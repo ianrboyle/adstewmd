@@ -1,11 +1,10 @@
-import { Box, Container } from "@mui/material";
+import { Box } from "@mui/material";
+import MainMenu from "../components/MainMenu";
 
 export default function Home() {
   return (
-    <Container>
-      {/* <Typography variant="h1">Hello World</Typography>
-       */}
-      <Box></Box>
-    </Container>
+    <Box>
+      <MainMenu />;
+    </Box>
   );
 }
