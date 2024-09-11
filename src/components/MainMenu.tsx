@@ -15,21 +15,34 @@ export default function MainMenu() {
           width: "100%",
           height: "50%",
           backgroundColor: "white",
-          display: "flex",
-          flexGrow: 1,
-          justifyContent: "center",
-          // alignItems: "center",
-          color: "black",
-          fontSize: "24px",
-          fontWeight: "bold",
-          borderRadius: "0px 0px 8px 8px",
         }}
       >
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid size={8}>
+        <Grid container spacing={2}>
+          <Grid
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+            size={8}
+          >
             <FeaturedServices />
           </Grid>
-          <Grid size={4}>
+          <Grid
+            size={4}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <FeaturedServices />
+          </Grid>
+          <Grid
+            size={12}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <FeaturedServices />
           </Grid>
         </Grid>
