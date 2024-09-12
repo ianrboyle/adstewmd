@@ -4,6 +4,7 @@ import "./globals.css";
 import ThemeRegistry from "./providers/ThemeRegistry/ThemeRegistry";
 import NavBar from "../components/NavBar";
 import { Box } from "@mui/material";
+import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,6 +31,7 @@ export default function RootLayout({
           > */}
           {children}
           {/* </Box> */}
+          <Footer />
         </ThemeRegistry>
       </body>
     </html>

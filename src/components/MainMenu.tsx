@@ -3,6 +3,7 @@ import React from "react";
 import FeaturedServices from "./FeaturedServices";
 import Grid from "@mui/material/Grid2";
 import BackgroundImage from "./BackgroundImage";
+import { ContactUs } from "./ContactUs";
 
 export default function MainMenu() {
   return (
@@ -47,6 +48,7 @@ export default function MainMenu() {
           </Grid>
         </Grid>
       </Box>
+      <ContactUs />
     </Box>
   );
 }
