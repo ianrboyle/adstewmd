@@ -1,16 +1,19 @@
 import React from "react";
 import Image from "next/image";
 import { Box } from "@mui/material";
-import AppIcon from "../../public/AppIcon.png";
+import AsdLogoPurple from "../../public/ASD_Logo.png";
+import AsdLogoWhite from "../../public/ASD_white.png";
 
-export default function LogoImage() {
+interface LogoImageProps {
+  logoColor: "purple" | "white";
+}
+export default function LogoImage({ logoColor }: LogoImageProps) {
+  const logo = logoColor == "purple" ? AsdLogoPurple : AsdLogoWhite;
   return (
-    <Box
-    // sx={{ display: "flex", flexDirection: "column" }}
-    >
+    <Box sx={{ width: logoColor === "white" ? "90%" : "auto" }}>
       <Image
         alt={`logo`}
-        src={AppIcon}
+        src={logo}
         style={{
           width: "100%",
           height: "auto",

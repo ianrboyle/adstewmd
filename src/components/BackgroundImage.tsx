@@ -9,7 +9,7 @@ export default function BackgroundImage() {
     // sx={{ display: "flex", flexDirection: "column" }}
     >
       <Image
-        alt={`vehicle image`}
+        alt={`background image`}
         src={background}
         style={{
           width: "100%",

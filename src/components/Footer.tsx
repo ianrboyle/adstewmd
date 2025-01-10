@@ -4,8 +4,11 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import { IconButton, Typography } from "@mui/material";
 import LogoImage from "./LogoImage";
-import AlarmIcon from "@mui/icons-material/Alarm";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import MapIcon from "@mui/icons-material/Map";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 export default function Footer() {
   return (
@@ -18,8 +21,8 @@ export default function Footer() {
           backgroundColor: "#28044C",
         }}
       >
-        <Grid container>
-          <Grid size={4}>
+        <Grid container spacing={2}>
+          <Grid size={{ xs: 12, md: 4, sm: 12 }}>
             <Box
               sx={{
                 display: "flex",
@@ -30,18 +33,55 @@ export default function Footer() {
                 border: "1px solid white",
               }}
             >
-              <LogoImage />
+              <LogoImage logoColor="white" />
               <Box>
-                <IconButton color="secondary" aria-label="add an alarm">
-                  <AlarmIcon />
+                <IconButton
+                  color="secondary"
+                  aria-label="go to facebook"
+                  sx={{
+                    color: "white",
+                  }}
+                >
+                  <FacebookIcon />
                 </IconButton>
-                <IconButton color="primary" aria-label="add to shopping cart">
-                  <AddShoppingCartIcon />
+                <IconButton
+                  aria-label="go to instagram"
+                  sx={{
+                    color: "white",
+                  }}
+                >
+                  <InstagramIcon />
+                </IconButton>
+                <IconButton
+                  aria-label="get directions"
+                  sx={{
+                    color: "white",
+                  }}
+                >
+                  <MapIcon />
+                </IconButton>
+              </Box>
+              <Box>
+                <IconButton
+                  aria-label="hours of operation"
+                  sx={{
+                    color: "white",
+                  }}
+                >
+                  <AccessTimeIcon />
+                  <Typography
+                    sx={{
+                      color: "white",
+                      paddingLeft: "5px",
+                    }}
+                  >
+                    Monday to Friday: 830am - 5:00pm
+                  </Typography>
                 </IconButton>
               </Box>
             </Box>
           </Grid>
-          <Grid size={4}>
+          <Grid size={{ xs: 12, md: 4, sm: 12 }}>
             <Box
               sx={{
                 display: "flex",
@@ -53,7 +93,7 @@ export default function Footer() {
               }}
             ></Box>
           </Grid>
-          <Grid size={4}>
+          <Grid size={{ xs: 12, md: 4, sm: 12 }}>
             <Box
               sx={{
                 display: "flex",
