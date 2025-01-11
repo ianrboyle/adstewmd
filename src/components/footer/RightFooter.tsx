@@ -34,9 +34,8 @@ export default function RightFooter() {
         }}
       >
         {links.map((link, index) => (
-          <Link href={`/${link.toLowerCase().replace(/\s+/g, "-")}`} key={index} passHref>
+          <Link href={`/${link.toLowerCase().replace(/\s+/g, "-")}`} key={index}>
             <Typography
-              component="a"
               sx={{
                 color: "white",
                 textDecoration: "none",
