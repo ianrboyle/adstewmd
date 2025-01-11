@@ -3,8 +3,7 @@ import "./globals.css";
 
 import ThemeRegistry from "./providers/ThemeRegistry/ThemeRegistry";
 import NavBar from "../components/NavBar";
-import { Box } from "@mui/material";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
