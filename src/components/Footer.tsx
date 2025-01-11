@@ -9,7 +9,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MapIcon from "@mui/icons-material/Map";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-
+import Divider from "@mui/material/Divider";
 export default function Footer() {
   return (
     <footer>
@@ -91,7 +91,80 @@ export default function Footer() {
                 minHeight: "30vh",
                 border: "1px solid white",
               }}
-            ></Box>
+            >
+              <Typography
+                sx={{
+                  color: "white",
+                }}
+              >
+                Contact Us
+              </Typography>
+              <Divider
+                variant="middle"
+                flexItem
+                sx={{
+                  backgroundColor: "white",
+                  width: "75%",
+                  margin: "0 auto",
+                  marginTop: "1rem",
+                  marginBottom: "1rem",
+                }}
+                aria-hidden="true"
+              />
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "1rem",
+                }}
+              >
+                <Grid container spacing={2} alignItems="center">
+                  {/* Left Box - 40% */}
+                  <Grid size={{ xs: 5, md: 5, lg: 5 }}>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "flex-start",
+                        justifyContent: "center",
+                        marginLeft: "1rem",
+                      }}
+                    >
+                      <Typography sx={{ color: "white", textAlign: "left" }}>Location:</Typography>
+                      <Typography sx={{ color: "white", textAlign: "left" }}>
+                        3300 E 1st Ave #400 Denver, CO 80206
+                      </Typography>
+                    </Box>
+                  </Grid>
+                  <Grid size={{ xs: 7, md: 7, lg: 7 }}>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Typography sx={{ color: "white" }}>303-333-6060</Typography>
+                    </Box>
+                  </Grid>
+                </Grid>
+              </Box>
+
+              <Divider
+                variant="middle"
+                flexItem
+                sx={{
+                  backgroundColor: "white",
+                  width: "75%",
+                  margin: "0 auto",
+                  marginTop: "1rem",
+                  marginBottom: "1rem",
+                }}
+                aria-hidden="true"
+              />
+            </Box>
           </Grid>
           <Grid size={{ xs: 12, md: 4, sm: 12 }}>
             <Box
