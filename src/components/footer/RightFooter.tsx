@@ -7,7 +7,7 @@ const links = [
   "Products",
   "Gallery",
   "Contact",
-  "Face procedures",
+  "Face Procedures",
   "Body",
   "Forms",
   "Payment",
@@ -34,11 +34,10 @@ export default function RightFooter() {
         }}
       >
         {links.map((link, index) => (
-          <Link href={`/${link.toLowerCase().replace(/\s+/g, "-")}`} key={index}>
+          <Link href={`/${link.toLowerCase().replace(/\s+/g, "-")}`} key={index} style={{ textDecoration: "none" }}>
             <Typography
               sx={{
                 color: "white",
-                textDecoration: "none",
                 "&:hover": {
                   textDecoration: "underline",
                 },

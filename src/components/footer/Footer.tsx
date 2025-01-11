@@ -7,6 +7,9 @@ import LeftFooter from "./LeftFooter";
 import CenterFooter from "./CenterFooter";
 import RightFooter from "./RightFooter";
 import { Divider, Typography } from "@mui/material";
+import Link from "next/link";
+
+const links = ["Accessibility", "Terms of Use", "Sitemap"];
 export default function Footer() {
   return (
     <footer>
@@ -47,9 +50,24 @@ export default function Footer() {
             gap: "1rem",
           }}
         >
-          <Typography>Copyright</Typography>
+          <Typography>
+            © Copyright 2025 Aesthetic Surgery & Dermatology of Cherry Creek | Design and Development by Ian Boyle
+          </Typography>
           <Divider orientation="vertical" sx={{ color: "white" }} variant="middle" flexItem />
-          <Typography>Accessibility</Typography>
+          {links.map((link, index) => (
+            <Link href={`/${link.toLowerCase().replace(/\s+/g, "-")}`} key={index} style={{ textDecoration: "none" }}>
+              <Typography
+                sx={{
+                  color: "white",
+                  "&:hover": {
+                    textDecoration: "underline",
+                  },
+                }}
+              >
+                {link}
+              </Typography>
+            </Link>
+          ))}
         </Box>
       </Box>
     </footer>
