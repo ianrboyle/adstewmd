@@ -11,13 +11,13 @@ import {
   ListItemButton,
   ListItemText,
   Toolbar,
-  Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import LogoImage from "./LogoImage";
 import { useState } from "react";
 import { Colors } from "../app/providers/ThemeRegistry/colors";
 import Link from "next/link";
+import NavBarContactInfo from "./NavBarContactInfo";
 
 interface Props {
   /**
@@ -67,7 +67,7 @@ export default function NavBar(props: Props) {
   );
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="sticky" sx={{ zIndex: 2000 }}>
+      <AppBar position="fixed" sx={{ zIndex: 2000 }}>
         <Toolbar>
           <LogoImage logoColor="purple" />
           <Box sx={{ ml: "auto" }}>
@@ -81,13 +81,15 @@ export default function NavBar(props: Props) {
               <MenuIcon />
             </IconButton>
           </Box>
-
-          <Box sx={{ display: { xs: "none", sm: "block" }, ml: "auto" }}>
-            {navItems.map((item) => (
-              <Link key={item} href={`/${item.toLowerCase().replace(/\s+/g, "-")}`} passHref>
-                <Button sx={{ color: `${Colors.purple}`, backgroundColor: "white" }}>{item}</Button>
-              </Link>
-            ))}
+          <Box>
+            <NavBarContactInfo />
+            <Box sx={{ display: { xs: "none", sm: "block" }, ml: "auto" }}>
+              {navItems.map((item) => (
+                <Link key={item} href={`/${item.toLowerCase().replace(/\s+/g, "-")}`} passHref>
+                  <Button sx={{ color: `${Colors.purple}`, backgroundColor: "white" }}>{item}</Button>
+                </Link>
+              ))}
+            </Box>
           </Box>
         </Toolbar>
       </AppBar>
