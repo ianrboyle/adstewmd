@@ -42,32 +42,53 @@ export default function Footer() {
             marginBottom: "1rem",
           }}
         />
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "1rem",
-          }}
-        >
-          <Typography>
-            © Copyright 2025 Aesthetic Surgery & Dermatology of Cherry Creek | Design and Development by Ian Boyle
-          </Typography>
-          <Divider orientation="vertical" sx={{ color: "white" }} variant="middle" flexItem />
-          {links.map((link, index) => (
-            <Link href={`/${link.toLowerCase().replace(/\s+/g, "-")}`} key={index} style={{ textDecoration: "none" }}>
-              <Typography
+        <Box>
+          <Grid container spacing={2}>
+            <Grid size={{ xs: 12, sm: 12, md: 6 }}>
+              <Box
                 sx={{
-                  color: "white",
-                  "&:hover": {
-                    textDecoration: "underline",
-                  },
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "1rem",
                 }}
               >
-                {link}
-              </Typography>
-            </Link>
-          ))}
+                <Typography>
+                  © Copyright 2025 Aesthetic Surgery & Dermatology of Cherry Creek | Design and Development by Ian Boyle
+                </Typography>
+              </Box>
+            </Grid>
+
+            <Grid size={{ xs: 12, sm: 12, md: 6 }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: { xs: "center", sm: "center", md: "flex-end" },
+                  gap: "1rem",
+                }}
+              >
+                {links.map((link, index) => (
+                  <Link
+                    href={`/${link.toLowerCase().replace(/\s+/g, "-")}`}
+                    key={index}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Typography
+                      sx={{
+                        color: "white",
+                        "&:hover": {
+                          textDecoration: "underline",
+                        },
+                      }}
+                    >
+                      {link}
+                    </Typography>
+                  </Link>
+                ))}
+              </Box>
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     </footer>
