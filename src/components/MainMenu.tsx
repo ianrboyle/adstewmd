@@ -1,14 +1,11 @@
 import { Box } from "@mui/material";
 import React from "react";
-import BackgroundImage from "./BackgroundImage";
+import MainMenuGreeting from "./MainMenuGreeting";
 import { ContactUs } from "./ContactUs";
-import FeaturedServices from "./FeaturedServices";
-
 export default function MainMenu() {
   return (
-    <Box>
-      <BackgroundImage />
-      <FeaturedServices />
+    <Box sx={{}}>
+      <MainMenuGreeting />
       <ContactUs />
     </Box>
   );
