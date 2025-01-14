@@ -52,7 +52,7 @@ export default function NavBar(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", top: "2.75rem", position: "relative" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", position: "relative" }}>
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -67,7 +67,7 @@ export default function NavBar(props: Props) {
   );
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" sx={{ zIndex: 2000 }}>
+      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer - 1 }}>
         <Toolbar>
           <LogoImage logoColor="purple" />
           <Box sx={{ ml: "auto" }}>
@@ -76,17 +76,31 @@ export default function NavBar(props: Props) {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
+              sx={{
+                mr: 2,
+                display: { xl: "none" },
+                fontSize: "2rem", // Increases the button size
+                padding: "1rem", // Increases the clickable area
+              }}
             >
-              <MenuIcon />
+              <MenuIcon sx={{ fontSize: "2.5rem" }} />
             </IconButton>
           </Box>
           <Box>
             <NavBarContactInfo />
-            <Box sx={{ display: { xs: "none", sm: "block" }, ml: "auto" }}>
+            <Box sx={{ display: { xs: "none", sm: "none", md: "none", lg: "block" }, ml: "auto" }}>
               {navItems.map((item) => (
                 <Link key={item} href={`/${item.toLowerCase().replace(/\s+/g, "-")}`} passHref>
-                  <Button sx={{ color: `${Colors.purple}`, backgroundColor: "white" }}>{item}</Button>
+                  <Button
+                    sx={{
+                      color: `${Colors.purple}`,
+                      backgroundColor: "white",
+                      marginTop: "0rem",
+                      marginBottom: "0rem",
+                    }}
+                  >
+                    {item}
+                  </Button>
                 </Link>
               ))}
             </Box>
@@ -94,7 +108,7 @@ export default function NavBar(props: Props) {
         </Toolbar>
       </AppBar>
       <nav>
-        <Drawer
+        {/* <Drawer
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -104,8 +118,30 @@ export default function NavBar(props: Props) {
           }}
           anchor="right"
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", sm: "block", md: "block" },
             "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
+            width: "15rem",
+          }}
+        >
+          {drawer}
+        </Drawer> */}
+        <Drawer
+          container={container}
+          variant="temporary" // Ensures the drawer is modal and overlays other content
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true, // Improves performance by not unmounting when closed
+          }}
+          anchor="right" // Change to "left" if you want it from the left side
+          PaperProps={{
+            sx: {
+              width: { xs: "100vw", sm: "20rem" }, // Full screen width on xs, smaller on larger screens
+              height: "100vh", // Ensures full height
+            },
+          }}
+          sx={{
+            zIndex: (theme) => theme.zIndex.drawer + 1, // Ensures the drawer is above the navbar
           }}
         >
           {drawer}

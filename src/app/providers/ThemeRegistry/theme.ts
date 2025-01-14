@@ -69,9 +69,17 @@ export const theme = createTheme({
         root: {
           backgroundColor: `${Colors.purple}`, // Set icons color to purple
           color: "#FFFFFF",
+          transition: "transform 0.3s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            backgroundImage: "linear-gradient(to bottom, #C086F9, #DFCDF1)",
+          },
+          marginTop: "1rem",
+          marginBottom: "1rem",
         },
       },
     },
+
     MuiTypography: {
       styleOverrides: {
         root: {

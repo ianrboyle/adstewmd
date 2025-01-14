@@ -19,7 +19,6 @@ export default function LeftFooter() {
       <LogoImage logoColor="white" />
       <Box>
         <IconButton
-          color="secondary"
           aria-label="go to facebook"
           sx={{
             color: "white",

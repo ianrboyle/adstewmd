@@ -82,19 +82,7 @@ export default function CenterFooter() {
         }}
         aria-hidden="true"
       />
-      <Button
-        type="submit"
-        sx={{
-          backgroundColor: "background.secondary",
-          mt: "1rem",
-          transition: "transform 0.3s",
-          "&:hover": {
-            transform: "scale(1.05)",
-            backgroundImage: "linear-gradient(to bottom, #C086F9, #DFCDF1)",
-          },
-          marginBottom: "1rem",
-        }}
-      >
+      <Button type="submit" sx={{}}>
         <CalendarMonthIcon sx={{ marginRight: "0.5rem" }} />
         BOOK AN APPOINTMENT
       </Button>

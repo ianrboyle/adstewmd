@@ -53,20 +53,7 @@ export const ContactUs = () => {
             marginBottom: "1rem",
           }}
         />
-        <Button
-          type="submit"
-          sx={{
-            backgroundColor: "background.secondary",
-            mt: "1rem",
-            transition: "transform 0.3s",
-            "&:hover": {
-              transform: "scale(1.05)",
-              backgroundImage: "linear-gradient(to bottom, #C086F9, #DFCDF1)",
-            },
-          }}
-        >
-          Submit
-        </Button>
+        <Button type="submit">Submit</Button>
       </Box>
     </Container>
   );

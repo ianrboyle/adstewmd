@@ -30,18 +30,18 @@ export default function MainMenuGreeting() {
         sx={{
           position: "absolute",
           top: { xs: "65%", md: "75%" },
-          height: "50%",
+          height: { xs: "75%", sm: "50%" },
           left: { xs: "50%", md: "35%", lg: "55%" },
           transform: "translate(-50%, -50%)",
           px: 2,
-          width: "90%",
+          width: "100%",
           maxWidth: { xs: "100%", md: "65%", lg: "100%" },
         }}
       >
         <Typography
           sx={{
             color: "",
-            fontSize: { xs: "4rem", md: "3rem" },
+            fontSize: { xs: "3rem", md: "3rem" },
             whiteSpace: { xs: "normal", sm: "normal", md: "normal", lg: "nowrap" },
             overflow: "hidden",
           }}
@@ -49,19 +49,7 @@ export default function MainMenuGreeting() {
           FEEL COMFORTABLE IN YOUR OWN SKIN
         </Typography>
 
-        <Button
-          type="submit"
-          sx={{
-            backgroundColor: "background.secondary",
-            mt: "1rem",
-            transition: "transform 0.3s",
-            "&:hover": {
-              transform: "scale(1.05)",
-              backgroundImage: "linear-gradient(to bottom, #C086F9, #DFCDF1)",
-            },
-            marginBottom: "1rem",
-          }}
-        >
+        <Button type="submit">
           <CalendarMonthIcon sx={{ marginRight: "0.5rem" }} />
           BOOK AN APPOINTMENT
         </Button>

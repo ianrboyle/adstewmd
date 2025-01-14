@@ -17,32 +17,21 @@ export default function NavBarContactInfo() {
     >
       <Box
         sx={{
-          display: { xs: "none", sm: "none", md: "block" },
+          display: { xs: "none", sm: "none", md: "none", lg: "block" },
           ml: "auto",
         }}
       >
-        <IconButton
-          color="secondary"
-          aria-label="go to facebook"
-          sx={{
-            color: "background.secondary",
-          }}
-        >
+        <IconButton color="secondary" aria-label="go to facebook" sx={{}}>
           <FacebookIcon />
         </IconButton>
-        <IconButton
-          aria-label="go to instagram"
-          sx={{
-            color: "background.secondary",
-          }}
-        >
+        <IconButton aria-label="go to instagram" sx={{}}>
           <InstagramIcon />
         </IconButton>
         <IconButton
           aria-label="get directions"
           sx={{
-            color: "background.secondary",
             mr: "1rem",
+            mt: "0rem",
           }}
         >
           <MapIcon />
@@ -51,7 +40,6 @@ export default function NavBarContactInfo() {
         <IconButton
           aria-label="Contact"
           sx={{
-            color: "background.secondary",
             mr: "1rem",
           }}
         >
@@ -60,25 +48,12 @@ export default function NavBarContactInfo() {
         <IconButton
           aria-label="Contact"
           sx={{
-            color: "background.secondary",
             mr: "1rem",
           }}
         >
           <PhoneAndroidIcon /> <Typography>303-333-6060</Typography>
         </IconButton>
-        <Button
-          type="submit"
-          sx={{
-            backgroundColor: "background.secondary",
-            mt: "1rem",
-            transition: "transform 0.3s",
-            "&:hover": {
-              transform: "scale(1.05)",
-              backgroundImage: "linear-gradient(to bottom, #C086F9, #DFCDF1)",
-            },
-            marginBottom: "1rem",
-          }}
-        >
+        <Button type="submit" sx={{}}>
           Patient Portal
         </Button>
       </Box>
