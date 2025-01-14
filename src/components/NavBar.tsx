@@ -27,7 +27,6 @@ interface Props {
   window?: () => Window;
 }
 
-const drawerWidth = 240;
 const navItems = [
   "About Us",
   "Patient Reviews",
@@ -108,7 +107,7 @@ export default function NavBar(props: Props) {
         </Toolbar>
       </AppBar>
       <nav>
-        {/* <Drawer
+        <Drawer
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -117,31 +116,14 @@ export default function NavBar(props: Props) {
             keepMounted: true,
           }}
           anchor="right"
-          sx={{
-            display: { xs: "block", sm: "block", md: "block" },
-            "& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
-            width: "15rem",
-          }}
-        >
-          {drawer}
-        </Drawer> */}
-        <Drawer
-          container={container}
-          variant="temporary" // Ensures the drawer is modal and overlays other content
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Improves performance by not unmounting when closed
-          }}
-          anchor="right" // Change to "left" if you want it from the left side
           PaperProps={{
             sx: {
-              width: { xs: "100vw", sm: "20rem" }, // Full screen width on xs, smaller on larger screens
-              height: "100vh", // Ensures full height
+              width: { xs: "100vw", sm: "20rem" },
+              height: "100vh",
             },
           }}
           sx={{
-            zIndex: (theme) => theme.zIndex.drawer + 1, // Ensures the drawer is above the navbar
+            zIndex: (theme) => theme.zIndex.drawer + 1,
           }}
         >
           {drawer}
