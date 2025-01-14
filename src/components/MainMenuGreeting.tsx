@@ -41,7 +41,7 @@ export default function MainMenuGreeting() {
         <Typography
           sx={{
             color: "",
-            fontSize: { xs: "3rem", md: "3rem" },
+            fontSize: { xs: "2rem", md: "3rem" },
             whiteSpace: { xs: "normal", sm: "normal", md: "normal", lg: "nowrap" },
             overflow: "hidden",
           }}
