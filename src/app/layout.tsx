@@ -20,16 +20,8 @@ export default function RootLayout({
       <body>
         <ThemeRegistry>
           <NavBar />
-          {/* <Box
-            component="main"
-            sx={{
-              flexGrow: 1,
-              bgcolor: "background.default",
-              mt: ["68px", "68px", "104px"],
-            }}
-          > */}
+
           {children}
-          {/* </Box> */}
           <Footer />
         </ThemeRegistry>
       </body>
