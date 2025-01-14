@@ -31,18 +31,19 @@ export default function MainMenuGreeting() {
           position: "absolute",
           top: { xs: "65%", md: "75%" },
           height: { xs: "75%", sm: "50%" },
-          left: { xs: "50%", md: "35%", lg: "55%" },
+          left: { xs: "50%", md: "35%", lg: "35%" },
           transform: "translate(-50%, -50%)",
           px: 2,
           width: "100%",
-          maxWidth: { xs: "100%", md: "65%", lg: "100%" },
+          maxWidth: { xs: "100%", md: "65%", lg: "50%" },
         }}
       >
         <Typography
+          variant="h3"
           sx={{
             color: "",
-            fontSize: { xs: "2rem", md: "3rem" },
-            whiteSpace: { xs: "normal", sm: "normal", md: "normal", lg: "nowrap" },
+            fontSize: { xs: "2.5rem", md: "3.5rem" },
+            whiteSpace: "normal",
             overflow: "hidden",
           }}
         >

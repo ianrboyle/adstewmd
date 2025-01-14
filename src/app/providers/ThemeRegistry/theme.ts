@@ -38,7 +38,7 @@ export const theme = createTheme({
     },
     text: {
       primary: `${Colors.white}`,
-      secondary: `${Colors.purple}`,
+      secondary: `#62288f`,
     },
   },
   typography: {
@@ -55,9 +55,9 @@ export const theme = createTheme({
       fontWeight: 600,
     },
     h3: {
-      fontSize: "1rem",
-      fontWeight: 700,
-      fontFamily: `${roboto.style.fontFamily}, sans-serif`,
+      fontSize: "1.5rem",
+      fontWeight: 500,
+      fontFamily: `${cormorantGaramond.style.fontFamily}, serif`,
       letterSpacing: "0.2rem",
     },
     body1: {
@@ -110,14 +110,14 @@ export const theme = createTheme({
     MuiIconButton: {
       styleOverrides: {
         root: {
-          color: `${Colors.purple}`, // Set icons color to purple
+          color: "#62288f", // Set icons color to purple
         },
       },
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          backgroundColor: `${Colors.purple}`, // Set icons color to purple
+          backgroundColor: `#62288f`, // Set icons color to purple
           color: "#FFFFFF",
           transition: "transform 0.3s",
           "&:hover": {
@@ -126,16 +126,18 @@ export const theme = createTheme({
           },
           marginTop: "1rem",
           marginBottom: "1rem",
+          fontFamily: `${roboto.style.fontFamily}, sans-serif`,
+          fontWeight: 400,
         },
       },
     },
-
-    MuiTypography: {
-      styleOverrides: {
-        root: {
-          color: `${Colors.purple}`, // Set icons color to purple
-        },
-      },
-    },
+    // overrides typegraphy color
+    // MuiTypography: {
+    //   styleOverrides: {
+    //     root: {
+    //       color: `${Colors.purple}`,
+    //     },
+    //   },
+    // },
   },
 });
