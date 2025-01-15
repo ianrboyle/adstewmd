@@ -10,7 +10,12 @@ interface LogoImageProps {
 export default function LogoImage({ logoColor }: LogoImageProps) {
   const logo = logoColor == "purple" ? AsdLogoPurple : AsdLogoWhite;
   return (
-    <Box sx={{ width: logoColor === "white" ? "90%" : { xs: "70%", sm: "60%", md: "50%", lg: "30%" }, mt: "1rem" }}>
+    <Box
+      sx={{
+        width: logoColor === "white" ? "90%" : { xs: "70%", sm: "60%", md: "40%", lg: "30%", xl: "20%" },
+        mt: "1rem",
+      }}
+    >
       <Image
         alt={`logo`}
         src={logo}

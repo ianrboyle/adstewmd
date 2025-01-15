@@ -56,7 +56,7 @@ export default function NavBar(props: Props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <ListItemButton sx={{ textAlign: "center", color: `#62288f`, backgroundColor: "white" }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -77,7 +77,7 @@ export default function NavBar(props: Props) {
               onClick={handleDrawerToggle}
               sx={{
                 mr: 2,
-                display: { xl: "none" },
+                display: { lg: "none" },
                 fontSize: "2rem", // Increases the button size
                 padding: "1rem", // Increases the clickable area
               }}
@@ -92,10 +92,11 @@ export default function NavBar(props: Props) {
                 <Link key={item} href={`/${item.toLowerCase().replace(/\s+/g, "-")}`} passHref>
                   <Button
                     sx={{
-                      color: `${Colors.purple}`,
+                      color: `#62288f`,
                       backgroundColor: "white",
                       marginTop: "0rem",
                       marginBottom: "0rem",
+                      marginRight: "0.5rem",
                     }}
                   >
                     {item}

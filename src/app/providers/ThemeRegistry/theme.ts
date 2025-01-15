@@ -44,32 +44,39 @@ export const theme = createTheme({
   typography: {
     fontFamily: `${roboto.style.fontFamily}, sans-serif, ${cormorantGaramond.style.fontFamily}, serif`,
     h1: {
-      fontSize: "3rem",
-      fontWeight: 700,
-      fontFamily: `${roboto.style.fontFamily}, sans-serif`,
-      letterSpacing: "0.1rem",
-    },
-    h2: {
-      fontSize: "2.5rem",
-      fontFamily: `${roboto.style.fontFamily}, sans-serif`,
-      fontWeight: 600,
-    },
-    h3: {
       fontSize: "1.5rem",
       fontWeight: 500,
       fontFamily: `${cormorantGaramond.style.fontFamily}, serif`,
       letterSpacing: "0.2rem",
     },
+    h2: {
+      fontSize: "1.5rem",
+      fontFamily: `${roboto.style.fontFamily}, sans-serif`,
+      fontWeight: 500,
+      letterSpacing: "0.1rem",
+    },
+    h3: {
+      fontSize: "1.rem",
+      fontWeight: 400,
+      fontFamily: `${roboto.style.fontFamily}, sans-serif`,
+      letterSpacing: "0.1rem",
+    },
+    h4: {
+      fontSize: "3rem",
+      fontWeight: 400,
+      lineHeight: 1.25,
+      fontFamily: `${cormorantGaramond.style.fontFamily}, serif`,
+    },
     body1: {
       fontSize: "1.25rem",
-      fontWeight: 300,
+      fontWeight: 400,
       lineHeight: 1.5,
       fontFamily: `${roboto.style.fontFamily}, sans-serif`,
     },
     body2: {
-      fontSize: "1.5rem",
-      fontWeight: 500,
-      lineHeight: 2,
+      fontSize: "1.75rem",
+      fontWeight: 300,
+      lineHeight: 1.5,
       fontFamily: `${cormorantGaramond.style.fontFamily}, serif`,
     },
     caption: {
@@ -128,6 +135,7 @@ export const theme = createTheme({
           marginBottom: "1rem",
           fontFamily: `${roboto.style.fontFamily}, sans-serif`,
           fontWeight: 400,
+          borderRadius: "1rem 0  1rem 0",
         },
       },
     },
