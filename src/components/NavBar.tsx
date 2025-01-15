@@ -18,7 +18,7 @@ import { useState } from "react";
 import { Colors } from "../app/providers/ThemeRegistry/colors";
 import Link from "next/link";
 import NavBarContactInfo from "./NavBarContactInfo";
-
+import CloseIcon from "@mui/icons-material/Close";
 interface Props {
   /**
    * Injected by the documentation to work in an iframe.
@@ -51,9 +51,17 @@ export default function NavBar(props: Props) {
   const container = window !== undefined ? () => window().document.body : undefined;
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", position: "relative" }}>
+    <Box sx={{ textAlign: "center", position: "relative" }}>
+      <IconButton
+        onClick={handleDrawerToggle}
+        sx={{ position: "absolute", top: 8, right: 8 }}
+        aria-label="close drawer"
+      >
+        <CloseIcon />
+      </IconButton>
+
       <Divider />
-      <List>
+      <List sx={{ mt: "3rem" }}>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "center", color: `#62288f`, backgroundColor: "white" }}>
@@ -119,7 +127,7 @@ export default function NavBar(props: Props) {
           anchor="right"
           PaperProps={{
             sx: {
-              width: { xs: "100vw", sm: "20rem" },
+              width: { xs: "100%", sm: "100%", md: "40%" },
               height: "100vh",
             },
           }}

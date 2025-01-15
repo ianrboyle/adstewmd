@@ -24,6 +24,7 @@ export default function LogoImage({ logoColor }: LogoImageProps) {
           height: "auto",
         }}
         sizes="100vw"
+        priority={false}
       />
     </Box>
   );
