@@ -44,7 +44,7 @@ export const theme = createTheme({
   typography: {
     fontFamily: `${roboto.style.fontFamily}, sans-serif, ${cormorantGaramond.style.fontFamily}, serif`,
     h1: {
-      fontSize: "1.5rem",
+      fontSize: "4.5rem",
       fontWeight: 500,
       fontFamily: `${cormorantGaramond.style.fontFamily}, serif`,
       letterSpacing: "0.2rem",
