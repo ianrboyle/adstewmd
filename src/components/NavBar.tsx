@@ -15,7 +15,6 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import LogoImage from "./LogoImage";
 import { useState } from "react";
-import { Colors } from "../app/providers/ThemeRegistry/colors";
 import Link from "next/link";
 import NavBarContactInfo from "./NavBarContactInfo";
 import CloseIcon from "@mui/icons-material/Close";

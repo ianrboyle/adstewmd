@@ -29,61 +29,68 @@ export default function FeaturedServices() {
             </Typography>
           </Box>
         </Box>
-
-        <Grid container spacing={2} sx={{ mt: "2rem", mb: "2rem" }}>
-          <Divider
-            sx={{
-              width: "100%",
-              backgroundColor: "white",
-              margin: "auto",
-            }}
-            variant="middle"
-          />
+        <Box justifyContent="center" display="flex">
           <Grid
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-            size={{ xs: 12, sm: 6, md: 3 }}
+            container
+            spacing={2}
+            sx={{ mt: "1rem", mb: "2rem", width: { sm: "100%", md: "80%", lg: "100%", xl: "80%" } }}
           >
-            <FeaturedServiceCard title="title 1" imageSrc="/porsche@2x.png" />
+            <Divider
+              sx={{
+                width: "100%",
+                backgroundColor: "white",
+                mb: "1rem",
+                ml: "auto",
+              }}
+              variant="middle"
+            />
+            <Grid
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+              size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
+            >
+              <FeaturedServiceCard title="Neurotoxins" imageSrc="/neurotoxins.png" />
+            </Grid>
+            <Grid
+              size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <FeaturedServiceCard title="Fillers" imageSrc="/injection.png" />
+            </Grid>
+            <Grid
+              size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <FeaturedServiceCard title="Body Contouring" imageSrc="/body-contour.png" />
+            </Grid>
+            <Grid
+              size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <FeaturedServiceCard title="Lasers" imageSrc="/laser.png" />
+            </Grid>
+            <Divider
+              sx={{
+                width: "100%",
+                backgroundColor: "white",
+                mt: "1rem",
+                ml: "auto",
+              }}
+              variant="middle"
+            />
           </Grid>
-          <Grid
-            size={{ xs: 12, sm: 6, md: 3 }}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <FeaturedServiceCard title="title 2" imageSrc="/porsche@2x.png" />
-          </Grid>
-          <Grid
-            size={{ xs: 12, sm: 6, md: 3 }}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <FeaturedServiceCard title="title 3" imageSrc="/porsche@2x.png" />
-          </Grid>
-          <Grid
-            size={{ xs: 12, sm: 6, md: 3 }}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <FeaturedServiceCard title="title 4" imageSrc="/porsche@2x.png" />
-          </Grid>
-          <Divider
-            sx={{
-              width: "100%",
-              backgroundColor: "white",
-              margin: "auto",
-            }}
-            variant="middle"
-          />
-        </Grid>
+        </Box>
       </>
     </OverlayComponent>
   );

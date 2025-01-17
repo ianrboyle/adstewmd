@@ -1,8 +1,6 @@
 import React from "react";
-import styles from "./OverlayComponent.module.css";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
-import featuredServicePng from "../../public/featured-services.png";
 interface OverlayComponentProps {
   backgroundImage: string;
   altText: string;
@@ -56,8 +54,7 @@ const OverlayComponent: React.FC<OverlayComponentProps> = ({
           }}
           priority
           sizes="100vw"
-          width="100"
-          height="100"
+          fill={true}
         />
       </Box>
 

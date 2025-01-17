@@ -1,4 +1,6 @@
-import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography } from "@mui/material";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface FeaturedServiceCardProps {
@@ -10,25 +12,41 @@ export default function FeaturedServiceCard({ title, imageSrc }: FeaturedService
     <Card
       sx={{
         width: "100%",
-        maxWidth: 380,
-        minHeight: { xs: 240, sm: 261, lg: 261 },
+        maxWidth: 300,
+        minHeight: { xs: 240, sm: 400, lg: 400 },
+        backgroundColor: "transparent",
       }}
+      elevation={0}
     >
-      <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" p={2}>
+      <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" sx={{ height: "100%" }}>
         {imageSrc && (
-          <CardMedia
-            component="img"
-            alt={title}
-            height="300"
-            image={imageSrc}
-            sx={{ borderRadius: "4px", objectFit: "cover", width: "100%" }}
-          />
+          <Box sx={{ borderRadius: "0 0 2rem 0", overflow: "hidden", width: "100%", height: "100%" }}>
+            <Image
+              src={imageSrc}
+              alt={title}
+              priority
+              sizes="100vw"
+              style={{ width: "100%", height: "100%" }}
+              width={100}
+              height={100}
+            />
+          </Box>
         )}
         <CardContent>
           <Box textAlign="center">
-            <Typography gutterBottom variant="h5" component="div">
-              {title}
-            </Typography>
+            <Link href={`/${title.toLowerCase().replace(/\s+/g, "-")}`} style={{ textDecoration: "none" }}>
+              <Typography
+                variant="h3"
+                sx={{
+                  color: "white",
+                  "&:hover": {
+                    textDecoration: "underline",
+                  },
+                }}
+              >
+                {title}
+              </Typography>
+            </Link>
           </Box>
         </CardContent>
       </Box>

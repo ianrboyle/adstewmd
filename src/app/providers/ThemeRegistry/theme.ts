@@ -56,7 +56,7 @@ export const theme = createTheme({
       letterSpacing: "0.1rem",
     },
     h3: {
-      fontSize: "1.rem",
+      fontSize: "1.5rem",
       fontWeight: 400,
       fontFamily: `${roboto.style.fontFamily}, sans-serif`,
       letterSpacing: "0.1rem",
