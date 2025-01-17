@@ -37,4 +37,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 - add featured services component
 - add new pages for links on featured services
-- add society images on FS
