@@ -3,12 +3,13 @@ import OverlayComponent from "./Overlay";
 import { Box, Divider, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import FeaturedServiceCard from "./FeaturedServiceCard";
+import AssociationsAndSocieties from "./AssociationsAndSocieties";
 export default function FeaturedServices() {
   return (
     <OverlayComponent
       backgroundImage="/featured-services.png"
       altText="Descriptive Alt Text"
-      backgroundColor="rgba(50, 20, 80, 0.6)"
+      backgroundColor="rgba(50, 20, 80, 0.7)"
       borderRadius={{ xs: "10rem 0 0 0", md: "20rem 0 0 0" }}
     >
       <>
@@ -91,6 +92,7 @@ export default function FeaturedServices() {
             />
           </Grid>
         </Box>
+        <AssociationsAndSocieties />
       </>
     </OverlayComponent>
   );

@@ -24,11 +24,11 @@ export default function FeaturedServiceCard({ title, imageSrc }: FeaturedService
             <Image
               src={imageSrc}
               alt={title}
-              priority
+              priority={false}
               sizes="100vw"
               style={{ width: "100%", height: "100%" }}
-              width={100}
-              height={100}
+              width={400}
+              height={400}
             />
           </Box>
         )}
