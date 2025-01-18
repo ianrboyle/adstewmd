@@ -20,17 +20,41 @@ export default function FeaturedServiceCard({ title, imageSrc }: FeaturedService
     >
       <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" sx={{ height: "100%" }}>
         {imageSrc && (
-          <Box sx={{ borderRadius: "0 0 2rem 0", overflow: "hidden", width: "100%", height: "100%" }}>
-            <Image
-              src={imageSrc}
-              alt={title}
-              priority={false}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }}
-              width={400}
-              height={400}
-            />
-          </Box>
+          <Link href={`/${title.toLowerCase().replace(/\s+/g, "-")}`}>
+            <Box
+              sx={{
+                borderRadius: "0 0 2rem 0",
+                overflow: "hidden",
+                width: "100%",
+                height: "100%",
+                cursor: "pointer",
+                position: "relative",
+                "&:hover::before": {
+                  content: '""',
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  zIndex: 1,
+                },
+                "&:hover": {
+                  boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.5)",
+                },
+              }}
+            >
+              <Image
+                src={imageSrc}
+                alt={title}
+                priority={false}
+                sizes="100vw"
+                style={{ width: "100%", height: "100%" }}
+                width={400}
+                height={400}
+              />
+            </Box>
+          </Link>
         )}
         <CardContent>
           <Box textAlign="center">
