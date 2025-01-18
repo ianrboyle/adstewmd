@@ -52,7 +52,7 @@ export default function FeaturedServices() {
               }}
               size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
             >
-              <FeaturedServiceCard title="Neurotoxins" imageSrc="/neurotoxins.png" />
+              <FeaturedServiceCard title="Neurotoxins" imageSrc="/neurotoxins.png" link="botox" />
             </Grid>
             <Grid
               size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
@@ -61,7 +61,7 @@ export default function FeaturedServices() {
                 justifyContent: "center",
               }}
             >
-              <FeaturedServiceCard title="Fillers" imageSrc="/injection.png" />
+              <FeaturedServiceCard title="Fillers" imageSrc="/injection.png" link="botox" />
             </Grid>
             <Grid
               size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
@@ -70,7 +70,7 @@ export default function FeaturedServices() {
                 justifyContent: "center",
               }}
             >
-              <FeaturedServiceCard title="Body Contouring" imageSrc="/body-contour.png" />
+              <FeaturedServiceCard title="Body Contouring" imageSrc="/body-contour.png" link="body" />
             </Grid>
             <Grid
               size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
@@ -79,7 +79,7 @@ export default function FeaturedServices() {
                 justifyContent: "center",
               }}
             >
-              <FeaturedServiceCard title="Lasers" imageSrc="/laser.png" />
+              <FeaturedServiceCard title="Lasers" imageSrc="/laser.png" link="laser-hair-removal" />
             </Grid>
             <Divider
               sx={{

@@ -6,8 +6,9 @@ import React from "react";
 interface FeaturedServiceCardProps {
   title: string;
   imageSrc: string;
+  link: string;
 }
-export default function FeaturedServiceCard({ title, imageSrc }: FeaturedServiceCardProps) {
+export default function FeaturedServiceCard({ title, imageSrc, link }: FeaturedServiceCardProps) {
   return (
     <Card
       sx={{
@@ -20,7 +21,7 @@ export default function FeaturedServiceCard({ title, imageSrc }: FeaturedService
     >
       <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" sx={{ height: "100%" }}>
         {imageSrc && (
-          <Link href={`/${title.toLowerCase().replace(/\s+/g, "-")}`}>
+          <Link href={`/services/${link}`}>
             <Box
               sx={{
                 borderRadius: "0 0 2rem 0",
