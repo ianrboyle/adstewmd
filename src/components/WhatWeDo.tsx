@@ -40,7 +40,14 @@ export default function WhatWeDo() {
             </Typography>
             <Typography
               variant="body1"
-              sx={{ color: "text.primary", whiteSpace: "normal", overflow: "hidden", mt: "1rem", mb: "3rem" }}
+              sx={{
+                color: "text.primary",
+                whiteSpace: "normal",
+                overflow: "hidden",
+                mt: "1rem",
+                mb: "3rem",
+                fontWeight: "400",
+              }}
             >
               Highly trained providers treat wrinkles, skin cancer, pre-cancers, and unwanted facial or body hair, as
               well as acne, brown spots, scarring, visible veins, rashes, warts, and other skin conditions.

@@ -85,8 +85,8 @@ export default function NavBar(props: Props) {
               sx={{
                 mr: 2,
                 display: { lg: "none" },
-                fontSize: "2rem", // Increases the button size
-                padding: "1rem", // Increases the clickable area
+                fontSize: "2rem",
+                padding: "1rem",
               }}
             >
               <MenuIcon sx={{ fontSize: "2.5rem" }} />

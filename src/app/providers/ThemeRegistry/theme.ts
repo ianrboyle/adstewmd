@@ -48,6 +48,7 @@ export const theme = createTheme({
       fontWeight: 500,
       fontFamily: `${cormorantGaramond.style.fontFamily}, serif`,
       letterSpacing: "0.2rem",
+      color: "text.primary",
     },
     h2: {
       fontSize: "1.5rem",
@@ -68,10 +69,14 @@ export const theme = createTheme({
       fontFamily: `${cormorantGaramond.style.fontFamily}, serif`,
     },
     body1: {
-      fontSize: "1.25rem",
-      fontWeight: 400,
-      lineHeight: 1.5,
+      // fontSize: "1.25rem",
+      // fontWeight: 400,
+      lineHeight: 1.75,
       fontFamily: `${roboto.style.fontFamily}, sans-serif`,
+      fontSize: "1.1rem",
+      fontWeight: 380,
+
+      letterSpacing: 1.5,
     },
     body2: {
       fontSize: "1.75rem",
