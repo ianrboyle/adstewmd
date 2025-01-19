@@ -38,4 +38,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - populate new FS pages
 
 - Footer:
+
   - implement map
+
+- add link to home page on logo (navbar and footer)
+- add links to all nav bar options
+  - create pages for each
+- add dropdowns for specific nav bar options
