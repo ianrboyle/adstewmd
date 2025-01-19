@@ -12,17 +12,20 @@ export default function AssociationsAndSocieties() {
           />
         </Grid>
         <Grid size={{ xs: 6, sm: 4, md: 2, lg: 2 }}>
-          <AssociationsAndSocietiesImage backgroundImage="/AAD.png" altText="American Academy of Dermatology" />
+          <AssociationsAndSocietiesImage
+            backgroundImage="/associations/AAD.png"
+            altText="American Academy of Dermatology"
+          />
         </Grid>
         <Grid size={{ xs: 6, sm: 4, md: 2, lg: 2 }}>
           <AssociationsAndSocietiesImage
-            backgroundImage="/ASCDAS.png"
+            backgroundImage="/associations/ASCDAS.png"
             altText="American Society of Cosmetic Dermatology & Aesthetic Surgery"
           />
         </Grid>
         <Grid size={{ xs: 6, sm: 4, md: 2, lg: 2 }}>
           <AssociationsAndSocietiesImage
-            backgroundImage="/Colorado-Dermatologic-Society.png"
+            backgroundImage="/associations/Colorado-Dermatologic-Society.png"
             altText="Colorado Dermatalogic Society"
           />
         </Grid>

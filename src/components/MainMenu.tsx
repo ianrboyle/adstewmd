@@ -7,7 +7,7 @@ import MainMenuGreeting from "./MainMenuGreeting";
 
 export default function MainMenu() {
   return (
-    <Box sx={{}}>
+    <Box>
       <MainMenuGreeting />
       <WhatWeDo />
       <FeaturedServices />
