@@ -1,44 +1,30 @@
-import { Box, Button, Divider, Typography } from "@mui/material";
+import { Box, Divider, Link, Typography } from "@mui/material";
 import FeaturedServiceBackgroundImage from "../../../components/featured-services/BackgroundImage";
 import Grid from "@mui/material/Grid2";
 import FeaturedServiceDescription from "../../../components/featured-services/Description";
-const fillersServices =
-  "Fillers injectables can soften your wrinkles or increase the volume in your lips or cheeks to make your features a bit more youthful. In the Cherry Creek area of Denver, Colorado, board-certified dermatologist Adrienne Stewart, MD, provides customized treatments using Juvéderm’s high-end product line at Aesthetic Surgery and Dermatology of Cherry Creek. Start planning your treatment by scheduling a consultation over the phone or online at the Cherry Creek office today.";
+import FeaturedServiceDescriptionPageHeading from "../../../components/featured-services/DescriptionPageHeading";
+import FeaturedServiceDescriptionWithList from "../../../components/featured-services/DescriptionWithList";
+import FillerTypes from "../../../components/featured-services/FillerTypes";
+import DividerWithContactButtons from "../../../components/featured-services/DividerWithContactButtons";
+import {
+  pageHeadingTitle,
+  pageHeadingSubtitle,
+  fillersServicesTitle,
+  fillersServices,
+  whatAreFillersTitle,
+  whatAreFillersText,
+  fillerResultsTitle,
+  fillerResultsBody,
+  fillersListMainText,
+  fillersListSubText,
+  whatFillersCanDo,
+  resultsLastTitle,
+  resultsLastBody,
+  howFillersFeelTitle,
+  howFillersFeelBody,
+} from "../../../constants/featured-services";
+import Image from "next/image";
 
-const fillersServicesTitle = "Fillers services offered in Cherry Creek, Denver, CO";
-
-const whatAreFillersText = [
-  "A popular line of cosmetic fillers you can inject into your face or hands to increase volume. Between fat loss and collagen decline with age, some of your facial features can change over time. You might have sunken cheeks, more defined under-eye hollows, or bonier hands. You can restore a more youthful appearance and texture using fillers.",
-  "There are multiple fillers product lines to target different areas and achieve different goals. However, they all share a common ingredient: hyaluronic acid. This gooey substance occurs naturally in your body to provide hydration and lubrication. Injected under your skin, it offers a soft and supple texture.",
-  "Your specialist at Aesthetic Surgery and Dermatology of Cherry Creek can help you reach your aesthetic goals by injecting at different depths for more definition and fullness.",
-];
-
-const fillerResultsTitle = "What are the results of fillers?";
-const fillerResultsBody = [
-  "Your skin changes with age as it produces less hyaluronic acid, collagen, and elastin. Fillers can counteract some of these effects by introducing more hyaluronic acid for greater volume.",
-];
-const whatAreFillersTitle = "What are fillers?";
-
-const whatFillersCanDo = [
-  "Smooth wrinkles and fine lines",
-  "Boost volume around your cheekbones",
-  "Define or volumize your lips",
-  "Add plumpness to the backs of your hands",
-  "Define facial contours",
-];
-
-const resultsLastTitle = "How long do the results of fillers last?";
-const resultsLastBody = [
-  "You can enjoy your filler results immediately after your injection appointment. While filler results aren’t permanent, they last up to a year. But that doesn’t mean they’re gone for good: If you enjoy the results of fillers, you can come back to Aesthetic Surgery and Dermatology of Cherry Creek for another visit and more injections.",
-];
-
-const howFillersFeelTitle = "What does treatment with fillers feel like?";
-const howFillersFeelBody = [
-  "Filler involves injections, so there can be some slight discomfort during the process. Aesthetic Surgery and Dermatology of Cherry Creek offers local anesthesia to numb the targeted areas before your injections for a more comfortable procedure.",
-];
-const juvedermFillers = ["Vollure XC", "Volbella XC", "Ultra XC", "Ultra Plus XC", "Volux, Voluma"];
-const restylaneFillers = ["Lyft", "Defyne", "Refyne", "Kysse", "Contour"];
-const rhaFillers = ["Redensity, 2, 3, 4", "Versa", "Radiesse+"];
 export default function Fillers() {
   return (
     <Box
@@ -48,14 +34,63 @@ export default function Fillers() {
       }}
     >
       <FeaturedServiceBackgroundImage imageSrc="/featured-services/botox-long.png" altText="botox" />
-      <Grid container spacing={0}>
-        <Grid size={{ md: 12, lg: 8 }}>
+
+      <Grid
+        container
+        spacing={4}
+        sx={{
+          justifyContent: "center", // Center items horizontallyd
+          display: "flex",
+          margin: "0 auto",
+        }}
+      >
+        <Grid
+          size={{ md: 12, lg: 8 }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <Box
             sx={{
-              ml: { md: "2rem", lg: "3rem", xl: "6rem" },
-              width: { sm: "100%", md: "95%", xl: "90%" },
+              width: { lg: "100%", xl: "90%" },
+
+              p: { xs: 2, sm: 2, md: 4, xl: 0 },
+            }}
+          >
+            <FeaturedServiceDescriptionPageHeading title={pageHeadingTitle} subtitle={pageHeadingSubtitle} />
+            <FeaturedServiceDescription title={fillersServicesTitle} body={[fillersServices]} />
+            <DividerWithContactButtons />
+            <FeaturedServiceDescription title={whatAreFillersTitle} body={whatAreFillersText} />
+            <FeaturedServiceDescription title={fillerResultsTitle} body={fillerResultsBody} />
+            <FeaturedServiceDescriptionWithList
+              mainText={fillersListMainText}
+              subText={fillersListSubText}
+              listItems={whatFillersCanDo}
+            />
+            <FeaturedServiceDescription title={resultsLastTitle} body={resultsLastBody} />
+            <FeaturedServiceDescription title={howFillersFeelTitle} body={howFillersFeelBody} />
+            <FillerTypes />
+          </Box>
+        </Grid>
+        <Divider
+          orientation="vertical"
+          variant="middle"
+          flexItem
+          sx={{ mr: "-1px", display: { xs: "none", lg: "block" } }}
+        />
+        <Grid
+          size={{ md: 12, lg: 3 }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Box
+            sx={{
+              minHeight: "200px",
               border: "1px solid black",
-              p: { xs: 2, sm: 2, md: 0 },
+              width: { md: "100%", lg: "100%", xl: "85%" },
             }}
           >
             <Box sx={{ p: 2 }}>
@@ -69,210 +104,54 @@ export default function Fillers() {
                   mt: "1rem",
                 }}
               >
-                Fillers In Denver, CO
+                Our Featured Services
               </Typography>
-              <Typography
-                variant="body2"
-                sx={{
-                  fontSize: "1.5rem",
-                  color: "text.secondary",
-                  whiteSpace: "normal",
-                  overflow: "hidden",
-                  mt: "1rem",
-                  lineHeight: "1.25",
-                }}
-              >
-                Fillers offered in Cherry Creek, Denver, CO and serving patients from the Denver Metropolitan Area
-              </Typography>
-            </Box>
-            <FeaturedServiceDescription title={fillersServicesTitle} body={[fillersServices]} />
-            <Box sx={{ p: 2 }}>
+
               <Divider
                 sx={{
                   width: "100%",
                   margin: "0 auto",
-                  backgroundColor: "#e0e0e0",
+                  backgroundColor: "secondary.main",
+                  height: 2,
                 }}
                 variant="middle"
               />
             </Box>
-            <Box sx={{ p: 2, justifyContent: "left", display: "flex" }}>
-              <Button sx={{ mr: "2.5rem" }}>Book Online</Button>
-              <Button>303-333-6060</Button>
-            </Box>
-            <FeaturedServiceDescription title={whatAreFillersTitle} body={whatAreFillersText} />
-            <FeaturedServiceDescription title={fillerResultsTitle} body={fillerResultsBody} />
-            <Box sx={{ p: 2 }}>
-              <Typography
-                variant="body1"
+            <Link href={`/services/botox`} style={{ display: "flex", width: "fit-content" }}>
+              <Box
                 sx={{
-                  color: "black",
-                  mb: "1rem",
+                  borderRadius: "0 0 2rem 0",
+                  overflow: "hidden",
+                  width: "100%",
+                  height: "100%",
+                  cursor: "pointer",
+                  position: "relative",
+                  "&:hover::before": {
+                    content: '""',
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    backgroundColor: "rgba(0, 0, 0, 0.5)",
+                    zIndex: 1,
+                  },
+                  "&:hover": {
+                    boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.5)",
+                  },
                 }}
               >
-                Your injection regimen is customized according to your goals. Fillers can:
-              </Typography>
-              {whatFillersCanDo &&
-                whatFillersCanDo.map((item, index) => (
-                  <Typography
-                    key={index}
-                    component="li"
-                    variant="body1"
-                    sx={{
-                      color: "black",
-                      marginBottom: "0.5rem",
-                      listStyleType: "disc", // Ensures it's a standard unordered list style
-                    }}
-                  >
-                    {item}
-                  </Typography>
-                ))}
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "black",
-                  mt: "1rem",
-                }}
-              >
-                If you have other cosmetic goals, you can get fillers as part of a comprehensive treatment plan at
-                Aesthetic Surgery and Dermatology of Cherry Creek. For example, other injectables like Botox® and
-                Jeuveau® can relax the muscles in your face to alleviate fine dynamic lines.
-              </Typography>
-            </Box>
-            <FeaturedServiceDescription title={resultsLastTitle} body={resultsLastBody} />
-            <FeaturedServiceDescription title={howFillersFeelTitle} body={howFillersFeelBody} />
-            <Box sx={{ p: 2 }}>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "black",
-                  mb: "1rem",
-                }}
-              >
-                Call Aesthetic Surgery and Dermatology of Cherry Creek or schedule a consultation online for fillers
-                today.
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "black",
-                  mb: "1rem",
-                }}
-              >
-                We offer the following fillers:
-              </Typography>
-              <Grid container spacing={2}>
-                <Grid size={{ xs: 12, sm: 4 }}>
-                  <Typography
-                    variant="body1"
-                    sx={{
-                      color: "black",
-                      mb: "1rem",
-                      textDecoration: "underline",
-                    }}
-                  >
-                    Juvederm
-                  </Typography>
-                  {juvedermFillers &&
-                    juvedermFillers.map((item, index) => (
-                      <Typography
-                        key={index}
-                        component="li"
-                        variant="body1"
-                        sx={{
-                          ml: "1rem",
-                          color: "black",
-                          marginBottom: "0.5rem",
-                          listStyleType: "disc", // Ensures it's a standard unordered list style
-                        }}
-                      >
-                        {item}
-                      </Typography>
-                    ))}
-                </Grid>
-                <Grid size={{ xs: 12, sm: 4 }}>
-                  <Typography
-                    variant="body1"
-                    sx={{
-                      color: "black",
-                      mb: "1rem",
-
-                      textDecoration: "underline",
-                    }}
-                  >
-                    Restylane
-                  </Typography>
-                  {restylaneFillers &&
-                    restylaneFillers.map((item, index) => (
-                      <Typography
-                        key={index}
-                        component="li"
-                        variant="body1"
-                        sx={{
-                          ml: "1rem",
-                          color: "black",
-                          marginBottom: "0.5rem",
-                          listStyleType: "disc", // Ensures it's a standard unordered list style
-                        }}
-                      >
-                        {item}
-                      </Typography>
-                    ))}
-                </Grid>
-                <Grid size={{ xs: 12, sm: 4 }}>
-                  <Typography
-                    variant="body1"
-                    sx={{
-                      color: "black",
-                      mb: "1rem",
-                      textDecoration: "underline",
-                    }}
-                  >
-                    RHA
-                  </Typography>
-                  {rhaFillers &&
-                    rhaFillers.map((item, index) => (
-                      <Typography
-                        key={index}
-                        component="li"
-                        variant="body1"
-                        sx={{
-                          ml: "1rem",
-                          color: "black",
-                          marginBottom: "0.5rem",
-                          listStyleType: "disc", // Ensures it's a standard unordered list style
-                        }}
-                      >
-                        {item}
-                      </Typography>
-                    ))}
-                </Grid>
-              </Grid>
-            </Box>
-          </Box>
-        </Grid>
-        <Grid size={{ md: 12, lg: 4 }}>
-          <Box
-            sx={{
-              ml: {
-                height: "200px",
-
-                border: "1px solid black",
-              },
-            }}
-          >
-            <Typography
-              variant="h4"
-              sx={{
-                fontSize: { xs: "2rem", md: "2.25rem" },
-                color: "black",
-                whiteSpace: "normal",
-                overflow: "hidden",
-                mt: "1rem",
-              }}
-            >
-              Featured Services
-            </Typography>
+                <Image
+                  src="/featured-services/neurotoxins2.png"
+                  alt="neurotoxins"
+                  priority={false}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "100%" }}
+                  width={400}
+                  height={400}
+                />
+              </Box>
+            </Link>
           </Box>
         </Grid>
       </Grid>
