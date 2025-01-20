@@ -31,7 +31,7 @@ export default function AssociationsAndSocieties() {
         </Grid>
         <Grid size={{ xs: 6, sm: 4, md: 2, lg: 2 }}>
           <AssociationsAndSocietiesImage
-            backgroundImage="/Colorado-Medical-Society.png"
+            backgroundImage="/associations/Colorado-Medical-Society.png"
             altText="Colorado Medical Society"
           />
         </Grid>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Box } from "@mui/material";
 import AsdLogoPurple from "../../public/ASD_Logo.png";
 import AsdLogoWhite from "../../public/ASD_white.png";
+import Link from "next/link";
 
 interface LogoImageProps {
   logoColor: "purple" | "white";
@@ -16,16 +17,18 @@ export default function LogoImage({ logoColor }: LogoImageProps) {
         mt: "1rem",
       }}
     >
-      <Image
-        alt={`logo`}
-        src={logo}
-        style={{
-          width: "100%",
-          height: "auto",
-        }}
-        sizes="100vw"
-        priority={false}
-      />
+      <Link href="/">
+        <Image
+          alt={`logo`}
+          src={logo}
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          sizes="100vw"
+          priority
+        />
+      </Link>
     </Box>
   );
 }

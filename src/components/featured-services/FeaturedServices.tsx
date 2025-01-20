@@ -7,7 +7,7 @@ import AssociationsAndSocieties from "./AssociationsAndSocieties";
 export default function FeaturedServices() {
   return (
     <OverlayComponent
-      backgroundImage="/featured-services.png"
+      backgroundImage="/featured-services/featured-services.png"
       altText="Descriptive Alt Text"
       backgroundColor="rgba(50, 20, 80, 0.7)"
       borderRadius={{ xs: "10rem 0 0 0", md: "20rem 0 0 0" }}
@@ -61,7 +61,7 @@ export default function FeaturedServices() {
                 justifyContent: "center",
               }}
             >
-              <FeaturedServiceCard title="Fillers" imageSrc="/featured-services/injection.png" link="botox" />
+              <FeaturedServiceCard title="Fillers" imageSrc="/featured-services/injection.png" link="fillers" />
             </Grid>
             <Grid
               size={{ xs: 12, sm: 12, md: 6, lg: 3 }}

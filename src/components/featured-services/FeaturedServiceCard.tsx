@@ -21,7 +21,7 @@ export default function FeaturedServiceCard({ title, imageSrc, link }: FeaturedS
     >
       <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" sx={{ height: "100%" }}>
         {imageSrc && (
-          <Link href={`/services/${link}`}>
+          <Link href={`/services/${link}`} style={{ display: "flex", width: "fit-content" }}>
             <Box
               sx={{
                 borderRadius: "0 0 2rem 0",
@@ -59,7 +59,7 @@ export default function FeaturedServiceCard({ title, imageSrc, link }: FeaturedS
         )}
         <CardContent>
           <Box textAlign="center">
-            <Link href={`/${title.toLowerCase().replace(/\s+/g, "-")}`} style={{ textDecoration: "none" }}>
+            <Link href={`/services/{${link}}`} style={{ textDecoration: "none" }}>
               <Typography
                 variant="h3"
                 sx={{
