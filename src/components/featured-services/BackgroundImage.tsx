@@ -19,7 +19,7 @@ export default function FeaturedServiceBackgroundImage({ imageSrc, altText }: Ba
         src={imageSrc}
         fill
         sizes="100vw"
-        priority={false}
+        priority
         style={{
           objectFit: "cover",
           objectPosition: "center 50%",

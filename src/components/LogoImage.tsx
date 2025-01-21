@@ -17,7 +17,7 @@ export default function LogoImage({ logoColor }: LogoImageProps) {
         mt: "1rem",
       }}
     >
-      <Link href="/">
+      <Link href="/" as="image">
         <Image
           alt={`logo`}
           src={logo}
