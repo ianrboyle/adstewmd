@@ -1,12 +1,13 @@
 import { Box, Typography, Divider, Button } from "@mui/material";
-import FeaturedServiceDescription from "../Description";
+import FeaturedServiceDescription from "./Description";
 import Grid from "@mui/material/Grid2";
-import FeaturedServicesImageColumn from "../ImageColumn";
+import FeaturedServicesImageColumn from "./ImageColumn";
 import { FeaturedServicesPages } from "../../../constants/enums";
-import FeaturedServiceDescriptionPageHeading from "../DescriptionPageHeading";
-import DividerWithContactButtons from "../DividerWithContactButtons";
-import FeaturedServiceDescriptionWithList from "../DescriptionWithList";
-import FillerTypes from "../FillerTypes";
+import FeaturedServiceDescriptionPageHeading from "./DescriptionPageHeading";
+import DividerWithContactButtons from "./DividerWithContactButtons";
+import FeaturedServiceDescriptionWithList from "./DescriptionWithList";
+import FillerTypes from "./FillerTypes";
+import LaserFAQs from "./LaserFAQs";
 
 interface FeaturedServicePageProps {
   initialDescription: string;
@@ -67,6 +68,7 @@ export default function FeaturedServicePage({
           )}
 
           {currentPage === FeaturedServicesPages.fillers && <FillerTypes />}
+          {currentPage === FeaturedServicesPages.laser && <LaserFAQs />}
         </Box>
       </Grid>
       <Divider

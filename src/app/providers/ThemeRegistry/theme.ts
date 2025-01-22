@@ -69,14 +69,11 @@ export const theme = createTheme({
       fontFamily: `${cormorantGaramond.style.fontFamily}, serif`,
     },
     body1: {
-      // fontSize: "1.25rem",
-      // fontWeight: 400,
       lineHeight: 1.8,
       fontFamily: `${roboto.style.fontFamily}, sans-serif`,
       fontSize: "1.1rem",
       fontWeight: 300,
-
-      letterSpacing: 1.5,
+      letterSpacing: 1,
     },
     body2: {
       fontSize: "1.75rem",

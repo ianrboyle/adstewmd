@@ -15,7 +15,7 @@ import {
 } from "../../../constants/featured-services/fillers";
 import { FeaturedServicesPages } from "../../../constants/enums";
 import FeaturedServicePage from "./FeaturedServicesPage";
-import FeaturedServiceBackgroundImage from "../BackgroundImage";
+import FeaturedServiceBackgroundImage from "./BackgroundImage";
 
 export default function FillersFeaturedServicePage() {
   return (

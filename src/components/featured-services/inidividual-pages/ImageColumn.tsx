@@ -1,6 +1,6 @@
 import { Box, Typography, Divider } from "@mui/material";
 import FeaturedServicesImageWithAnimation from "./ImageWithAnimation";
-import { FeaturedServicesPages } from "../../constants/enums";
+import { FeaturedServicesPages } from "../../../constants/enums";
 
 interface ImageColumnProps {
   currentPage: FeaturedServicesPages;

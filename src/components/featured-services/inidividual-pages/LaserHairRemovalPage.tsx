@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import FeaturedServiceBackgroundImage from "../BackgroundImage";
+import FeaturedServiceBackgroundImage from "./BackgroundImage";
 import { FeaturedServicesPages } from "../../../constants/enums";
 import FeaturedServicePage from "./FeaturedServicesPage";
 import {

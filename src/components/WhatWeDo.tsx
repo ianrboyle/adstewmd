@@ -81,7 +81,10 @@ export default function WhatWeDo() {
             <Typography variant="h2" sx={{ color: "text.secondary", mt: "1.5rem" }}>
               The Office of Dr. Adrienne Stewart
             </Typography>
-            <Typography variant="body1" sx={{ color: "black", whiteSpace: "normal", overflow: "hidden", mt: "1rem" }}>
+            <Typography
+              variant="body1"
+              sx={{ color: "black", whiteSpace: "normal", overflow: "hidden", mt: "1rem", fontWeight: "400" }}
+            >
               Aesthetic Surgery and Dermatology of Cherry Creek is a cutting-edge aesthetic dermatology practice in
               Denver, Colorado, founded by board-certified dermatologist Adrienne Stewart, MD, and medical aesthetician
               Willa Roberts. They use state-of-the-art modalities and technologies during conservative applications. Dr.
