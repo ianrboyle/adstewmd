@@ -1,85 +1,53 @@
-import { Box, Divider } from "@mui/material";
-import Grid from "@mui/material/Grid2";
-import FeaturedServiceDescription from "../Description";
-import FeaturedServiceDescriptionPageHeading from "../DescriptionPageHeading";
-import FeaturedServiceDescriptionWithList from "../DescriptionWithList";
-import FillerTypes from "../FillerTypes";
-import DividerWithContactButtons from "../DividerWithContactButtons";
+import { Box } from "@mui/material";
 import {
-  pageHeadingTitle,
-  pageHeadingSubtitle,
   fillersServicesTitle,
   fillersServices,
   whatAreFillersTitle,
   whatAreFillersText,
   fillerResultsTitle,
   fillerResultsBody,
-  fillersListMainText,
   fillersListSubText,
   whatFillersCanDo,
   resultsLastTitle,
   resultsLastBody,
   howFillersFeelTitle,
   howFillersFeelBody,
-} from "../../../constants/featured-services";
-import FeaturedServicesImageColumn from "../ImageColumn";
+} from "../../../constants/featured-services/fillers";
 import { FeaturedServicesPages } from "../../../constants/enums";
+import FeaturedServicePage from "./FeaturedServicesPage";
+import FeaturedServiceBackgroundImage from "../BackgroundImage";
 
 export default function FillersFeaturedServicePage() {
   return (
-    <Grid
-      container
-      spacing={4}
+    <Box
       sx={{
-        justifyContent: "center",
-        display: "flex",
-        margin: "0 auto",
+        mt: { xs: "5rem", sm: "7rem", md: "7rem", lg: "9rem", xl: "7rem" },
+        backgroundColor: "white",
       }}
     >
-      <Grid
-        size={{ md: 12, lg: 8 }}
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Box
-          sx={{
-            width: { lg: "100%", xl: "90%" },
-
-            p: { xs: 2, sm: 2, md: 4, xl: 0 },
-          }}
-        >
-          <FeaturedServiceDescriptionPageHeading title={pageHeadingTitle} subtitle={pageHeadingSubtitle} />
-          <FeaturedServiceDescription title={fillersServicesTitle} body={[fillersServices]} />
-          <DividerWithContactButtons />
-          <FeaturedServiceDescription title={whatAreFillersTitle} body={whatAreFillersText} />
-          <FeaturedServiceDescription title={fillerResultsTitle} body={fillerResultsBody} />
-          <FeaturedServiceDescriptionWithList
-            mainText={fillersListMainText}
-            subText={fillersListSubText}
-            listItems={whatFillersCanDo}
-          />
-          <FeaturedServiceDescription title={resultsLastTitle} body={resultsLastBody} />
-          <FeaturedServiceDescription title={howFillersFeelTitle} body={howFillersFeelBody} />
-          <FillerTypes />
-        </Box>
-      </Grid>
-      <Divider
-        orientation="vertical"
-        variant="middle"
-        flexItem
-        sx={{ mr: "-1px", display: { xs: "none", lg: "block" } }}
+      <FeaturedServiceBackgroundImage
+        imageSrc="/featured-services/fillers-long.png"
+        altText="botox"
+        objectPosition="center 0%"
       />
-      <Grid
-        size={{ md: 12, lg: 3 }}
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <FeaturedServicesImageColumn currentPage={FeaturedServicesPages.fillers} />
-      </Grid>
-    </Grid>
+      <FeaturedServicePage
+        initialDescription={fillersServices}
+        initialDescriptionTitle={fillersServicesTitle}
+        sections={[
+          { title: whatAreFillersTitle, body: whatAreFillersText },
+          // { title: fillerResultsTitle, body: fillerResultsBody },
+          {
+            title: fillerResultsTitle,
+            body: fillerResultsBody,
+            subText: fillersListSubText,
+            isList: true,
+            listItems: whatFillersCanDo,
+          },
+          { title: resultsLastTitle, body: resultsLastBody },
+          { title: howFillersFeelTitle, body: howFillersFeelBody },
+        ]}
+        currentPage={FeaturedServicesPages.fillers}
+      />
+    </Box>
   );
 }

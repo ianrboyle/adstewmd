@@ -1,9 +1,5 @@
-import { Box, Typography } from "@mui/material";
+import LaserHairRemovalPage from "../../../components/featured-services/inidividual-pages/LaserHairRemovalPage";
 
 export default function LaserHairRemoval() {
-  return (
-    <Box sx={{ mt: "10rem" }}>
-      <Typography variant="h1">Laser Hair Removal</Typography>
-    </Box>
-  );
+  return <LaserHairRemovalPage />;
 }

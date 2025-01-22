@@ -14,6 +14,7 @@ export default function FeaturedServiceDescription({ title, body }: FeaturedServ
           fontSize: { xs: "2rem", md: "1.75rem" },
           fontWeight: "400",
           color: "text.secondary",
+          mb: "1rem",
         }}
       >
         {title}

@@ -15,6 +15,7 @@ export const whatAreFillersText = [
 export const fillerResultsTitle = "What are the results of fillers?";
 export const fillerResultsBody = [
   "Your skin changes with age as it produces less hyaluronic acid, collagen, and elastin. Fillers can counteract some of these effects by introducing more hyaluronic acid for greater volume.",
+  "Your injection regimen is customized according to your goals. Fillers can:",
 ];
 export const whatAreFillersTitle = "What are fillers?";
 

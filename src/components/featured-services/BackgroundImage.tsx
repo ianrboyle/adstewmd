@@ -3,14 +3,15 @@ import Image from "next/image";
 interface BackgroundImageProps {
   imageSrc: string;
   altText: string;
+  objectPosition: string;
 }
-export default function FeaturedServiceBackgroundImage({ imageSrc, altText }: BackgroundImageProps) {
+export default function FeaturedServiceBackgroundImage({ imageSrc, altText, objectPosition }: BackgroundImageProps) {
   return (
     <Box
       sx={{
         position: "relative",
         width: "100vw",
-        height: { xs: "100px", sm: "175px", md: "200px" },
+        height: { xs: "125px", sm: "175px", md: "200px" },
         overflow: "hidden",
       }}
     >
@@ -22,7 +23,7 @@ export default function FeaturedServiceBackgroundImage({ imageSrc, altText }: Ba
         priority
         style={{
           objectFit: "cover",
-          objectPosition: "center 50%",
+          objectPosition: objectPosition,
         }}
       />
     </Box>
