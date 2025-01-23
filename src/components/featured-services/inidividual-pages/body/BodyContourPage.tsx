@@ -16,7 +16,6 @@ import {
 } from "../../../../constants/featured-services/body-contouring";
 import { FeaturedServicesPages } from "../../../../constants/enums";
 import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
-import FeaturedServiceDescriptionWithImage from "./BodyContourImages";
 
 export default function BodyContouringFeaturedServicesPageContent() {
   return (
@@ -35,29 +34,7 @@ export default function BodyContouringFeaturedServicesPageContent() {
       <FeaturedServicePage
         initialDescription={bodyContourMain}
         initialDescriptionTitle={bodyTitle}
-        sections={[
-          {
-            title: coolSculpTitle,
-            body: coolSculpt,
-          },
-          {
-            title: vanquishTitle,
-            body: vanquish,
-          },
-          {
-            title: emsculptTitle,
-            body: emsculpt,
-          },
-          {
-            title: laserTitle,
-            body: laser,
-          },
-          {
-            title: cuteraTitle,
-            body: cutera,
-          },
-          // { title: fillerResultsTitle, body: fillerResultsBody },
-        ]}
+        sections={[]}
         currentPage={FeaturedServicesPages.body}
       />
     </Box>

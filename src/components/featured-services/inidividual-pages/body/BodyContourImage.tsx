@@ -68,7 +68,7 @@ export default function BodyContourImage({ link, imageSrc, altText, text }: Imag
             top: "85%",
             left: "15%",
             zIndex: 2,
-            textAlign: "center",
+            textAlign: "left",
           }}
         >
           <Typography

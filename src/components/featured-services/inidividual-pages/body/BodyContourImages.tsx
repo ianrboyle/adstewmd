@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import BodyContourImage from "./BodyContourImage";
 interface ImageProps {
@@ -15,7 +15,19 @@ interface FeaturedServiceDescriptionProps {
 
 export default function FeaturedServiceBodyContourImages({ title, body, imageProps }: FeaturedServiceDescriptionProps) {
   return (
-    <Box>
+    <Box sx={{ p: 2, mb: "2rem" }}>
+      <Typography
+        variant="body2"
+        sx={{
+          fontSize: { xs: "2rem", md: "1.75rem" },
+          fontWeight: "400",
+          color: "text.secondary",
+          mb: "1rem",
+        }}
+      >
+        Our Products:
+      </Typography>
+
       <Grid container spacing={4}>
         <Grid size={{ xs: 12, sm: 6, md: 6, lg: 4, xl: 4 }}>
           <BodyContourImage
