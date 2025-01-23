@@ -70,7 +70,11 @@ export default function FeaturedServices() {
                 justifyContent: "center",
               }}
             >
-              <FeaturedServiceCard title="Body Contouring" imageSrc="/featured-services/body-contour.png" link="body" />
+              <FeaturedServiceCard
+                title="Body Contouring"
+                imageSrc="/featured-services/body/body-contour.png"
+                link="body"
+              />
             </Grid>
             <Grid
               size={{ xs: 12, sm: 12, md: 6, lg: 3 }}

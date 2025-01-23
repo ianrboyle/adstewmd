@@ -56,7 +56,7 @@ export default function FeaturedServicesImageColumn({ currentPage }: ImageColumn
         <FeaturedServicesImageWithAnimation
           text="BODY CONTOURING"
           link="body"
-          imageSrc="/featured-services/body-contour2.png"
+          imageSrc="/featured-services/body/body-contour2.png"
           altText="body contouring"
         />
       )}

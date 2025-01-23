@@ -8,6 +8,7 @@ import DividerWithContactButtons from "./DividerWithContactButtons";
 import FeaturedServiceDescriptionWithList from "./DescriptionWithList";
 import FillerTypes from "../fillers/FillerTypes";
 import LaserFAQs from "../laser-hair-removal/LaserFAQs";
+import FeaturedServiceBodyContourImages from "../body/BodyContourImages";
 
 interface FeaturedServicePageProps {
   initialDescription: string;
@@ -69,6 +70,15 @@ export default function FeaturedServicePage({
 
           {currentPage === FeaturedServicesPages.fillers && <FillerTypes />}
           {currentPage === FeaturedServicesPages.laser && <LaserFAQs />}
+          {currentPage === FeaturedServicesPages.body && (
+            <FeaturedServiceBodyContourImages
+              imageProps={{ imgSrc: "", link: "", altText: "", imgTitle: "" }}
+              title="Cool Sculpting"
+              body={[
+                "A non-invasive fat reduction treatment that uses controlled cooling to eliminate stubborn fat cells, sculpting your body without surgery or downtime.",
+              ]}
+            />
+          )}
         </Box>
       </Grid>
       <Divider
