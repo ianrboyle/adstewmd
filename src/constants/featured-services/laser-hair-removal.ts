@@ -1,3 +1,5 @@
+import { FAQ } from "../../interfaces/faq";
+
 export const pageHeadingTitle = "Laser Hair Removal";
 export const pageHeadingBody =
   "Are you tired of plucking, shaving, or waxing and want a permanent hair removal solution? At Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado, board-certified dermatologist Adrienne Stewart, MD, and medical aestheticians Willa Roberts & Jodi Payne offer laser hair removal treatments to get rid of unwanted hair for the long term.";
@@ -93,12 +95,8 @@ export const sayGoodbyeTitle = "Say Goodbye to Unwanted Hair With Laser Hair Rem
 export const sayGoodbyeBody = [
   "Call the Aesthetic Surgery and Dermatology of Cherry Creek office at 303-333-6060 to schedule a laser hair removal consultation, or use the online booking feature today. Whether you want to treat small areas or larger regions, our team will give you smooth, hair-free skin with long-lasting results.",
 ];
-interface FAQs {
-  question: string;
-  answer: string;
-}
 
-export const laserHairRemovalFAQs: FAQs[] = [
+export const laserHairRemovalFAQs: FAQ[] = [
   {
     question: faqQuestion1,
     answer: faqAnswer1,

@@ -1,11 +1,17 @@
 import { Box, Typography } from "@mui/material";
 
+interface imageProps {
+  imgSrc: string;
+  imgTitle: string;
+  altText: string;
+}
 interface FeaturedServiceDescriptionProps {
   title: string;
   body: string[]; // Accepts either a single string or an array of paragraphs
+  imageProps?: imageProps;
 }
 
-export default function FeaturedServiceDescription({ title, body }: FeaturedServiceDescriptionProps) {
+export default function FeaturedServiceDescription({ title, body, imageProps }: FeaturedServiceDescriptionProps) {
   return (
     <Box sx={{ p: 2 }}>
       <Typography

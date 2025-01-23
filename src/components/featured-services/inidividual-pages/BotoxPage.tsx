@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { FeaturedServicesPages } from "../../../constants/enums";
-import FeaturedServicePage from "./FeaturedServicesPage";
-import FeaturedServiceBackgroundImage from "./BackgroundImage";
+import FeaturedServicePage from "./individual-page-components/FeaturedServicesPage";
+import FeaturedServiceBackgroundImage from "./individual-page-components/BackgroundImage";
 import {
   botoxServicesTitle,
   botoxServices,

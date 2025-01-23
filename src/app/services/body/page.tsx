@@ -1,9 +1,5 @@
-import { Box, Typography } from "@mui/material";
+import BodyContouringFeaturedServicesPageContent from "../../../components/featured-services/inidividual-pages/body/BodyContourPage";
 
 export default function Body() {
-  return (
-    <Box sx={{ mt: "10rem" }}>
-      <Typography variant="h1">Body</Typography>
-    </Box>
-  );
+  return <BodyContouringFeaturedServicesPageContent />;
 }

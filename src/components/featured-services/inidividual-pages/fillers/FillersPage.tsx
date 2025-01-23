@@ -12,10 +12,10 @@ import {
   resultsLastBody,
   howFillersFeelTitle,
   howFillersFeelBody,
-} from "../../../constants/featured-services/fillers";
-import { FeaturedServicesPages } from "../../../constants/enums";
-import FeaturedServicePage from "./FeaturedServicesPage";
-import FeaturedServiceBackgroundImage from "./BackgroundImage";
+} from "../../../../constants/featured-services/fillers";
+import { FeaturedServicesPages } from "../../../../constants/enums";
+import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
+import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
 
 export default function FillersFeaturedServicePage() {
   return (

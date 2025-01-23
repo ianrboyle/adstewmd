@@ -2,12 +2,12 @@ import { Box, Typography, Divider, Button } from "@mui/material";
 import FeaturedServiceDescription from "./Description";
 import Grid from "@mui/material/Grid2";
 import FeaturedServicesImageColumn from "./ImageColumn";
-import { FeaturedServicesPages } from "../../../constants/enums";
+import { FeaturedServicesPages } from "../../../../constants/enums";
 import FeaturedServiceDescriptionPageHeading from "./DescriptionPageHeading";
 import DividerWithContactButtons from "./DividerWithContactButtons";
 import FeaturedServiceDescriptionWithList from "./DescriptionWithList";
-import FillerTypes from "./FillerTypes";
-import LaserFAQs from "./LaserFAQs";
+import FillerTypes from "../fillers/FillerTypes";
+import LaserFAQs from "../laser-hair-removal/LaserFAQs";
 
 interface FeaturedServicePageProps {
   initialDescription: string;
@@ -51,7 +51,7 @@ export default function FeaturedServicePage({
             p: { xs: 2, sm: 2, md: 4, xl: 0 },
           }}
         >
-          <FeaturedServiceDescription title={initialDescriptionTitle} body={[initialDescription]} />
+          <FeaturedServiceDescriptionPageHeading title={initialDescriptionTitle} body={[initialDescription]} />
           <DividerWithContactButtons />
           {sections.map((section, index) =>
             section.isList && section.listItems ? (

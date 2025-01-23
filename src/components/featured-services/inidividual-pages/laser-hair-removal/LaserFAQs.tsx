@@ -1,17 +1,15 @@
 import Accordion from "@mui/material/Accordion";
-import AccordionActions from "@mui/material/AccordionActions";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Button from "@mui/material/Button";
 import { Box } from "@mui/material";
 import {
   laserHairRemovalFAQs,
   sayGoodbyeBody,
   sayGoodbyeTitle,
-} from "../../../constants/featured-services/laser-hair-removal";
-import FeaturedServiceDescription from "./Description";
+} from "../../../../constants/featured-services/laser-hair-removal";
+import FeaturedServiceDescription from "../individual-page-components/Description";
 
 export default function LaserFAQs() {
   return (

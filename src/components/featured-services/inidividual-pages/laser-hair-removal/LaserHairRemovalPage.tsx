@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import FeaturedServiceBackgroundImage from "./BackgroundImage";
-import { FeaturedServicesPages } from "../../../constants/enums";
-import FeaturedServicePage from "./FeaturedServicesPage";
+import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
+import { FeaturedServicesPages } from "../../../../constants/enums";
+import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
 import {
   howDoesItWorkBody,
   howDoesItWorkTitle,
@@ -22,7 +22,7 @@ import {
   whatIsLaserHairRemovalTitle,
   whyChooseASDBody,
   whyChooseASDTitle,
-} from "../../../constants/featured-services/laser-hair-removal";
+} from "../../../../constants/featured-services/laser-hair-removal";
 
 export default function LaserHairRemovalPage() {
   return (

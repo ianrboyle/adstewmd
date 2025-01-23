@@ -11,7 +11,8 @@ export default function FeaturedServiceBackgroundImage({ imageSrc, altText, obje
       sx={{
         position: "relative",
         width: "100vw",
-        height: { xs: "125px", sm: "175px", md: "200px" },
+        // height: { xs: "125px", sm: "175px", md: "200px", lg: "35vh" },
+        height: "35vh",
         overflow: "hidden",
       }}
     >
