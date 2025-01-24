@@ -54,7 +54,7 @@ export default function FeaturedServiceBodyContourImages() {
         <Grid size={{ xs: 12, sm: 6, md: 6, lg: 4, xl: 4 }}>
           <BodyContourImage
             text="CUTERA LASER VEIN TREATMENT"
-            link="body/cutera"
+            link="body/cutera-laser-vein-treatment"
             imageSrc="/featured-services/body/cutera.png"
             altText="cutera"
           />

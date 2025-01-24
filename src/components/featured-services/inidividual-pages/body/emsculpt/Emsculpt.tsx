@@ -1,21 +1,8 @@
 import { Box, Divider } from "@mui/material";
 import FeaturedServiceBackgroundImage from "../../individual-page-components/BackgroundImage";
 import { FeaturedServicesPages } from "../../../../../constants/enums";
-import {
-  whatIsCoolSculptTitle,
-  whatIsCoolSculptBody,
-  coolSculptResultsTitle,
-  coolSculptResultsMain,
-  coolSculptResultsList,
-  coolSculptResultsSubtext,
-  seeResultsTitle,
-  seeResultsBody,
-  goodCandidateTitle,
-  goodCandidateBody,
-} from "../../../../../constants/featured-services/coolsculpting";
 import FeaturedServiceDescription from "../../individual-page-components/Description";
 import FeaturedServiceDescriptionPageHeading from "../../individual-page-components/DescriptionPageHeading";
-import FeaturedServiceDescriptionWithList from "../../individual-page-components/DescriptionWithList";
 import DividerWithContactButtons from "../../individual-page-components/DividerWithContactButtons";
 import FeaturedServicesImageColumn from "../../individual-page-components/ImageColumn";
 

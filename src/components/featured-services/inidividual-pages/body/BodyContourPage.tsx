@@ -1,19 +1,6 @@
 import { Box } from "@mui/material";
 import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
-import {
-  bodyContourMain,
-  bodyTitle,
-  coolSculpt,
-  coolSculpTitle,
-  cutera,
-  cuteraTitle,
-  emsculpt,
-  emsculptTitle,
-  laser,
-  laserTitle,
-  vanquish,
-  vanquishTitle,
-} from "../../../../constants/featured-services/body-contouring";
+import { bodyContourMain, bodyTitle } from "../../../../constants/featured-services/body-contouring";
 import { FeaturedServicesPages } from "../../../../constants/enums";
 import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
 
