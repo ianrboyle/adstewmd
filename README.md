@@ -35,13 +35,11 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-- populate new FS pages
-
 - Footer:
 
   - implement map
 
-- create pages for body contouring products
 - add links to all nav bar options
   - create pages for each
 - add dropdowns for specific nav bar options
+- add animations to FS home page images
