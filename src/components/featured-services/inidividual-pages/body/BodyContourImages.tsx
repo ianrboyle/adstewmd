@@ -1,19 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import BodyContourImage from "./BodyContourImage";
-interface ImageProps {
-  imgSrc: string;
-  imgTitle: string;
-  altText: string;
-  link: string;
-}
-interface FeaturedServiceDescriptionProps {
-  title: string;
-  body: string[]; // Accepts either a single string or an array of paragraphs
-  imageProps: ImageProps;
-}
 
-export default function FeaturedServiceBodyContourImages({ title, body, imageProps }: FeaturedServiceDescriptionProps) {
+export default function FeaturedServiceBodyContourImages() {
   return (
     <Box sx={{ p: 2, mb: "2rem" }}>
       <Typography

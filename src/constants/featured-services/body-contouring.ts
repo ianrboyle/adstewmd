@@ -1,5 +1,3 @@
-import { FAQ } from "../../interfaces/faq";
-
 export const bodyTitle = "Body Contouring";
 
 export const promoTitle = "Act now! Up to 50% off of CoolSculpting";

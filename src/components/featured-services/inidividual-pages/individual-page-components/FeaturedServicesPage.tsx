@@ -1,4 +1,4 @@
-import { Box, Typography, Divider, Button } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import FeaturedServiceDescription from "./Description";
 import Grid from "@mui/material/Grid2";
 import FeaturedServicesImageColumn from "./ImageColumn";
@@ -70,15 +70,7 @@ export default function FeaturedServicePage({
 
           {currentPage === FeaturedServicesPages.fillers && <FillerTypes />}
           {currentPage === FeaturedServicesPages.laser && <LaserFAQs />}
-          {currentPage === FeaturedServicesPages.body && (
-            <FeaturedServiceBodyContourImages
-              imageProps={{ imgSrc: "", link: "", altText: "", imgTitle: "" }}
-              title="Cool Sculpting"
-              body={[
-                "A non-invasive fat reduction treatment that uses controlled cooling to eliminate stubborn fat cells, sculpting your body without surgery or downtime.",
-              ]}
-            />
-          )}
+          {currentPage === FeaturedServicesPages.body && <FeaturedServiceBodyContourImages />}
         </Box>
       </Grid>
       <Divider

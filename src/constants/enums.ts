@@ -3,4 +3,5 @@ export enum FeaturedServicesPages {
   fillers = "fillers",
   laser = "laser",
   body = "body",
+  coolSculpt = "coolsculpt",
 }
