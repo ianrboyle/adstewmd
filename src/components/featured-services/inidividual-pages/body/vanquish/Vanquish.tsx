@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { FeaturedServicesPages } from "../../../../../constants/enums";
+import { CurrentPage } from "../../../../../constants/enums";
 import FeaturedServiceBackgroundImage from "../../individual-page-components/BackgroundImage";
 import FeaturedServicePage from "../../individual-page-components/FeaturedServicesPage";
 import {
@@ -11,7 +11,7 @@ import {
   whatIsVanquishBody,
   whatIsVanquishTitle,
   vanquishTitle,
-} from "../../../../../constants/featured-services/vanquish";
+} from "../../../../../constants/featured-services/body/vanquish";
 
 export default function Vanquish() {
   return (
@@ -40,7 +40,7 @@ export default function Vanquish() {
             subText: vanquishResultsSubtext,
           },
         ]}
-        currentPage={FeaturedServicesPages.vanquish}
+        currentPage={CurrentPage.vanquish}
       />
     </Box>
   );

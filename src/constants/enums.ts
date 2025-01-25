@@ -1,4 +1,4 @@
-export enum FeaturedServicesPages {
+export enum CurrentPage {
   botox = "botox",
   fillers = "fillers",
   laser = "laser",
@@ -7,4 +7,6 @@ export enum FeaturedServicesPages {
   emsculpt = "emsculpt",
   vanquish = "vanquish",
   cutera = "cutera",
+  aboutUs = "aboutUs",
+  jeuveau = "jeuveau",
 }

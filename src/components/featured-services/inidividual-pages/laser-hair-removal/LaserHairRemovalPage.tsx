@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
-import { FeaturedServicesPages } from "../../../../constants/enums";
+import { CurrentPage } from "../../../../constants/enums";
 import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
 import {
   howDoesItWorkBody,
@@ -62,7 +62,7 @@ export default function LaserHairRemovalPage() {
           { title: whatHappensAfterTitle, body: whatHappensAfterBody },
           { title: whyChooseASDTitle, body: whyChooseASDBody },
         ]}
-        currentPage={FeaturedServicesPages.laser}
+        currentPage={CurrentPage.laser}
       />
     </Box>
   );

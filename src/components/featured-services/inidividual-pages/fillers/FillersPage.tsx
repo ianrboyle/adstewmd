@@ -1,7 +1,11 @@
 import { Box } from "@mui/material";
+
+import { CurrentPage } from "../../../../constants/enums";
+import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
+import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
 import {
-  fillersServicesTitle,
   fillersServices,
+  fillersServicesTitle,
   whatAreFillersTitle,
   whatAreFillersText,
   fillerResultsTitle,
@@ -13,9 +17,6 @@ import {
   howFillersFeelTitle,
   howFillersFeelBody,
 } from "../../../../constants/featured-services/fillers";
-import { FeaturedServicesPages } from "../../../../constants/enums";
-import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
-import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
 
 export default function FillersFeaturedServicePage() {
   return (
@@ -46,7 +47,7 @@ export default function FillersFeaturedServicePage() {
           { title: resultsLastTitle, body: resultsLastBody },
           { title: howFillersFeelTitle, body: howFillersFeelBody },
         ]}
-        currentPage={FeaturedServicesPages.fillers}
+        currentPage={CurrentPage.fillers}
       />
     </Box>
   );

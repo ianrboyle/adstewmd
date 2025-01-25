@@ -2,7 +2,7 @@ import { Box, Divider } from "@mui/material";
 import FeaturedServiceDescription from "./Description";
 import Grid from "@mui/material/Grid2";
 import FeaturedServicesImageColumn from "./ImageColumn";
-import { FeaturedServicesPages } from "../../../../constants/enums";
+import { CurrentPage } from "../../../../constants/enums";
 import FeaturedServiceDescriptionPageHeading from "./DescriptionPageHeading";
 import DividerWithContactButtons from "./DividerWithContactButtons";
 import FeaturedServiceDescriptionWithList from "./DescriptionWithList";
@@ -20,7 +20,7 @@ interface FeaturedServicePageProps {
     listItems?: string[];
     subText?: string;
   }[];
-  currentPage: FeaturedServicesPages;
+  currentPage: CurrentPage;
 }
 
 export default function FeaturedServicePage({
@@ -68,9 +68,9 @@ export default function FeaturedServicePage({
             )
           )}
 
-          {currentPage === FeaturedServicesPages.fillers && <FillerTypes />}
-          {currentPage === FeaturedServicesPages.laser && <LaserFAQs />}
-          {currentPage === FeaturedServicesPages.body && <FeaturedServiceBodyContourImages />}
+          {currentPage === CurrentPage.fillers && <FillerTypes />}
+          {currentPage === CurrentPage.laser && <LaserFAQs />}
+          {currentPage === CurrentPage.body && <FeaturedServiceBodyContourImages />}
         </Box>
       </Grid>
       <Divider

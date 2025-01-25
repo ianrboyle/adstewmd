@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { FeaturedServicesPages } from "../../../constants/enums";
+import { CurrentPage } from "../../../constants/enums";
 import FeaturedServicePage from "./individual-page-components/FeaturedServicesPage";
 import FeaturedServiceBackgroundImage from "./individual-page-components/BackgroundImage";
 import {
@@ -57,7 +57,7 @@ export default function BotoxFeaturedServicesPageContent() {
             body: botoxExpectationsBody,
           },
         ]}
-        currentPage={FeaturedServicesPages.botox}
+        currentPage={CurrentPage.botox}
       />
     </Box>
   );

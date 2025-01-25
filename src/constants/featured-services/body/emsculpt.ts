@@ -1,4 +1,4 @@
-import { Abilities } from "../../interfaces/abilities";
+import { Abilities } from "../../../interfaces/abilities";
 
 export const emsculptTitle = "Emsculpt NEO";
 export const ecsculptMain =

@@ -1,6 +1,6 @@
 import { Box, Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { emsculptAbilities } from "../../../../../constants/featured-services/emsculpt";
+import { emsculptAbilities } from "../../../../../constants/featured-services/body/emsculpt";
 export default function EmsculptAbilitiesAccordian() {
   return (
     <Box sx={{ mb: "2rem" }}>

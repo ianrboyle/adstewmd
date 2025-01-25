@@ -1,9 +1,9 @@
 import { Box, Typography, Divider } from "@mui/material";
 import FeaturedServicesImageWithAnimation from "./ImageWithAnimation";
-import { FeaturedServicesPages } from "../../../../constants/enums";
+import { CurrentPage } from "../../../../constants/enums";
 
 interface ImageColumnProps {
-  currentPage: FeaturedServicesPages;
+  currentPage: CurrentPage;
 }
 export default function FeaturedServicesImageColumn({ currentPage }: ImageColumnProps) {
   return (
@@ -36,7 +36,7 @@ export default function FeaturedServicesImageColumn({ currentPage }: ImageColumn
           variant="middle"
         />
       </Box>
-      {currentPage !== FeaturedServicesPages.botox && (
+      {currentPage !== CurrentPage.botox && (
         <FeaturedServicesImageWithAnimation
           text="NEUROTOXINS"
           link="botox"
@@ -44,7 +44,7 @@ export default function FeaturedServicesImageColumn({ currentPage }: ImageColumn
           altText="botox"
         />
       )}
-      {currentPage !== FeaturedServicesPages.fillers && (
+      {currentPage !== CurrentPage.fillers && (
         <FeaturedServicesImageWithAnimation
           text="FILLERS"
           link="fillers"
@@ -52,7 +52,7 @@ export default function FeaturedServicesImageColumn({ currentPage }: ImageColumn
           altText="fillers"
         />
       )}
-      {currentPage !== FeaturedServicesPages.body && (
+      {currentPage !== CurrentPage.body && (
         <FeaturedServicesImageWithAnimation
           text="BODY CONTOURING"
           link="body"
@@ -61,7 +61,7 @@ export default function FeaturedServicesImageColumn({ currentPage }: ImageColumn
         />
       )}
 
-      {currentPage !== FeaturedServicesPages.laser && (
+      {currentPage !== CurrentPage.laser && (
         <FeaturedServicesImageWithAnimation
           text="LASERS"
           link="laser-hair-removal"

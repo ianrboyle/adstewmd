@@ -1,5 +1,5 @@
 import { Box, Divider } from "@mui/material";
-import { FeaturedServicesPages } from "../../../../../constants/enums";
+import { CurrentPage } from "../../../../../constants/enums";
 import FeaturedServiceBackgroundImage from "../../individual-page-components/BackgroundImage";
 import {
   coolsculptMain,
@@ -14,7 +14,7 @@ import {
   seeResultsTitle,
   whatIsCoolSculptBody,
   whatIsCoolSculptTitle,
-} from "../../../../../constants/featured-services/coolsculpting";
+} from "../../../../../constants/featured-services/body/coolsculpting";
 import Grid from "@mui/material/Grid2";
 import FeaturedServiceDescriptionPageHeading from "../../individual-page-components/DescriptionPageHeading";
 import FeaturedServicesImageColumn from "../../individual-page-components/ImageColumn";
@@ -199,7 +199,7 @@ export default function Coolsculpting() {
             justifyContent: "center",
           }}
         >
-          <FeaturedServicesImageColumn currentPage={FeaturedServicesPages.coolSculpt} />
+          <FeaturedServicesImageColumn currentPage={CurrentPage.coolSculpt} />
         </Grid>
       </Grid>
     </Box>

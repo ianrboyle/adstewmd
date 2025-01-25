@@ -1,6 +1,6 @@
 import { Box, Divider } from "@mui/material";
 import FeaturedServiceBackgroundImage from "../../individual-page-components/BackgroundImage";
-import { FeaturedServicesPages } from "../../../../../constants/enums";
+import { CurrentPage } from "../../../../../constants/enums";
 import FeaturedServiceDescription from "../../individual-page-components/Description";
 import FeaturedServiceDescriptionPageHeading from "../../individual-page-components/DescriptionPageHeading";
 import DividerWithContactButtons from "../../individual-page-components/DividerWithContactButtons";
@@ -16,7 +16,7 @@ import {
   whatIsEmsculptBody,
   howManyEmsculptTreatmentsTitle,
   howManyEmsculptTreatmentsBody,
-} from "../../../../../constants/featured-services/emsculpt";
+} from "../../../../../constants/featured-services/body/emsculpt";
 
 export default function Emsculpt() {
   return (
@@ -74,7 +74,7 @@ export default function Emsculpt() {
             justifyContent: "center",
           }}
         >
-          <FeaturedServicesImageColumn currentPage={FeaturedServicesPages.coolSculpt} />
+          <FeaturedServicesImageColumn currentPage={CurrentPage.coolSculpt} />
         </Grid>
       </Grid>
     </Box>
