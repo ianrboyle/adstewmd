@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 
-import { CurrentPage } from "../../../../constants/enums";
-import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
-import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
+import { CurrentPage } from "../../../../../constants/enums";
+import FeaturedServicePage from "../../individual-page-components/FeaturedServicesPage";
+import FeaturedServiceBackgroundImage from "../../individual-page-components/BackgroundImage";
 import {
   fillersServices,
   fillersServicesTitle,
@@ -16,7 +16,7 @@ import {
   resultsLastBody,
   howFillersFeelTitle,
   howFillersFeelBody,
-} from "../../../../constants/featured-services/fillers";
+} from "../../../../../constants/featured-services/injectables/fillers";
 
 export default function FillersFeaturedServicePage() {
   return (

@@ -1,11 +1,11 @@
 import { Box } from "@mui/material";
-import FeaturedServiceBackgroundImage from "../../individual-page-components/BackgroundImage";
-import FeaturedServicePage from "../../individual-page-components/FeaturedServicesPage";
+import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
+import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
 import {
   howDoesJeuveauWorkBody,
   howDoesJeuveauWorkTitle,
-  howIsJeuveuaDifferentBody,
-  howIsJeuveuaDifferentTitle,
+  howIsJeuveauDifferentBody,
+  howIsJeuveauDifferentTitle,
   howLongDoesJeuveauLastBody,
   howLongDoesJeuveauLastTitle,
   jeuveauMainText,
@@ -16,8 +16,8 @@ import {
   whatDoesJeuveauAddressTitle,
   whatIsJeuveauBody,
   whatIsJeuveauTitle,
-} from "../../../../../constants/featured-services/fillers/jeuveau";
-import { CurrentPage } from "../../../../../constants/enums";
+} from "../../../../constants/featured-services/injectables/jeuveau";
+import { CurrentPage } from "../../../../constants/enums";
 
 export default function Jeuveau() {
   return (
@@ -42,7 +42,7 @@ export default function Jeuveau() {
             title: howDoesJeuveauWorkTitle,
             body: howDoesJeuveauWorkBody,
           },
-          { title: howIsJeuveuaDifferentTitle, body: howIsJeuveuaDifferentBody },
+          { title: howIsJeuveauDifferentTitle, body: howIsJeuveauDifferentBody },
           { title: whatDoesJeuveauAddressTitle, body: whatDoesJeuveauAddressBody },
           { title: whatCanIExpectJeuveauTitle, body: whatCanIExpectJeuveauBody },
           { title: howLongDoesJeuveauLastTitle, body: howLongDoesJeuveauLastBody },

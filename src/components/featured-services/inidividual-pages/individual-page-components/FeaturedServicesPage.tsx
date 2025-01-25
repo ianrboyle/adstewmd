@@ -6,7 +6,7 @@ import { CurrentPage } from "../../../../constants/enums";
 import FeaturedServiceDescriptionPageHeading from "./DescriptionPageHeading";
 import DividerWithContactButtons from "./DividerWithContactButtons";
 import FeaturedServiceDescriptionWithList from "./DescriptionWithList";
-import FillerTypes from "../fillers/FillerTypes";
+import FillerTypes from "../injectables/fillers/FillerTypes";
 import LaserFAQs from "../laser-hair-removal/LaserFAQs";
 import FeaturedServiceBodyContourImages from "../body/BodyContourImages";
 

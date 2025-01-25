@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import { CurrentPage } from "../../../constants/enums";
-import FeaturedServicePage from "./individual-page-components/FeaturedServicesPage";
-import FeaturedServiceBackgroundImage from "./individual-page-components/BackgroundImage";
+import { CurrentPage } from "../../../../constants/enums";
+import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
+import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
 import {
   botoxServicesTitle,
   botoxServices,
@@ -17,7 +17,7 @@ import {
   whatHappensDuringInjectionsTitle,
   botoxExpectationsBody,
   botoxExpectationsTitle,
-} from "../../../constants/featured-services/botox";
+} from "../../../../constants/featured-services/injectables/botox";
 
 export default function BotoxFeaturedServicesPageContent() {
   return (

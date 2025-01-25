@@ -107,15 +107,18 @@ export default function AboutUs() {
               >
                 Aesthetic Surgery and Dermatology of Cherry Creek provides revolutionary Allergan, Revance, and Evolus
                 products. The practice offers cosmetic consultations to determine patient goals and develop a treatment
-                plan, cosmetic injectables, including <Link href="/services/botox">Botox®</Link>, Dysport®,{" "}
-                <Link style={{ color: "text.secondary" }} href="/services/fillers/jeuveau">
+                plan, cosmetic injectables, including <Link href="/services/injectables/botox">Botox®</Link>, Dysport®,{" "}
+                <Link style={{ color: "text.secondary" }} href="/services/injectables/jeuveau">
                   Jeuveau®
                 </Link>
-                , <Link href="/services/daxxify">Daxxify™</Link>,{" "}
-                <Link href="/services/fillers/juvederm">Juvéderm®</Link>, <Link href="/services/voluma">Voluma®</Link>,{" "}
-                <Link href="/servics/volux">Volux®</Link>, <Link href="/services/restylane">Restylane®</Link>,{" "}
-                <Link href="/services/rha">RHA®</Link>, <Link href="/services/sculptra">Sculptra®</Link>, and numerous
-                other <Link href="/services/dermal-fillers">dermal fillers</Link>.
+                , <Link href="/services/injectables/daxxify">Daxxify™</Link>,{" "}
+                <Link href="/services/injectables//juvederm">Juvéderm®</Link>,{" "}
+                <Link href="/services/injectables/voluma">Voluma®</Link>,{" "}
+                <Link href="/servics/injectables/volux">Volux®</Link>,{" "}
+                <Link href="/services/injectables/restylane">Restylane®</Link>,{" "}
+                <Link href="/services/injectables/rha">RHA®</Link>,{" "}
+                <Link href="/services/injectables/sculptra">Sculptra®</Link>, and numerous other{" "}
+                <Link href="/services/injectables/dermal-fillers">dermal fillers</Link>.
               </Typography>
               <Typography
                 variant="body1"

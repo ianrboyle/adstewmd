@@ -14,8 +14,8 @@ export const howDoesJeuveauWorkBody = [
   "When injected, Jeuveau interferes with the nerve signals that tell the muscles to contract. The treatment temporarily paralyzes muscle movement, causing the skin atop to unfold. Within three days to a week, the skin appears smoother and more youthful. Jeuveau can address existing fine lines and wrinkles while preventing new ones from forming.",
 ];
 
-export const howIsJeuveuaDifferentTitle = "How is Jeuveau different from Botox Cosmetic?";
-export const howIsJeuveuaDifferentBody = [
+export const howIsJeuveauDifferentTitle = "How is Jeuveau different from Botox Cosmetic?";
+export const howIsJeuveauDifferentBody = [
   "Jeuveau and Botox Cosmetic share many similarities. However, Botox can treat a wider range of treatment areas than Jeuveau. While Jeuveau is currently FDA-approved to address glabellar lines, Botox treats frown lines as well as crow’s feet and forehead lines. Botox can also minimize the symptoms of migraines and hyperhidrosis (excessive sweating).",
   "Jeuveau typically costs slightly less than Botox and lasts just as long. It’s an effective treatment for individuals who have received Botox in the past and are no longer satisfied with their results. After a cosmetic consultation, Dr. Stewart can determine whether Jeuveau or Botox is best for you.",
 ];

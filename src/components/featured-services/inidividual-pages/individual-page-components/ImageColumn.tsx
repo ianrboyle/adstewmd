@@ -39,7 +39,7 @@ export default function FeaturedServicesImageColumn({ currentPage }: ImageColumn
       {currentPage !== CurrentPage.botox && (
         <FeaturedServicesImageWithAnimation
           text="NEUROTOXINS"
-          link="botox"
+          link="injectables/botox"
           imageSrc="/featured-services/neurotoxins2.png"
           altText="botox"
         />
@@ -47,7 +47,7 @@ export default function FeaturedServicesImageColumn({ currentPage }: ImageColumn
       {currentPage !== CurrentPage.fillers && (
         <FeaturedServicesImageWithAnimation
           text="FILLERS"
-          link="fillers"
+          link="injectables/fillers"
           imageSrc="/featured-services/fillers2.png"
           altText="fillers"
         />

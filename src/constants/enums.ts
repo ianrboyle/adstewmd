@@ -9,4 +9,5 @@ export enum CurrentPage {
   cutera = "cutera",
   aboutUs = "aboutUs",
   jeuveau = "jeuveau",
+  daxxify = "daxxify",
 }

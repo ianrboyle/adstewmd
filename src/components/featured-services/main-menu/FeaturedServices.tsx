@@ -52,7 +52,11 @@ export default function FeaturedServices() {
               }}
               size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
             >
-              <FeaturedServiceCard title="Neurotoxins" imageSrc="/featured-services/neurotoxins.png" link="botox" />
+              <FeaturedServiceCard
+                title="Neurotoxins"
+                imageSrc="/featured-services/neurotoxins.png"
+                link="injectables/botox"
+              />
             </Grid>
             <Grid
               size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
@@ -61,7 +65,11 @@ export default function FeaturedServices() {
                 justifyContent: "center",
               }}
             >
-              <FeaturedServiceCard title="Fillers" imageSrc="/featured-services/injection.png" link="fillers" />
+              <FeaturedServiceCard
+                title="Fillers"
+                imageSrc="/featured-services/injection.png"
+                link="injectables/fillers"
+              />
             </Grid>
             <Grid
               size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
