@@ -16,9 +16,9 @@ interface FeaturedServicePageProps {
   initialDescriptionTitle: string;
   sections: {
     title: string;
-    body: string[];
+    body: string[] | React.ReactNode[];
     isList?: boolean;
-    listItems?: string[];
+    listItems?: string[] | React.ReactNode[];
     subText?: string;
   }[];
   currentPage: CurrentPage;
@@ -65,7 +65,7 @@ export default function FeaturedServicePage({
                 listItems={section.listItems}
               />
             ) : (
-              <FeaturedServiceDescription key={index} title={section.title} body={section.body as string[]} />
+              <FeaturedServiceDescription key={index} title={section.title} body={section.body} />
             )
           )}
 

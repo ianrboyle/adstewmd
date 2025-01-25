@@ -2,8 +2,8 @@ import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 interface DescriptionWithListProps {
   title: string;
-  mainText: string[];
-  listItems: string[];
+  mainText: string[] | React.ReactNode[];
+  listItems: string[] | React.ReactNode[];
   subText?: string;
 }
 

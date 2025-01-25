@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 
 interface FeaturedServiceDescriptionProps {
   title: string;
-  body: string[];
+  body: string[] | React.ReactNode[];
 }
 
 export default function FeaturedServiceDescription({ title, body }: FeaturedServiceDescriptionProps) {
