@@ -43,6 +43,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
   - implement map
 
+- add SEO nextjs stuff
+
 - add links to all nav bar options
   - create pages for each
 - add dropdowns for specific nav bar options
