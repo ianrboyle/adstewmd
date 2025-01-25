@@ -13,4 +13,5 @@ export enum CurrentPage {
   voluma = "voluma",
   volux = "volux",
   rha = "rha",
+  restylane = "restylane",
 }
