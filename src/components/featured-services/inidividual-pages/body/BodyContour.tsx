@@ -4,7 +4,7 @@ import { bodyContourMain, bodyTitle } from "../../../../constants/featured-servi
 import { CurrentPage } from "../../../../constants/enums";
 import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
 
-export default function BodyContouringFeaturedServicesPageContent() {
+export default function BodyContour() {
   return (
     <Box
       sx={{

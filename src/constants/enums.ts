@@ -10,4 +10,7 @@ export enum CurrentPage {
   aboutUs = "aboutUs",
   jeuveau = "jeuveau",
   daxxify = "daxxify",
+  voluma = "voluma",
+  volux = "volux",
+  rha = "rha",
 }

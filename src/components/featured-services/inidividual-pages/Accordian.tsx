@@ -1,17 +1,12 @@
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
+import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Box } from "@mui/material";
-import {
-  laserHairRemovalFAQs,
-  sayGoodbyeBody,
-  sayGoodbyeTitle,
-} from "../../../../constants/featured-services/laser-hair-removal";
-import FeaturedServiceDescription from "../individual-page-components/Description";
+import { AccordianTitleAndContent } from "../../../interfaces/accordianTitleAndContent";
 
-export default function LaserFAQs() {
+interface AccordianProps {
+  content: AccordianTitleAndContent[];
+  title: string;
+}
+export default function FeaturedServicesAccordian({ content, title }: AccordianProps) {
   return (
     <Box sx={{ mb: "2rem" }}>
       <Box sx={{ p: 2 }}>
@@ -24,10 +19,10 @@ export default function LaserFAQs() {
             mb: "1rem",
           }}
         >
-          Frequently Asked Questions
+          {title}
         </Typography>
-        {laserHairRemovalFAQs &&
-          laserHairRemovalFAQs.map((faq, index) => (
+        {content &&
+          content.map((ability, index) => (
             <Accordion key={index}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -45,27 +40,29 @@ export default function LaserFAQs() {
                     mb: "1rem",
                   }}
                 >
-                  {faq.question}
+                  {ability.title}
                 </Typography>
               </AccordionSummary>
               <AccordionDetails sx={{ color: "black" }}>
-                {" "}
-                <Typography
-                  key={index}
-                  variant="body1"
-                  sx={{
-                    color: "black",
-                    whiteSpace: "normal",
-                    overflow: "hidden",
-                  }}
-                >
-                  {faq.answer}
-                </Typography>
+                {ability.content &&
+                  ability.content.map((text, textIndex) => (
+                    <Typography
+                      key={textIndex}
+                      variant="body1"
+                      sx={{
+                        color: "black",
+                        whiteSpace: "normal",
+                        overflow: "hidden",
+                        mb: textIndex != ability.content.length - 1 ? "1rem" : "0rem",
+                      }}
+                    >
+                      {text}
+                    </Typography>
+                  ))}
               </AccordionDetails>
             </Accordion>
           ))}
       </Box>
-      <FeaturedServiceDescription title={sayGoodbyeTitle} body={sayGoodbyeBody} />
     </Box>
   );
 }

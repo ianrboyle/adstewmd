@@ -1,5 +1,5 @@
-import BotoxFeaturedServicesPageContent from "../../../../components/featured-services/inidividual-pages/injectables/BotoxPage";
+import Botox from "../../../../components/featured-services/inidividual-pages/injectables/Botox";
 
-export default function Botox() {
-  return <BotoxFeaturedServicesPageContent />;
+export default function BotoxPage() {
+  return <Botox />;
 }

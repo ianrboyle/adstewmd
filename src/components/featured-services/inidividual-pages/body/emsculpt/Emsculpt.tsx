@@ -8,7 +8,6 @@ import FeaturedServicesImageColumn from "../../individual-page-components/ImageC
 
 import Grid from "@mui/material/Grid2";
 import EmsculptImages from "./EmsculptImages";
-import EmsculptAbilitiesAccordian from "./EmsculptAbilitiesAccordian";
 import {
   emsculptTitle,
   ecsculptMain,
@@ -16,7 +15,10 @@ import {
   whatIsEmsculptBody,
   howManyEmsculptTreatmentsTitle,
   howManyEmsculptTreatmentsBody,
+  emsculptAccordianTitle,
+  emsculptAbilities,
 } from "../../../../../constants/featured-services/body/emsculpt";
+import FeaturedServicesAccordian from "../../Accordian";
 
 export default function Emsculpt() {
   return (
@@ -56,7 +58,7 @@ export default function Emsculpt() {
             <FeaturedServiceDescriptionPageHeading title={emsculptTitle} body={[ecsculptMain]} />
             <DividerWithContactButtons />
             <FeaturedServiceDescription title={whatIsEmsculptTitle} body={whatIsEmsculptBody} />
-            <EmsculptAbilitiesAccordian />
+            <FeaturedServicesAccordian title={emsculptAccordianTitle} content={emsculptAbilities} />
             <FeaturedServiceDescription title={howManyEmsculptTreatmentsTitle} body={howManyEmsculptTreatmentsBody} />
             <EmsculptImages />
           </Box>

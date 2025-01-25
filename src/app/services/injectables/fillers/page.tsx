@@ -1,5 +1,5 @@
-import FillersFeaturedServicePage from "../../../../components/featured-services/inidividual-pages/injectables/fillers/FillersPage";
+import Fillers from "../../../../components/featured-services/inidividual-pages/injectables/fillers/Fillers";
 
-export default function Fillers() {
-  return <FillersFeaturedServicePage />;
+export default function FillersPage() {
+  return <Fillers />;
 }

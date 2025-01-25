@@ -7,8 +7,9 @@ import FeaturedServiceDescriptionPageHeading from "./DescriptionPageHeading";
 import DividerWithContactButtons from "./DividerWithContactButtons";
 import FeaturedServiceDescriptionWithList from "./DescriptionWithList";
 import FillerTypes from "../injectables/fillers/FillerTypes";
-import LaserFAQs from "../laser-hair-removal/LaserFAQs";
 import FeaturedServiceBodyContourImages from "../body/BodyContourImages";
+import FeaturedServicesAccordian from "../Accordian";
+import { laserHairRemovalFAQs } from "../../../../constants/featured-services/laser-hair-removal";
 
 interface FeaturedServicePageProps {
   initialDescription: string;
@@ -69,7 +70,9 @@ export default function FeaturedServicePage({
           )}
 
           {currentPage === CurrentPage.fillers && <FillerTypes />}
-          {currentPage === CurrentPage.laser && <LaserFAQs />}
+          {currentPage === CurrentPage.laser && (
+            <FeaturedServicesAccordian title="Frequently Asked Questions" content={laserHairRemovalFAQs} />
+          )}
           {currentPage === CurrentPage.body && <FeaturedServiceBodyContourImages />}
         </Box>
       </Grid>

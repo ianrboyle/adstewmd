@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import { CurrentPage } from "../../../../../constants/enums";
-import FeaturedServiceBackgroundImage from "../../individual-page-components/BackgroundImage";
-import FeaturedServicePage from "../../individual-page-components/FeaturedServicesPage";
+import { CurrentPage } from "../../../../constants/enums";
+import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
+import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
 import {
   vanquishMainText,
   vanquishResultsListItems,
@@ -11,7 +11,7 @@ import {
   whatIsVanquishBody,
   whatIsVanquishTitle,
   vanquishTitle,
-} from "../../../../../constants/featured-services/body/vanquish";
+} from "../../../../constants/featured-services/body/vanquish";
 
 export default function Vanquish() {
   return (

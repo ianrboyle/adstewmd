@@ -18,7 +18,7 @@ import {
   howFillersFeelBody,
 } from "../../../../../constants/featured-services/injectables/fillers";
 
-export default function FillersFeaturedServicePage() {
+export default function Fillers() {
   return (
     <Box
       sx={{

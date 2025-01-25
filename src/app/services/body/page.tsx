@@ -1,5 +1,5 @@
-import BodyContouringFeaturedServicesPageContent from "../../../components/featured-services/inidividual-pages/body/BodyContourPage";
+import BodyContour from "../../../components/featured-services/inidividual-pages/body/BodyContour";
 
-export default function Body() {
-  return <BodyContouringFeaturedServicesPageContent />;
+export default function BodyPage() {
+  return <BodyContour />;
 }

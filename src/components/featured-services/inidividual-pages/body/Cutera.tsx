@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import FeaturedServiceBackgroundImage from "../../individual-page-components/BackgroundImage";
-import FeaturedServicePage from "../../individual-page-components/FeaturedServicesPage";
-import { cuteraTitle } from "../../../../../constants/featured-services/body/body-contouring";
+import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
+import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
+import { cuteraTitle } from "../../../../constants/featured-services/body/body-contouring";
 import {
   cuteraMain,
   whatDoesCuteraTreatListItems,
@@ -12,8 +12,8 @@ import {
   whatIsCuteraTitle,
   whatToExpectCuteraBody,
   whatToExpectCuteraTitle,
-} from "../../../../../constants/featured-services/body/cutera";
-import { CurrentPage } from "../../../../../constants/enums";
+} from "../../../../constants/featured-services/body/cutera";
+import { CurrentPage } from "../../../../constants/enums";
 
 export default function Cutera() {
   return (

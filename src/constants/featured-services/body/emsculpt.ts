@@ -1,4 +1,4 @@
-import { Abilities } from "../../../interfaces/abilities";
+import { AccordianTitleAndContent } from "../../../interfaces/accordianTitleAndContent";
 
 export const emsculptTitle = "Emsculpt NEO";
 export const ecsculptMain =
@@ -12,24 +12,24 @@ export const whatIsEmsculptBody = [
 
   "During an initial consultation, your specialist at Aesthetic Surgery and Dermatology of Cherry Creek helps you decide which areas to target so they can customize your treatment plan accordingly.",
 ];
-
-export const emsculptAbilities: Abilities[] = [
+export const emsculptAccordianTitle = "EMsculpt Neo works to transform your figure in three distinct ways:";
+export const emsculptAbilities: AccordianTitleAndContent[] = [
   {
-    ability: "Fat Reduction",
-    description: [
+    title: "Fat Reduction",
+    content: [
       "You can burn fat through exercise, but some of your body fat clings on no matter what you do. Radiofrequency can melt about 30% of the unwanted fat on your stomach, thighs, underarms, and other targeted areas.",
       "It can take years to develop your physique by lifting weights at the gym. EMsculpt Neo works your muscles by stimulating rapid muscle contractions to give you the results of intense workouts without all the conscious work and time commitment. In fact, the treatment can increase your muscle mass by up to 25% in a shorter time than traditional workouts.",
     ],
   },
   {
-    ability: "Muscle building",
-    description: [
+    title: "Muscle building",
+    content: [
       "The thermal energy from EMsculpt Neo warms your skin which causes collagen growth to make it firmer and elastin growth to make it tighter.",
     ],
   },
   {
-    ability: "Skin tightening",
-    description: [
+    title: "Skin tightening",
+    content: [
       "EMsculpt Neo's thermal energy not only enhances muscle tone but also stimulates collagen and elastin production in the skin. This results in firmer, tighter, and more youthful-looking skin, effectively addressing skin laxity in targeted areas.",
     ],
   },

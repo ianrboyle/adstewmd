@@ -1,4 +1,4 @@
-import { FAQ } from "../../interfaces/faq";
+import { AccordianTitleAndContent } from "../../interfaces/accordianTitleAndContent";
 
 export const pageHeadingTitle = "Laser Hair Removal";
 export const pageHeadingBody =
@@ -73,52 +73,58 @@ export const whyChooseASDBody = [
 export const faqTitle = "Frequentyly Asked Questions";
 
 const faqQuestion1 = "HOW DO I KNOW IF LASER HAIR REMOVAL IS RIGHT FOR ME?";
-const faqAnswer1 =
-  "You'll know if this method is for you based on your consultation. Your specialist will examine the unwanted facial or body hair, review your medical history, and discuss the results you're hoping for. They will tailor a treatment plan based on this information, even if it is a different technique entirely.";
+const faqAnswer1 = [
+  "You'll know if this method is for you based on your consultation. Your specialist will examine the unwanted facial or body hair, review your medical history, and discuss the results you're hoping for. They will tailor a treatment plan based on this information, even if it is a different technique entirely.",
+];
 const faqQuestion2 = "HOW MANY SESSIONS WILL I NEED?";
-const faqAnswer2 =
-  "Most people need anywhere from four to eight sessions to see the best results, depending on the treatment area, hair type, and skin tone. You'll need multiple treatments to catch all the hair follicles while they’re growing, since hair grows in cycles.";
+const faqAnswer2 = [
+  "Most people need anywhere from four to eight sessions to see the best results, depending on the treatment area, hair type, and skin tone. You'll need multiple treatments to catch all the hair follicles while they’re growing, since hair grows in cycles.",
+];
 const faqQuestion3 = "CAN LASER HAIR REMOVAL BE DONE ON ANY SKIN TYPE?";
-const faqAnswer3 =
-  "Yes, laser hair removal is safe for most skin types. Your provider will assess your skin and hair color to determine the best laser settings for you. Advances in laser technology have made it more accessible for a wider range of skin tones.";
+const faqAnswer3 = [
+  "Yes, laser hair removal is safe for most skin types. Your provider will assess your skin and hair color to determine the best laser settings for you. Advances in laser technology have made it more accessible for a wider range of skin tones.",
+];
 const faqQuestion4 = "WHAT SHOULD I AVOID AFTER GETTING LASER HAIR REMOVAL?";
-const faqAnswer4 =
-  "After laser hair removal, stay away from direct sun exposure, tanning beds, and heat-based activities (like saunas or hot tubs) for at least 48 hours. Also, don’t pluck or wax the treated area, as this can interfere with the treatment. Stick to shaving if necessary between sessions.";
+const faqAnswer4 = [
+  "After laser hair removal, stay away from direct sun exposure, tanning beds, and heat-based activities (like saunas or hot tubs) for at least 48 hours. Also, don’t pluck or wax the treated area, as this can interfere with the treatment. Stick to shaving if necessary between sessions.",
+];
 const faqQuestion5 = "WHAT ARE SOME MAINTENANCE TIPS FOR POST-LASER HAIR REMOVAL?";
-const faqAnswer5 =
-  "Follow any aftercare instructions provided by your specialist. Try to stay out of the sun, keep the treated area moisturized, and wear sunscreen when necessary. Over time, you may need occasional touch-up sessions to maintain your hair-free skin.";
+const faqAnswer5 = [
+  "Follow any aftercare instructions provided by your specialist. Try to stay out of the sun, keep the treated area moisturized, and wear sunscreen when necessary. Over time, you may need occasional touch-up sessions to maintain your hair-free skin.",
+];
 const faqQuestion6 = "DOES LASER HAIR REMOVAL HURT?";
-const faqAnswer6 =
-  "The sensation during laser hair removal is often described as quick, light snaps like a rubber band flicking against your skin. While everyone’s pain tolerance is different, most patients find the treatment very manageable. Plus, modern lasers often come with cooling features that make the experience more comfortable. If you're still worried, a numbing cream can be applied before your session to help ease any discomfort.";
+const faqAnswer6 = [
+  "The sensation during laser hair removal is often described as quick, light snaps like a rubber band flicking against your skin. While everyone’s pain tolerance is different, most patients find the treatment very manageable. Plus, modern lasers often come with cooling features that make the experience more comfortable. If you're still worried, a numbing cream can be applied before your session to help ease any discomfort.",
+];
 
 export const sayGoodbyeTitle = "Say Goodbye to Unwanted Hair With Laser Hair Removal";
 export const sayGoodbyeBody = [
   "Call the Aesthetic Surgery and Dermatology of Cherry Creek office at 303-333-6060 to schedule a laser hair removal consultation, or use the online booking feature today. Whether you want to treat small areas or larger regions, our team will give you smooth, hair-free skin with long-lasting results.",
 ];
 
-export const laserHairRemovalFAQs: FAQ[] = [
+export const laserHairRemovalFAQs: AccordianTitleAndContent[] = [
   {
-    question: faqQuestion1,
-    answer: faqAnswer1,
+    title: faqQuestion1,
+    content: faqAnswer1,
   },
   {
-    question: faqQuestion2,
-    answer: faqAnswer2,
+    title: faqQuestion2,
+    content: faqAnswer2,
   },
   {
-    question: faqQuestion3,
-    answer: faqAnswer3,
+    title: faqQuestion3,
+    content: faqAnswer3,
   },
   {
-    question: faqQuestion4,
-    answer: faqAnswer4,
+    title: faqQuestion4,
+    content: faqAnswer4,
   },
   {
-    question: faqQuestion5,
-    answer: faqAnswer5,
+    title: faqQuestion5,
+    content: faqAnswer5,
   },
   {
-    question: faqQuestion6,
-    answer: faqAnswer6,
+    title: faqQuestion6,
+    content: faqAnswer6,
   },
 ];

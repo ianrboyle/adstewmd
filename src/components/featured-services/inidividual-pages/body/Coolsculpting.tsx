@@ -1,27 +1,27 @@
 import { Box, Divider } from "@mui/material";
-import { CurrentPage } from "../../../../../constants/enums";
-import FeaturedServiceBackgroundImage from "../../individual-page-components/BackgroundImage";
-import {
-  coolsculptMain,
-  coolSculptResultsList,
-  coolSculptResultsMain,
-  coolSculptResultsSubtext,
-  coolSculptResultsTitle,
-  coolsculptTitle,
-  goodCandidateBody,
-  goodCandidateTitle,
-  seeResultsBody,
-  seeResultsTitle,
-  whatIsCoolSculptBody,
-  whatIsCoolSculptTitle,
-} from "../../../../../constants/featured-services/body/coolsculpting";
+import { CurrentPage } from "../../../../constants/enums";
 import Grid from "@mui/material/Grid2";
-import FeaturedServiceDescriptionPageHeading from "../../individual-page-components/DescriptionPageHeading";
-import FeaturedServicesImageColumn from "../../individual-page-components/ImageColumn";
-import DividerWithContactButtons from "../../individual-page-components/DividerWithContactButtons";
+import {
+  coolsculptTitle,
+  coolsculptMain,
+  whatIsCoolSculptTitle,
+  whatIsCoolSculptBody,
+  coolSculptResultsTitle,
+  coolSculptResultsMain,
+  coolSculptResultsList,
+  coolSculptResultsSubtext,
+  seeResultsTitle,
+  seeResultsBody,
+  goodCandidateTitle,
+  goodCandidateBody,
+} from "../../../../constants/featured-services/body/coolsculpting";
+import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
+import FeaturedServiceDescription from "../individual-page-components/Description";
+import FeaturedServiceDescriptionPageHeading from "../individual-page-components/DescriptionPageHeading";
+import FeaturedServiceDescriptionWithList from "../individual-page-components/DescriptionWithList";
+import DividerWithContactButtons from "../individual-page-components/DividerWithContactButtons";
+import FeaturedServicesImageColumn from "../individual-page-components/ImageColumn";
 import Image from "next/image";
-import FeaturedServiceDescription from "../../individual-page-components/Description";
-import FeaturedServiceDescriptionWithList from "../../individual-page-components/DescriptionWithList";
 export default function Coolsculpting() {
   return (
     <Box

@@ -19,7 +19,7 @@ import {
   botoxExpectationsTitle,
 } from "../../../../constants/featured-services/injectables/botox";
 
-export default function BotoxFeaturedServicesPageContent() {
+export default function Botox() {
   return (
     <Box
       sx={{

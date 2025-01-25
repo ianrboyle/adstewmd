@@ -111,10 +111,9 @@ export default function AboutUs() {
                 <Link style={{ color: "text.secondary" }} href="/services/injectables/jeuveau">
                   Jeuveau®
                 </Link>
-                , <Link href="/services/injectables/daxxify">Daxxify™</Link>,{" "}
-                <Link href="/services/injectables//juvederm">Juvéderm®</Link>,{" "}
+                , <Link href="/services/injectables/daxxify">Daxxify™</Link>, Juvéderm®,{" "}
                 <Link href="/services/injectables/voluma">Voluma®</Link>,{" "}
-                <Link href="/servics/injectables/volux">Volux®</Link>,{" "}
+                <Link href="/services/injectables/volux">Volux®</Link>,{" "}
                 <Link href="/services/injectables/restylane">Restylane®</Link>,{" "}
                 <Link href="/services/injectables/rha">RHA®</Link>,{" "}
                 <Link href="/services/injectables/sculptra">Sculptra®</Link>, and numerous other{" "}
