@@ -39,8 +39,6 @@ export default function Voluma() {
         initialDescriptionTitle={volumaMainTitle}
         sections={[
           { title: whatIsVolumaTitle, body: whatIsVolumaBody },
-          // { title: fillerResultsTitle, body: fillerResultsBody },
-
           { title: howDoesVolumaWorkTitle, body: howDoesVolumaWorkBody },
           {
             title: whatDoesVolumaAddressTitle,
@@ -53,7 +51,7 @@ export default function Voluma() {
           { title: whatCanIExpectVolumaTitle, body: whatCanIExpectVolumaBody },
           { title: howLongDoesVolumaLastTitle, body: howLongDoesVolumaLastBody },
         ]}
-        currentPage={CurrentPage.voluma}
+        currentPage={CurrentPage.genericPage}
       />
     </Box>
   );

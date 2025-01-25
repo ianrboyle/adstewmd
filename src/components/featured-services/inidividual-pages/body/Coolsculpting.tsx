@@ -199,7 +199,7 @@ export default function Coolsculpting() {
             justifyContent: "center",
           }}
         >
-          <FeaturedServicesImageColumn currentPage={CurrentPage.coolSculpt} />
+          <FeaturedServicesImageColumn currentPage={CurrentPage.genericPage} />
         </Grid>
       </Grid>
     </Box>

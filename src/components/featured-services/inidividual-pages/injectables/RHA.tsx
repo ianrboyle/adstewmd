@@ -208,7 +208,7 @@ export default function RHA() {
             justifyContent: "center",
           }}
         >
-          <FeaturedServicesImageColumn currentPage={CurrentPage.rha} />
+          <FeaturedServicesImageColumn currentPage={CurrentPage.genericPage} />
         </Grid>
       </Grid>
     </Box>

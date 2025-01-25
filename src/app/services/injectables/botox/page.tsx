@@ -2,7 +2,7 @@ import Botox from "../../../../components/featured-services/inidividual-pages/in
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Botox in Denver, CO",
+  title: "Botox Denver CO",
   description: "Botox offered in Cherry Creek, Denver, CO and serving patients from the Denver Metropolitan Area",
 };
 

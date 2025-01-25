@@ -39,8 +39,6 @@ export default function Restylane() {
         initialDescriptionTitle={restylaneMainTitle}
         sections={[
           { title: whatIsRestylaneTitle, body: whatIsRestylaneBody },
-          // { title: fillerResultsTitle, body: fillerResultsBody },
-
           { title: howDoesRestylaneWorkTitle, body: howDoesRestylaneWorkBody },
           {
             title: whatDoesRestylaneAddressTitle,
@@ -53,7 +51,7 @@ export default function Restylane() {
           { title: whatCanIExpectRestylaneTitle, body: whatCanIExpectRestylaneBody },
           { title: howLongDoesRestylaneLastTitle, body: howLongDoesRestylaneLastBody },
         ]}
-        currentPage={CurrentPage.restylane}
+        currentPage={CurrentPage.genericPage}
       />
     </Box>
   );

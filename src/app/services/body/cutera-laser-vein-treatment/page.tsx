@@ -2,7 +2,7 @@ import Cutera from "../../../../components/featured-services/inidividual-pages/b
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cutera Laser Vein Treatment in Denver, CO",
+  title: "Cutera Laser Vein Treatment Denver CO",
   description:
     "Cutera Laser Vein Treatment offered in Cherry Creek, Denver, CO and serving patients from the Denver Metropolitan Area",
 };

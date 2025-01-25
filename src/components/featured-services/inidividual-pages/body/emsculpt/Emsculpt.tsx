@@ -76,7 +76,7 @@ export default function Emsculpt() {
             justifyContent: "center",
           }}
         >
-          <FeaturedServicesImageColumn currentPage={CurrentPage.coolSculpt} />
+          <FeaturedServicesImageColumn currentPage={CurrentPage.genericPage} />
         </Grid>
       </Grid>
     </Box>

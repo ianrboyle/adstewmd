@@ -37,7 +37,6 @@ export default function Volux() {
         initialDescriptionTitle={voluxMainTitle}
         sections={[
           { title: whatIsVoluxTitle, body: whatIsVoluxBody },
-
           { title: howDoesVoluxWorkTitle, body: howDoesVoluxWorkBody },
           {
             title: whatDoesVoluxAddressTitle,
@@ -47,7 +46,7 @@ export default function Volux() {
           { title: whatCanIExpectVoluxTitle, body: whatCanIExpectVoluxBody },
           { title: howLongDoesVoluxLastTitle, body: howLongDoesVoluxLastBody },
         ]}
-        currentPage={CurrentPage.volux}
+        currentPage={CurrentPage.genericPage}
       />
     </Box>
   );

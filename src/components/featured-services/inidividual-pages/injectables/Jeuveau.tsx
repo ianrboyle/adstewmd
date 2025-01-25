@@ -37,7 +37,6 @@ export default function Jeuveau() {
         initialDescriptionTitle={jeuveauMainTitle}
         sections={[
           { title: whatIsJeuveauTitle, body: whatIsJeuveauBody },
-          // { title: fillerResultsTitle, body: fillerResultsBody },
           {
             title: howDoesJeuveauWorkTitle,
             body: howDoesJeuveauWorkBody,
@@ -47,7 +46,7 @@ export default function Jeuveau() {
           { title: whatCanIExpectJeuveauTitle, body: whatCanIExpectJeuveauBody },
           { title: howLongDoesJeuveauLastTitle, body: howLongDoesJeuveauLastBody },
         ]}
-        currentPage={CurrentPage.jeuveau}
+        currentPage={CurrentPage.genericPage}
       />
     </Box>
   );

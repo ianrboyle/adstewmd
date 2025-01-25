@@ -46,7 +46,7 @@ export default function Cutera() {
             body: whatToExpectCuteraBody,
           },
         ]}
-        currentPage={CurrentPage.cutera}
+        currentPage={CurrentPage.genericPage}
       />
     </Box>
   );

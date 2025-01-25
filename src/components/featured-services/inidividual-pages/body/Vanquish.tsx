@@ -40,7 +40,7 @@ export default function Vanquish() {
             subText: vanquishResultsSubtext,
           },
         ]}
-        currentPage={CurrentPage.vanquish}
+        currentPage={CurrentPage.genericPage}
       />
     </Box>
   );

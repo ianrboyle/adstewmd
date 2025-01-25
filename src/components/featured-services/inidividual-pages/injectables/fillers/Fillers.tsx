@@ -36,7 +36,6 @@ export default function Fillers() {
         initialDescriptionTitle={fillersServicesTitle}
         sections={[
           { title: whatAreFillersTitle, body: whatAreFillersText },
-          // { title: fillerResultsTitle, body: fillerResultsBody },
           {
             title: fillerResultsTitle,
             body: fillerResultsBody,

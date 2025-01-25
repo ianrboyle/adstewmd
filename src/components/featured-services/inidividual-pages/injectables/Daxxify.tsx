@@ -35,14 +35,12 @@ export default function Daxxify() {
         initialDescriptionTitle={daxxifyMainTitle}
         sections={[
           { title: whatIsDaxxifyTitle, body: whatIsDaxxifyBody },
-          // { title: fillerResultsTitle, body: fillerResultsBody },
-
           { title: howIsDaxxifyDifferentTitle, body: howIsDaxxifyDifferentBody },
           { title: whatDoesDaxxifyAddressTitle, body: whatDoesDaxxifyAddressBody },
           { title: whatCanIExpectDaxxifyTitle, body: whatCanIExpectDaxxifyBody },
           { title: howLongDoesDaxxifyLastTitle, body: howLongDoesDaxxifyLastBody },
         ]}
-        currentPage={CurrentPage.daxxify}
+        currentPage={CurrentPage.genericPage}
       />
     </Box>
   );
