@@ -19,7 +19,7 @@ import {
   whatIsVolumaBody,
   whatIsVolumaTitle,
 } from "../../../../constants/featured-services/injectables/voluma";
-import { CurrentPage } from "../../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 
 export default function Voluma() {
   return (
@@ -51,7 +51,7 @@ export default function Voluma() {
           { title: whatCanIExpectVolumaTitle, body: whatCanIExpectVolumaBody },
           { title: howLongDoesVolumaLastTitle, body: howLongDoesVolumaLastBody },
         ]}
-        currentPage={CurrentPage.genericPage}
+        currentPage={PageType.genericPage}
       />
     </Box>
   );

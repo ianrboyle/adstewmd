@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
 import { bodyContourMain, bodyTitle } from "../../../../constants/featured-services/body/body-contouring";
-import { CurrentPage } from "../../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
 
 export default function BodyContour() {
@@ -22,7 +22,7 @@ export default function BodyContour() {
         initialDescription={bodyContourMain}
         initialDescriptionTitle={bodyTitle}
         sections={[]}
-        currentPage={CurrentPage.body}
+        currentPage={PageType.body}
       />
     </Box>
   );

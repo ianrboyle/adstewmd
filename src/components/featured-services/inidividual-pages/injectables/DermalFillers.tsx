@@ -19,7 +19,7 @@ import {
   whenNoticeResultsDermalFillersBody,
   whenNoticeResultsDermalFillersTitle,
 } from "../../../../constants/featured-services/injectables/dermal-fillers";
-import { CurrentPage } from "../../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 
 export default function DermalFillers() {
   return (
@@ -56,7 +56,7 @@ export default function DermalFillers() {
           { title: areDermalFillersRightForMeTitle, body: areDermalFillersRightForMeBody },
           { title: whenNoticeResultsDermalFillersTitle, body: whenNoticeResultsDermalFillersBody },
         ]}
-        currentPage={CurrentPage.genericPage}
+        currentPage={PageType.genericPage}
       />
     </Box>
   );

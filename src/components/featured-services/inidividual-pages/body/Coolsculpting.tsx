@@ -1,5 +1,5 @@
 import { Box, Divider } from "@mui/material";
-import { CurrentPage } from "../../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 import Grid from "@mui/material/Grid2";
 import {
   coolsculptTitle,
@@ -199,7 +199,7 @@ export default function Coolsculpting() {
             justifyContent: "center",
           }}
         >
-          <FeaturedServicesImageColumn currentPage={CurrentPage.genericPage} />
+          <FeaturedServicesImageColumn currentPage={PageType.genericPage} />
         </Grid>
       </Grid>
     </Box>

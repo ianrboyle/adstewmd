@@ -13,7 +13,7 @@ import {
   whatIsSculptraBody,
   whatIsSculptraTitle,
 } from "../../../../constants/featured-services/injectables/scultpra";
-import { CurrentPage } from "../../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 
 export default function Sculptra() {
   return (
@@ -43,7 +43,7 @@ export default function Sculptra() {
 
           { title: doesSculptraCauseSideEffectsTitle, body: doesSculptraCauseSideEffectsBody },
         ]}
-        currentPage={CurrentPage.genericPage}
+        currentPage={PageType.genericPage}
       />
     </Box>
   );

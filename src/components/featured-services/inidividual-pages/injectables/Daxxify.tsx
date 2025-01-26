@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
 import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
-import { CurrentPage } from "../../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 import {
   daxxifyMainText,
   daxxifyMainTitle,
@@ -40,7 +40,7 @@ export default function Daxxify() {
           { title: whatCanIExpectDaxxifyTitle, body: whatCanIExpectDaxxifyBody },
           { title: howLongDoesDaxxifyLastTitle, body: howLongDoesDaxxifyLastBody },
         ]}
-        currentPage={CurrentPage.genericPage}
+        currentPage={PageType.genericPage}
       />
     </Box>
   );

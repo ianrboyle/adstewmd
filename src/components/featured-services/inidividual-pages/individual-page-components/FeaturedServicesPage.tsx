@@ -2,7 +2,7 @@ import { Box, Divider } from "@mui/material";
 import FeaturedServiceDescription from "./Description";
 import Grid from "@mui/material/Grid2";
 import FeaturedServicesImageColumn from "./ImageColumn";
-import { CurrentPage } from "../../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 import FeaturedServiceDescriptionPageHeading from "./DescriptionPageHeading";
 import DividerWithContactButtons from "./DividerWithContactButtons";
 import FeaturedServiceDescriptionWithList from "./DescriptionWithList";
@@ -21,7 +21,7 @@ interface FeaturedServicePageProps {
     listItems?: string[] | React.ReactNode[];
     subText?: string;
   }[];
-  currentPage: CurrentPage;
+  currentPage: PageType;
 }
 
 export default function FeaturedServicePage({
@@ -69,11 +69,11 @@ export default function FeaturedServicePage({
             )
           )}
 
-          {currentPage === CurrentPage.fillers && <FillerTypes />}
-          {currentPage === CurrentPage.laser && (
+          {currentPage === PageType.fillers && <FillerTypes />}
+          {currentPage === PageType.laser && (
             <FeaturedServicesAccordian title="Frequently Asked Questions" content={laserHairRemovalFAQs} />
           )}
-          {currentPage === CurrentPage.body && <FeaturedServiceBodyContourImages />}
+          {currentPage === PageType.body && <FeaturedServiceBodyContourImages />}
         </Box>
       </Grid>
       <Divider

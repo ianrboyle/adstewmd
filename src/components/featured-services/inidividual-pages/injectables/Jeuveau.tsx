@@ -17,7 +17,7 @@ import {
   whatIsJeuveauBody,
   whatIsJeuveauTitle,
 } from "../../../../constants/featured-services/injectables/jeuveau";
-import { CurrentPage } from "../../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 
 export default function Jeuveau() {
   return (
@@ -46,7 +46,7 @@ export default function Jeuveau() {
           { title: whatCanIExpectJeuveauTitle, body: whatCanIExpectJeuveauBody },
           { title: howLongDoesJeuveauLastTitle, body: howLongDoesJeuveauLastBody },
         ]}
-        currentPage={CurrentPage.genericPage}
+        currentPage={PageType.genericPage}
       />
     </Box>
   );

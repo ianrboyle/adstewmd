@@ -1,7 +1,7 @@
 import { Box, Divider, Typography } from "@mui/material";
 import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
 import FeaturedServicesImageColumn from "../individual-page-components/ImageColumn";
-import { CurrentPage } from "../../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 import Grid from "@mui/material/Grid2";
 import DividerWithContactButtons from "../individual-page-components/DividerWithContactButtons";
 import FeaturedServicesAccordian from "../Accordian";
@@ -208,7 +208,7 @@ export default function RHA() {
             justifyContent: "center",
           }}
         >
-          <FeaturedServicesImageColumn currentPage={CurrentPage.genericPage} />
+          <FeaturedServicesImageColumn currentPage={PageType.genericPage} />
         </Grid>
       </Grid>
     </Box>

@@ -1,4 +1,4 @@
-export enum CurrentPage {
+export enum PageType {
   botox = "botox",
   fillers = "fillers",
   laser = "laser",

@@ -13,7 +13,7 @@ import {
   whatToExpectCuteraBody,
   whatToExpectCuteraTitle,
 } from "../../../../constants/featured-services/body/cutera";
-import { CurrentPage } from "../../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 
 export default function Cutera() {
   return (
@@ -46,7 +46,7 @@ export default function Cutera() {
             body: whatToExpectCuteraBody,
           },
         ]}
-        currentPage={CurrentPage.genericPage}
+        currentPage={PageType.genericPage}
       />
     </Box>
   );

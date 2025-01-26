@@ -1,6 +1,6 @@
 import { Box, Divider } from "@mui/material";
 import FeaturedServiceBackgroundImage from "../../individual-page-components/BackgroundImage";
-import { CurrentPage } from "../../../../../constants/enums";
+import { PageType } from "../../../../../constants/enums";
 import FeaturedServiceDescription from "../../individual-page-components/Description";
 import FeaturedServiceDescriptionPageHeading from "../../individual-page-components/DescriptionPageHeading";
 import DividerWithContactButtons from "../../individual-page-components/DividerWithContactButtons";
@@ -76,7 +76,7 @@ export default function Emsculpt() {
             justifyContent: "center",
           }}
         >
-          <FeaturedServicesImageColumn currentPage={CurrentPage.genericPage} />
+          <FeaturedServicesImageColumn currentPage={PageType.genericPage} />
         </Grid>
       </Grid>
     </Box>

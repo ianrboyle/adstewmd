@@ -1,7 +1,19 @@
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import Link from "next/link";
 
-const juvedermFillers = ["Vollure XC", "Volbella XC", "Ultra XC", "Ultra Plus XC", "Volux, Voluma"];
+const juvedermFillers = [
+  "Vollure XC",
+  "Volbella XC",
+  "Ultra XC",
+  "Ultra Plus XC",
+  <>
+    <Link href="/services/injectables/volux">Volux</Link>
+  </>,
+  <>
+    <Link href="/services/injectables/voluma">Voluma</Link>
+  </>,
+];
 const restylaneFillers = ["Lyft", "Defyne", "Refyne", "Kysse", "Contour"];
 const rhaFillers = ["Redensity, 2, 3, 4", "Versa", "Radiesse+"];
 export default function FillerTypes() {
@@ -32,7 +44,6 @@ export default function FillerTypes() {
             sx={{
               color: "black",
               mb: "1rem",
-              textDecoration: "underline",
             }}
           >
             Juvederm
@@ -60,11 +71,9 @@ export default function FillerTypes() {
             sx={{
               color: "black",
               mb: "1rem",
-
-              textDecoration: "underline",
             }}
           >
-            Restylane
+            <Link href="/services/injectables/restylane">Restylane</Link>
           </Typography>
           {restylaneFillers &&
             restylaneFillers.map((item, index) => (
@@ -89,10 +98,9 @@ export default function FillerTypes() {
             sx={{
               color: "black",
               mb: "1rem",
-              textDecoration: "underline",
             }}
           >
-            RHA
+            <Link href="/services/injectables/rha">RHA</Link>
           </Typography>
           {rhaFillers &&
             rhaFillers.map((item, index) => (
@@ -104,7 +112,7 @@ export default function FillerTypes() {
                   ml: "1rem",
                   color: "black",
                   marginBottom: "0.5rem",
-                  listStyleType: "disc", // Ensures it's a standard unordered list style
+                  listStyleType: "disc",
                 }}
               >
                 {item}

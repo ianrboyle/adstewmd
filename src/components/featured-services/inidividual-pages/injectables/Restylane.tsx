@@ -19,7 +19,7 @@ import {
   whatIsRestylaneBody,
   whatIsRestylaneTitle,
 } from "../../../../constants/featured-services/injectables/restylane";
-import { CurrentPage } from "../../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 
 export default function Restylane() {
   return (
@@ -51,7 +51,7 @@ export default function Restylane() {
           { title: whatCanIExpectRestylaneTitle, body: whatCanIExpectRestylaneBody },
           { title: howLongDoesRestylaneLastTitle, body: howLongDoesRestylaneLastBody },
         ]}
-        currentPage={CurrentPage.genericPage}
+        currentPage={PageType.genericPage}
       />
     </Box>
   );

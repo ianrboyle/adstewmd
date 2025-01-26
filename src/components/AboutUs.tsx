@@ -2,7 +2,7 @@ import { Box, Divider, Typography } from "@mui/material";
 import Image from "next/image";
 import Grid from "@mui/material/Grid2";
 import FeaturedServicesImageColumn from "./featured-services/inidividual-pages/individual-page-components/ImageColumn";
-import { CurrentPage } from "../constants/enums";
+import { PageType } from "../constants/enums";
 import Link from "next/link";
 export default function AboutUs() {
   return (
@@ -145,10 +145,11 @@ export default function AboutUs() {
               >
                 Aesthetic Surgery and Dermatology of Cherry Creek provides{" "}
                 <Link href="/services/body/cutera-laser-vein-treatment">Cutera laser vein treatments</Link>,{" "}
-                <Link href="/services/body/fraxel">Fraxel skin resurfacing</Link>,{" "}
-                <Link href="/services/facials">facials</Link>, <Link href="/services/microneedling">microneedling</Link>
-                , <Link href="/services/laser">laser hair removal</Link>, and{" "}
-                <Link href="/services/chemical-peel">chemical peels</Link> to help patients look and feel younger
+                <Link href="/services/face/fraxel">Fraxel skin resurfacing</Link>,{" "}
+                <Link href="/services/face/facials">facials</Link>,{" "}
+                <Link href="/services/face/microneedling">microneedling</Link>,{" "}
+                <Link href="/services/laser">laser hair removal</Link>, and{" "}
+                <Link href="/services/face/chemical-peel">chemical peels</Link> to help patients look and feel younger
                 without excessive downtime.
               </Typography>
               <Typography
@@ -231,7 +232,7 @@ export default function AboutUs() {
             justifyContent: "center",
           }}
         >
-          <FeaturedServicesImageColumn currentPage={CurrentPage.aboutUs} />
+          <FeaturedServicesImageColumn currentPage={PageType.genericPage} />
         </Grid>
       </Grid>
     </Box>
