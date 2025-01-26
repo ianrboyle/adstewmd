@@ -59,8 +59,8 @@ export default function AboutUs() {
               <Typography
                 variant="body2"
                 sx={{
-                  fontSize: { xs: "2rem", md: "2rem" },
-                  fontWeight: "400",
+                  fontSize: { xs: "2rem", md: "2.5rem" },
+                  fontWeight: "500",
                   color: "text.secondary",
                   mb: "1rem",
                 }}
@@ -149,7 +149,7 @@ export default function AboutUs() {
                 <Link href="/services/face/facials">facials</Link>,{" "}
                 <Link href="/services/face/microneedling">microneedling</Link>,{" "}
                 <Link href="/services/laser">laser hair removal</Link>, and{" "}
-                <Link href="/services/face/chemical-peel">chemical peels</Link> to help patients look and feel younger
+                <Link href="/services/face/chemical-peels">chemical peels</Link> to help patients look and feel younger
                 without excessive downtime.
               </Typography>
               <Typography

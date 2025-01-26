@@ -4,4 +4,5 @@ export enum PageType {
   laser = "laser",
   body = "body",
   genericPage = "genericPage",
+  chemicalPeels = "chemicalPeels",
 }

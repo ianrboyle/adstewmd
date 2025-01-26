@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 
 interface HeadingProps {
   title: string;
-  body?: string[];
+  body?: string[] | React.ReactNode[];
 }
 export default function FeaturedServiceDescriptionPageHeading({ title, body }: HeadingProps) {
   return (

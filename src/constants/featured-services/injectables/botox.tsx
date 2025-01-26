@@ -1,5 +1,14 @@
-export const botoxServices =
-  " If you’re ready to reduce lines and wrinkles using simple cosmetic injections, see the specialists at Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado. Board-certified dermatologist Adrienne Stewart, MD, offers Botox®, Dysport®, Daxxify™, and Jeuveau® injections to take years off your appearance without pain or downtime. Call the office to learn more, or use the online booking feature today.";
+import Link from "next/link";
+
+export const botoxServices = (
+  <>
+    If you’re ready to reduce lines and wrinkles using simple cosmetic injections, see the specialists at Aesthetic
+    Surgery and Dermatology of Cherry Creek in Denver, Colorado. Board-certified dermatologist Adrienne Stewart, MD,
+    offers Botox®, Dysport®, <Link href="/services/injectables/daxxify">Daxxify</Link>™, and{" "}
+    <Link href="/services/injectables/jeuveau">Jeuveau</Link>® injections to take years off your appearance without pain
+    or downtime. Call the office to learn more, or use the online booking feature today.
+  </>
+);
 
 export const botoxServicesTitle = "Botox services offered in Cherry Creek, Denver, CO";
 export const botoxPageHeadingTitle = "Botox In Denver, CO";

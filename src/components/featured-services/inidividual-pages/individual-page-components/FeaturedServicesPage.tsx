@@ -10,9 +10,11 @@ import FillerTypes from "../injectables/fillers/FillerTypes";
 import FeaturedServiceBodyContourImages from "../body/BodyContourImages";
 import FeaturedServicesAccordian from "../Accordian";
 import { laserHairRemovalFAQs } from "../../../../constants/featured-services/laser-hair-removal";
+import { chemicalPeelsFAQs, chemicalPeelsFAQsTitle } from "../../../../constants/featured-services/face/chemical-peels";
+import React from "react";
 
 interface FeaturedServicePageProps {
-  initialDescription: string;
+  initialDescription: string | React.ReactNode;
   initialDescriptionTitle: string;
   sections: {
     title: string;
@@ -72,6 +74,9 @@ export default function FeaturedServicePage({
           {currentPage === PageType.fillers && <FillerTypes />}
           {currentPage === PageType.laser && (
             <FeaturedServicesAccordian title="Frequently Asked Questions" content={laserHairRemovalFAQs} />
+          )}
+          {currentPage === PageType.chemicalPeels && (
+            <FeaturedServicesAccordian title={chemicalPeelsFAQsTitle} content={chemicalPeelsFAQs} />
           )}
           {currentPage === PageType.body && <FeaturedServiceBodyContourImages />}
         </Box>
