@@ -28,9 +28,9 @@ export default function Facials() {
       }}
     >
       <FeaturedServiceBackgroundImage
-        imageSrc="/featured-services/face/fraxel.png"
+        imageSrc="/featured-services/face/facials.png"
         altText="fraxel"
-        objectPosition="center 50%"
+        objectPosition="center 40%"
       />
       <FeaturedServicePage
         initialDescription={facialsMainText}
