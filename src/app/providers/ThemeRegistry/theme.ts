@@ -72,7 +72,7 @@ export const theme = createTheme({
       lineHeight: 1.8,
       fontFamily: `${roboto.style.fontFamily}, sans-serif`,
       fontSize: "1.1rem",
-      fontWeight: 300,
+      fontWeight: 400,
       letterSpacing: 1,
     },
     body2: {
