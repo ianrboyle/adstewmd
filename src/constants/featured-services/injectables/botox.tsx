@@ -10,10 +10,7 @@ export const botoxServices = (
   </>
 );
 
-export const botoxServicesTitle = "Botox services offered in Cherry Creek, Denver, CO";
-export const botoxPageHeadingTitle = "Botox In Denver, CO";
-export const botoxPageHeadingSubTitle =
-  " Botox offered in Cherry Creek, Denver, CO and serving patients from the Denver Metropolitan Area";
+export const botoxServicesTitle = "Botox";
 
 export const whatIsBotoxTitle = "What is Botox?";
 export const whatIsBotoxBody = [

@@ -49,4 +49,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
   - create pages for each
 - add dropdowns for specific nav bar options
 - add animations to FS home page images
+
   - figure out how to implement animation only when scrolling over content
+
+- figureo out og-image (open graph)
+  - https://www.youtube.com/watch?v=wTGVHLyV09M&t=52s

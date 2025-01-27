@@ -27,16 +27,51 @@ interface Props {
 }
 
 const navItems = [
-  "About Us",
-  "Patient Reviews",
-  "Blog",
-  "Products",
-  "Gallery",
-  "Contact",
-  "Face Procedures",
-  "Body",
-  "Forms",
-  "Payment",
+  { title: "About Us", link: "/about-us", subItems: [{ title: "Providers", link: "/providers" }] },
+  { title: "Patient Reviews", link: "/reviews", subItems: [] },
+  { title: "Products", link: "/products", subItems: [] },
+  { title: "Gallery", link: "/gallery", subItems: [] },
+  { title: "Contact", link: "/contact", subItems: [] },
+  {
+    title: "Face Procedures",
+    link: "/services/face",
+    subItems: [
+      { title: "Botox", link: "/services/injectable/botox" },
+      { title: "Jeuveau", link: "/services/injectable/jeuveau" },
+      { title: "Daxxify", link: "/services/injectable/daxxify" },
+      { title: "Microneedling", link: "/services/face/microneedling" },
+      { title: "Kybella", link: "/services/injectable/kybella" },
+      { title: "Chemical Peels", link: "/services/face/chemical-peels" },
+      { title: "Facials", link: "/services/face/facials" },
+      { title: "Laser Resurfacing", link: "/services/face/laser-resurfacing" },
+      { title: "Fraxel", link: "/services/injectable/fraxel" },
+      { title: "Fillers", link: "/services/injectable/fillers" },
+      { title: "Sculptra", link: "/services/injectable/sculptra" },
+      { title: "AviClear Laser", link: "/services/face/avi-clear" },
+      { title: "Diamond Glod", link: "/services/face/diamond-glow" },
+    ],
+  },
+  {
+    title: "Body",
+    link: "/services/body",
+    subItems: [
+      { title: "Laser Hair Removal", link: "/services/body/laser-hair-removal" },
+      { title: "Coolsculpting Elite", link: "/services/body/coolsculpting" },
+      { title: "Emsculpt Neo", link: "/services/body/emsculpt" },
+      { title: "Vanquish", link: "/services/body/vanquish" },
+      { title: "Cutera Laser Vein Treatment", link: "/services/body/cutera" },
+    ],
+  },
+  {
+    title: "Forms",
+    link: "/forms",
+    subItems: [],
+  },
+  {
+    title: "Payment",
+    link: "/payment",
+    subItems: [],
+  },
 ];
 
 export default function NavBar(props: Props) {
@@ -62,9 +97,9 @@ export default function NavBar(props: Props) {
       <Divider />
       <List sx={{ mt: "3rem" }}>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item.link} disablePadding>
             <ListItemButton sx={{ textAlign: "center", color: `#62288f`, backgroundColor: "white" }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={item.title} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -96,7 +131,7 @@ export default function NavBar(props: Props) {
             <NavBarContactInfo />
             <Box sx={{ display: { xs: "none", sm: "none", md: "none", lg: "block" }, ml: "auto" }}>
               {navItems.map((item) => (
-                <Link key={item} href={`/${item.toLowerCase().replace(/\s+/g, "-")}`} passHref>
+                <Link key={item.title} href={`${item.link}`} passHref>
                   <Button
                     sx={{
                       color: `#62288f`,
@@ -106,7 +141,7 @@ export default function NavBar(props: Props) {
                       marginRight: "0.5rem",
                     }}
                   >
-                    {item}
+                    {item.title}
                   </Button>
                 </Link>
               ))}
