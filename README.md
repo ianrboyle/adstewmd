@@ -45,11 +45,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 - add gallery page
 
-- add links to all nav bar options
-  - create pages for each
-    - Face:
-      - Laser Resurfacing
-- add dropdowns for specific nav bar options
+- add faces services page
+- add all services page
+
 - add animations to FS home page images
 
   - figure out how to implement animation only when scrolling over content

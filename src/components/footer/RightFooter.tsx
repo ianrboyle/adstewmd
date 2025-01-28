@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
+import { navItems } from "../../constants/nav-items";
 const links = [
   "About Us",
   "Patient Reviews",
@@ -33,8 +34,8 @@ export default function RightFooter() {
           padding: "1rem",
         }}
       >
-        {links.map((link, index) => (
-          <Link href={`/${link.toLowerCase().replace(/\s+/g, "-")}`} key={index} style={{ textDecoration: "none" }}>
+        {navItems.map((item, index) => (
+          <Link href={item.link} key={index} style={{ textDecoration: "none" }}>
             <Typography
               sx={{
                 color: "white",
@@ -43,7 +44,7 @@ export default function RightFooter() {
                 },
               }}
             >
-              {link}
+              {item.title}
             </Typography>
           </Link>
         ))}
