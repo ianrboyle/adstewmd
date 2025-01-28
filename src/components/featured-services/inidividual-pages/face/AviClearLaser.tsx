@@ -10,7 +10,7 @@ import AviClearImage from "./AviClearImage";
 import AviClearAwards from "./AviClearAwards";
 const aviClearMainTitle = "AviClear Laser";
 const aviClearMainBody = [
-  "Reimagining how acne is treated.AviClear is the first and original FDA-cleared energy device for thereatment of mild, moderate, and serve acne. 4 Engineered with a revolutionary 1726 nm wavelength for allskin types, it selectively targets and suppresses the sebaceous glands, eliminating acne at the sourcewithout the need for prescription medications.",
+  "Reimagining how acne is treated. AviClear is the first and original FDA-cleared energy device for thereatment of mild, moderate, and serve acne. 4-Engineered with a revolutionary 1726 nm wavelength for allskin types, it selectively targets and suppresses the sebaceous glands, eliminating acne at the sourcewithout the need for prescription medications.",
   "Significantly eliminates acne in three, quick 30-minute treatment sessions without downtime. AviClear is equipped with exclusive AviCool™ sapphire skin cooling and smart sensors to maximize patient comfort and safety and maintain skin’s temperature during treatment.",
 ];
 
