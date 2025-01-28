@@ -23,7 +23,7 @@ import { navItems } from "../constants/nav-items";
 import NavBarLinks from "./NavBarLinks";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import NavBarDrawer from "./NavBarDrawer";
+
 interface Props {
   /**
    * Injected by the documentation to work in an iframe.

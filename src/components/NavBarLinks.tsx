@@ -2,7 +2,8 @@ import { Box, Button, Menu, MenuItem } from "@mui/material";
 import Link from "next/link";
 import { navItems, SubLink } from "../constants/nav-items";
 import React, { useState } from "react";
-
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 export default function NavBarLinks() {
   const [anchorEl, setAnchorEl] = React.useState<{ element: HTMLElement | null; index: number | null }>({
     element: null,
@@ -17,10 +18,6 @@ export default function NavBarLinks() {
     setAnchorEl({ element: null, index: null });
   };
 
-  const handleNavigate = (path: string) => {
-    handleClose(); // Close the menu
-    // Navigate to the selected page
-  };
   return (
     <Box sx={{ display: { xs: "none", sm: "none", md: "none", lg: "block" }, ml: "auto" }}>
       {navItems.map((item, index) =>
@@ -53,6 +50,7 @@ export default function NavBarLinks() {
               aria-haspopup="true"
             >
               {item.title}
+              {anchorEl.index === index ? <ExpandLess /> : <ExpandMore />}
             </Button>
             <Menu
               id={`menu-${index}`}

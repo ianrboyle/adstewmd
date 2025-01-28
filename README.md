@@ -48,7 +48,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - add links to all nav bar options
   - create pages for each
     - Face:
-      - Diamond Glow
       - Laser Resurfacing
       - Aviclear laser
 - add dropdowns for specific nav bar options

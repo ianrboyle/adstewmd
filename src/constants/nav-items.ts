@@ -9,7 +9,7 @@ interface Links {
 }
 export const navItems: Links[] = [
   {
-    title: "About Us",
+    title: "About",
     link: "/about-us",
     subLinks: [
       { title: "About Us", link: "/about-us" },
@@ -37,7 +37,7 @@ export const navItems: Links[] = [
       { title: "Fillers", link: "/services/injectables/fillers" },
       { title: "Sculptra", link: "/services/injectables/sculptra" },
       { title: "AviClear Laser", link: "/services/face/avi-clear" },
-      { title: "Diamond GloW", link: "/services/face/diamond-glow" },
+      { title: "Diamond Glow", link: "/services/face/diamond-glow" },
     ],
   },
   {

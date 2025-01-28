@@ -3,7 +3,7 @@ export const diamondGlowMainTitle = "DiamondGlow®";
 export const diamondGlowMainText =
   "Revitalize your skin's natural luminosity and tackle dullness, uneven texture, or environmental damage with the transformative DiamondGlow® treatment at Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado. Esteemed board-certified dermatologist Adrienne Stewart, MD, along with experienced medical aestheticians Jodi Payne and Willa Roberts, specialize in DiamondGlow® treatments that deeply cleanse, exfoliate, and infuse the skin with nourishing serums for an immediate and enduring glow, all with minimal downtime. Secure your skin consultation now by calling the office or booking online today.";
 
-export const whatIsDiamondGlowTitle = "What is DiamondGlow®??";
+export const whatIsDiamondGlowTitle = "What is DiamondGlow®?";
 
 export const whatIsDiamondGlowBody = [
   "DiamondGlow® is more than a facial. Unlike traditional wet facial treatments, which rely on chemical exfoliation to treat skin at the surface level, DiamondGlow’s® patented recessed diamond tip wand delivers a next-level resurfacing treatment that deeply cleans and rejuvenates the skin. FINE LINES, OVERALL DRYNESS, Radiance & Roughness can all be combated with regular DiamondGlow® facials. Recommended typically once a month but can vary due to skin types or conditions. Different diamond tips can be used to accommodate any skin type. Great for exfoliation and getting debris and gunk removed from your skin. The skin will feel fresh and have a glow! Perfect if you have an event coming up and you want something lighter than a peel.",
