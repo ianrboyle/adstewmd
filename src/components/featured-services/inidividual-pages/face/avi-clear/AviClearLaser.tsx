@@ -1,10 +1,10 @@
 import { Box, Divider, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
-import FeaturedServicesImageColumn from "../individual-page-components/ImageColumn";
-import { PageType } from "../../../../constants/enums";
-import DividerWithContactButtons from "../individual-page-components/DividerWithContactButtons";
-import FeaturedServiceDescriptionPageHeading from "../individual-page-components/DescriptionPageHeading";
+import FeaturedServiceBackgroundImage from "../../individual-page-components/BackgroundImage";
+import FeaturedServicesImageColumn from "../../individual-page-components/ImageColumn";
+import { PageType } from "../../../../../constants/enums";
+import DividerWithContactButtons from "../../individual-page-components/DividerWithContactButtons";
+import FeaturedServiceDescriptionPageHeading from "../../individual-page-components/DescriptionPageHeading";
 
 import AviClearImage from "./AviClearImage";
 import AviClearAwards from "./AviClearAwards";
