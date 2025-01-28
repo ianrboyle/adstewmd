@@ -2,7 +2,7 @@
 import {
   AppBar,
   Box,
-  Button,
+  Collapse,
   Divider,
   Drawer,
   IconButton,
@@ -21,6 +21,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import React from "react";
 import { navItems } from "../constants/nav-items";
 import NavBarLinks from "./NavBarLinks";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 interface Props {
   /**
    * Injected by the documentation to work in an iframe.
@@ -37,6 +39,12 @@ export default function NavBar(props: Props) {
     setMobileOpen((prevState) => !prevState);
   };
 
+  const [expandedIndex, setExpandedIndex] = React.useState<number | null>(null);
+
+  const handleDropDownToggle = (index: number) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
   const container = window !== undefined ? () => window().document.body : undefined;
 
   const drawer = (
@@ -51,13 +59,59 @@ export default function NavBar(props: Props) {
 
       <Divider />
       <List sx={{ mt: "3rem" }}>
-        {navItems.map((item) => (
-          <ListItem key={item.link} disablePadding>
-            <ListItemButton sx={{ textAlign: "center", color: `#62288f`, backgroundColor: "white" }}>
-              <ListItemText primary={item.title} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        {navItems.map((item, index) =>
+          !item.subLinks || item.subLinks.length <= 0 ? (
+            <ListItem key={index} disablePadding>
+              <Link href={item.link} style={{ textDecoration: "none", display: "flex", width: "100%" }} passHref>
+                <ListItemButton
+                  onClick={handleDrawerToggle}
+                  sx={{ textAlign: "left", color: `#62288f`, backgroundColor: "white", width: "100%" }}
+                >
+                  <ListItemText sx={{ ml: "1rem" }} primary={item.title} />
+                </ListItemButton>
+              </Link>
+            </ListItem>
+          ) : (
+            <React.Fragment key={index}>
+              <ListItem disablePadding>
+                <ListItemButton
+                  onClick={() => handleDropDownToggle(index)}
+                  sx={{ textAlign: "left", color: `#62288f`, backgroundColor: "white" }}
+                >
+                  <ListItemText sx={{ ml: "1rem" }} primary={item.title} />
+                  {expandedIndex === index ? <ExpandLess /> : <ExpandMore />}
+                </ListItemButton>
+              </ListItem>
+              {item.subLinks && (
+                <Collapse in={expandedIndex === index} timeout="auto" unmountOnExit>
+                  <List component="div" disablePadding>
+                    {item.subLinks.map((subLink, subIndex) => (
+                      <Link
+                        key={subIndex}
+                        href={subLink.link}
+                        style={{ textDecoration: "none", display: "flex", width: "100%" }}
+                        passHref
+                      >
+                        <ListItemButton
+                          key={subLink.link}
+                          sx={{
+                            pl: 4,
+                            textAlign: "left",
+                            color: `#62288f`,
+                            backgroundColor: "#f9f9f9",
+                          }}
+                          onClick={handleDrawerToggle}
+                        >
+                          <ListItemText sx={{ ml: "1rem" }} primary={subLink.title} />
+                        </ListItemButton>
+                      </Link>
+                    ))}
+                  </List>
+                </Collapse>
+              )}
+            </React.Fragment>
+          )
+        )}
       </List>
     </Box>
   );

@@ -12,7 +12,7 @@ export const navItems: Links[] = [
     title: "About Us",
     link: "/about-us",
     subLinks: [
-      { title: "About Us", link: "about-us" },
+      { title: "About Us", link: "/about-us" },
       { title: "Providers", link: "/providers" },
     ],
   },
@@ -45,7 +45,7 @@ export const navItems: Links[] = [
     link: "/services/body",
     subLinks: [
       { title: "All Body Procedures", link: "/services/body" },
-      { title: "Laser Hair Removal", link: "/services/body/laser-hair-removal" },
+      { title: "Laser Hair Removal", link: "/services/laser-hair-removal" },
       { title: "Coolsculpting Elite", link: "/services/body/coolsculpting" },
       { title: "Emsculpt Neo", link: "/services/body/emsculpt" },
       { title: "Vanquish", link: "/services/body/vanquish" },

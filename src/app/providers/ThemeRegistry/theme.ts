@@ -141,6 +141,24 @@ export const theme = createTheme({
         },
       },
     },
+    MuiListItemButton: {
+      styleOverrides: {
+        root: {
+          backgroundColor: `#62288f`, // Set icons color to purple
+          color: "#FFFFFF",
+          transition: "transform 0.3s",
+          "&:hover": {
+            transform: "scale(1.05)",
+            backgroundImage: "linear-gradient(to bottom, #C086F9, #DFCDF1)",
+          },
+          // marginTop: "1rem",
+          // marginBottom: "1rem",
+          fontFamily: `${roboto.style.fontFamily}, sans-serif`,
+          fontWeight: 400,
+          borderRadius: "1rem 0  1rem 0",
+        },
+      },
+    },
     // overrides typegraphy color
     // MuiTypography: {
     //   styleOverrides: {

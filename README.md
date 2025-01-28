@@ -35,18 +35,17 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-- add pages for all links in about us page
-  - juvederm
-  - rha
-    -etc
 - Footer:
 
   - implement map
 
-- add SEO nextjs stuff
-
 - add links to all nav bar options
   - create pages for each
+    - Face:
+      - Diamond Glow
+      - Kybella
+      - Laser Resurfacing
+      - Aviclear laser
 - add dropdowns for specific nav bar options
 - add animations to FS home page images
 

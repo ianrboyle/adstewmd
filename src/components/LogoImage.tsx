@@ -19,13 +19,12 @@ export default function LogoImage({ logoColor }: LogoImageProps) {
     >
       <Link href="/">
         <Image
-          alt={`logo`}
+          alt="Logo"
           src={logo}
           style={{
             width: "100%",
             height: "auto",
           }}
-          sizes="100vw"
           priority
         />
       </Link>
