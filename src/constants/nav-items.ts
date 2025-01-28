@@ -37,7 +37,7 @@ export const navItems: Links[] = [
       { title: "Fillers", link: "/services/injectables/fillers" },
       { title: "Sculptra", link: "/services/injectables/sculptra" },
       { title: "AviClear Laser", link: "/services/face/avi-clear" },
-      { title: "Diamond Glod", link: "/services/face/diamond-glow" },
+      { title: "Diamond GloW", link: "/services/face/diamond-glow" },
     ],
   },
   {
