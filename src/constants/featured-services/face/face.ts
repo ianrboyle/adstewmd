@@ -42,7 +42,7 @@ export const faceImages: FeaturedServicesImageProps[] = [
   },
   {
     src: "/featured-services/face/fillers-small.png",
-    text: "fillers",
+    text: "FILLERS",
     altText: "fillers",
     link: "injectables/fillers",
   },
@@ -58,4 +58,16 @@ export const faceImages: FeaturedServicesImageProps[] = [
     altText: "avi-clear",
     link: "face/avi-clear",
   },
+  // {
+  //   src: "/featured-services/face/voluma-small.png",
+  //   text: "JUVEDERM VOLUMA",
+  //   altText: "voluma",
+  //   link: "face/voluma",
+  // },
+  // {
+  //   src: "/featured-services/face/vollux-small.png",
+  //   text: "JUVEDERM VOLUX",
+  //   altText: "volux",
+  //   link: "face/volux",
+  // },
 ];

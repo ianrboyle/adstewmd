@@ -80,7 +80,9 @@ export default function FeaturedServicePage({
           {currentPage === PageType.chemicalPeels && (
             <FeaturedServicesAccordian title={chemicalPeelsFAQsTitle} content={chemicalPeelsFAQs} />
           )}
-          {currentPage === PageType.body && <FeaturedServicesSmallImagesGrid imageProps={bodyContourImages} />}
+          {currentPage === PageType.body && (
+            <FeaturedServicesSmallImagesGrid showTitle={true} imageProps={bodyContourImages} />
+          )}
         </Box>
       </Grid>
       <Divider

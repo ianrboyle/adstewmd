@@ -54,7 +54,7 @@ export default function FaceProcedures() {
             >
               All Face Procedures and Treatments
             </Typography>
-            <FeaturedServicesSmallImagesGrid imageProps={faceImages} />
+            <FeaturedServicesSmallImagesGrid showTitle={false} imageProps={faceImages} />
           </Box>
         </Grid>
         <Divider

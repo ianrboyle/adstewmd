@@ -5,22 +5,25 @@ import { FeaturedServicesImageProps } from "../../../../interfaces/featured-serv
 
 interface SmallImageProps {
   imageProps: FeaturedServicesImageProps[];
+  showTitle: boolean;
 }
 
-export default function FeaturedServicesSmallImagesGrid({ imageProps }: SmallImageProps) {
+export default function FeaturedServicesSmallImagesGrid({ imageProps, showTitle = true }: SmallImageProps) {
   return (
     <Box sx={{ p: 2, mb: "2rem" }}>
-      <Typography
-        variant="body2"
-        sx={{
-          fontSize: { xs: "2rem", md: "1.75rem" },
-          fontWeight: "400",
-          color: "text.secondary",
-          mb: "1rem",
-        }}
-      >
-        Our Products:
-      </Typography>
+      {showTitle && (
+        <Typography
+          variant="body2"
+          sx={{
+            fontSize: { xs: "2rem", md: "1.75rem" },
+            fontWeight: "400",
+            color: "text.secondary",
+            mb: "1rem",
+          }}
+        >
+          Our Products:
+        </Typography>
+      )}
 
       <Grid container spacing={4}>
         {imageProps.map((image, index) => (
