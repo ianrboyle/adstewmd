@@ -30,7 +30,7 @@ export default function AviClearLaser() {
       }}
     >
       <FeaturedServiceBackgroundImage
-        imageSrc="/featured-services/face/chemical-peel.png"
+        imageSrc="/featured-services/face/laser-resurfacing-small.png"
         altText="fraxel"
         objectPosition="center 40%"
       />

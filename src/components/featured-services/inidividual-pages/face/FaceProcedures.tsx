@@ -3,6 +3,8 @@ import FeaturedServiceBackgroundImage from "../individual-page-components/Backgr
 import Grid from "@mui/material/Grid2";
 import FeaturedServicesImageColumn from "../individual-page-components/ImageColumn";
 import { PageType } from "../../../../constants/enums";
+import { faceImages } from "../../../../constants/featured-services/face/face";
+import FeaturedServicesSmallImagesGrid from "../individual-page-components/SmallImagesGrid";
 export default function FaceProcedures() {
   return (
     <Box
@@ -14,7 +16,7 @@ export default function FaceProcedures() {
       <FeaturedServiceBackgroundImage
         imageSrc="/featured-services/botox-long.png"
         altText="fraxel"
-        objectPosition="center 40%"
+        objectPosition="center 50%"
       />
       <Grid
         container
@@ -38,21 +40,21 @@ export default function FaceProcedures() {
               p: { xs: 2, sm: 2, md: 4, xl: 0 },
             }}
           >
-            <Box sx={{ p: 2 }}>
-              <Typography
-                variant="h4"
-                sx={{
-                  fontSize: { xs: "2rem", md: "2.25rem" },
-                  color: "text.secondary",
-                  whiteSpace: "normal",
-                  overflow: "hidden",
-                  mt: "1rem",
-                  mb: "1rem",
-                }}
-              >
-                All Face Procedures and Treatments
-              </Typography>
-            </Box>
+            <Typography
+              variant="h4"
+              sx={{
+                fontSize: { xs: "2rem", md: "2.25rem" },
+                color: "text.secondary",
+                whiteSpace: "normal",
+                overflow: "hidden",
+                mt: "1rem",
+                mb: "1rem",
+                p: 2,
+              }}
+            >
+              All Face Procedures and Treatments
+            </Typography>
+            <FeaturedServicesSmallImagesGrid imageProps={faceImages} />
           </Box>
         </Grid>
         <Divider

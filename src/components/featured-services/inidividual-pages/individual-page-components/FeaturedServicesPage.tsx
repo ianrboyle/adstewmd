@@ -7,12 +7,12 @@ import FeaturedServiceDescriptionPageHeading from "./DescriptionPageHeading";
 import DividerWithContactButtons from "./DividerWithContactButtons";
 import FeaturedServiceDescriptionWithList from "./DescriptionWithList";
 import FillerTypes from "../injectables/fillers/FillerTypes";
-import FeaturedServiceBodyContourImages from "../body/SmallImagesGrid";
+import FeaturedServiceBodyContourImages from "./SmallImagesGrid";
 import FeaturedServicesAccordian from "../Accordian";
 import { laserHairRemovalFAQs } from "../../../../constants/featured-services/laser-hair-removal";
 import { chemicalPeelsFAQs, chemicalPeelsFAQsTitle } from "../../../../constants/featured-services/face/chemical-peels";
 import React from "react";
-import FeaturedServicesSmallImagesGrid from "../body/SmallImagesGrid";
+import FeaturedServicesSmallImagesGrid from "./SmallImagesGrid";
 import { bodyContourImages } from "../../../../constants/featured-services/body/body-contouring";
 
 interface FeaturedServicePageProps {

@@ -24,9 +24,9 @@ export default function LaserResurfacing() {
       }}
     >
       <FeaturedServiceBackgroundImage
-        imageSrc="/featured-services/face/facials.png"
+        imageSrc="/featured-services/face/laser-resurfacing-small.png"
         altText="fraxel"
-        objectPosition="center 40%"
+        objectPosition="center 50%"
       />
       <FeaturedServicePage
         initialDescription={laserResurfacingMainText}
