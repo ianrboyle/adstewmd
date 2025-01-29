@@ -1,4 +1,4 @@
-import Microneedling from "../../../../components/featured-services/inidividual-pages/face/Microneedling";
+import Microneedling from "../../../../components/treatments-and-services/face/Microneedling";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

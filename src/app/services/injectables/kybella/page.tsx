@@ -1,4 +1,4 @@
-import Kybella from "../../../../components/featured-services/inidividual-pages/injectables/Kybella";
+import Kybella from "../../../../components/treatments-and-services/injectables/Kybella";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

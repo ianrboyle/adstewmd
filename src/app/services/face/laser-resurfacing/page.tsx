@@ -1,4 +1,4 @@
-import LaserResurfacing from "../../../../components/featured-services/inidividual-pages/face/LaserResurfacing";
+import LaserResurfacing from "../../../../components/treatments-and-services/face/LaserResurfacing";
 
 export default function LaserResurfacingPage() {
   return <LaserResurfacing />;

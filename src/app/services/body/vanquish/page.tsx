@@ -1,4 +1,4 @@
-import Vanquish from "../../../../components/featured-services/inidividual-pages/body/Vanquish";
+import Vanquish from "../../../../components/treatments-and-services/body/Vanquish";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

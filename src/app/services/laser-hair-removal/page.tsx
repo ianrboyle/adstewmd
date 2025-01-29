@@ -1,4 +1,4 @@
-import LaserHairRemovalPage from "../../../components/featured-services/inidividual-pages/laser-hair-removal/LaserHairRemovalPage";
+import LaserHairRemovalPage from "../../../components/treatments-and-services/laser-hair-removal/LaserHairRemovalPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

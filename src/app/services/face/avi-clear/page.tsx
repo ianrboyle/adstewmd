@@ -1,4 +1,4 @@
-import AviClearLaser from "../../../../components/featured-services/inidividual-pages/face/avi-clear/AviClearLaser";
+import AviClearLaser from "../../../../components/treatments-and-services/face/avi-clear/AviClearLaser";
 
 export default function AviClearLaserPage() {
   return <AviClearLaser />;

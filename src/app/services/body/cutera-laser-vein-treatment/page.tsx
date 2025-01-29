@@ -1,4 +1,4 @@
-import Cutera from "../../../../components/featured-services/inidividual-pages/body/Cutera";
+import Cutera from "../../../../components/treatments-and-services/body/Cutera";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

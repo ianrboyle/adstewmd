@@ -1,4 +1,4 @@
-import Facials from "../../../../components/featured-services/inidividual-pages/face/Facials";
+import Facials from "../../../../components/treatments-and-services/face/Facials";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

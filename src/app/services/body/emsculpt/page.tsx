@@ -1,4 +1,4 @@
-import Emsculpt from "../../../../components/featured-services/inidividual-pages/body/emsculpt/Emsculpt";
+import Emsculpt from "../../../../components/treatments-and-services/body/emsculpt/Emsculpt";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

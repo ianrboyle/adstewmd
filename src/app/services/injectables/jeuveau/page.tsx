@@ -1,4 +1,4 @@
-import Jeuveau from "../../../../components/featured-services/inidividual-pages/injectables/Jeuveau";
+import Jeuveau from "../../../../components/treatments-and-services/injectables/Jeuveau";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

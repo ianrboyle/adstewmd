@@ -1,4 +1,4 @@
-import ChemicalPeels from "../../../../components/featured-services/inidividual-pages/face/ChemicalPeels";
+import ChemicalPeels from "../../../../components/treatments-and-services/face/ChemicalPeels";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,4 +1,4 @@
-import Sculptra from "../../../../components/featured-services/inidividual-pages/injectables/Sculptra";
+import Sculptra from "../../../../components/treatments-and-services/injectables/Sculptra";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

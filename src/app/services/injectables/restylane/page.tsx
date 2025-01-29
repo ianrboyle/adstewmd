@@ -1,4 +1,4 @@
-import Restylane from "../../../../components/featured-services/inidividual-pages/injectables/Restylane";
+import Restylane from "../../../../components/treatments-and-services/injectables/Restylane";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

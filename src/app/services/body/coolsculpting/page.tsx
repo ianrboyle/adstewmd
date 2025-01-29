@@ -1,4 +1,4 @@
-import Coolsculpting from "../../../../components/featured-services/inidividual-pages/body/Coolsculpting";
+import Coolsculpting from "../../../../components/treatments-and-services/body/Coolsculpting";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

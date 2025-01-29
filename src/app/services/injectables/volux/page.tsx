@@ -1,4 +1,4 @@
-import Volux from "../../../../components/featured-services/inidividual-pages/injectables/Volux";
+import Volux from "../../../../components/treatments-and-services/injectables/Volux";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

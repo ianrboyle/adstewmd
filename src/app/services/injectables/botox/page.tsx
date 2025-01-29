@@ -1,4 +1,4 @@
-import Botox from "../../../../components/featured-services/inidividual-pages/injectables/Botox";
+import Botox from "../../../../components/treatments-and-services/injectables/Botox";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

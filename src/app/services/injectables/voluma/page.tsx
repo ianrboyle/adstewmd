@@ -1,4 +1,4 @@
-import Voluma from "../../../../components/featured-services/inidividual-pages/injectables/Voluma";
+import Voluma from "../../../../components/treatments-and-services/injectables/Voluma";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

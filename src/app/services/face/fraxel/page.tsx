@@ -1,4 +1,4 @@
-import Fraxel from "../../../../components/featured-services/inidividual-pages/face/Fraxel";
+import Fraxel from "../../../../components/treatments-and-services/face/Fraxel";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

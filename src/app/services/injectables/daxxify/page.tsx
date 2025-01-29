@@ -1,4 +1,4 @@
-import Daxxify from "../../../../components/featured-services/inidividual-pages/injectables/Daxxify";
+import Daxxify from "../../../../components/treatments-and-services/injectables/Daxxify";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

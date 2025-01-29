@@ -1,4 +1,4 @@
-import DermalFillers from "../../../../components/featured-services/inidividual-pages/injectables/DermalFillers";
+import DermalFillers from "../../../../components/treatments-and-services/injectables/DermalFillers";
 
 export default function DermalFillersPage() {
   return <DermalFillers />;

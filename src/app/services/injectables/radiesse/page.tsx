@@ -1,4 +1,4 @@
-import Radiesse from "../../../../components/featured-services/inidividual-pages/injectables/Radiesse";
+import Radiesse from "../../../../components/treatments-and-services/injectables/Radiesse";
 
 export default function RadiessePage() {
   return <Radiesse />;

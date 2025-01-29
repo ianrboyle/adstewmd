@@ -1,4 +1,4 @@
-import DiamondGlow from "../../../../components/featured-services/inidividual-pages/face/DiamondGlow";
+import DiamondGlow from "../../../../components/treatments-and-services/face/DiamondGlow";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

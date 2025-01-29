@@ -1,4 +1,4 @@
-import RHA from "../../../../components/featured-services/inidividual-pages/injectables/RHA";
+import RHA from "../../../../components/treatments-and-services/injectables/RHA";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

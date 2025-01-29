@@ -1,4 +1,4 @@
-import CosmeticConsulation from "../../../components/featured-services/inidividual-pages/cosmetic-consultation/CosmeticConsulation";
+import CosmeticConsulation from "../../../components/treatments-and-services/cosmetic-consultation/CosmeticConsulation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

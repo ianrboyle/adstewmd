@@ -1,4 +1,4 @@
-import BodyContour from "../../../components/featured-services/inidividual-pages/body/BodyContour";
+import BodyContour from "../../../components/treatments-and-services/body/BodyContour";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

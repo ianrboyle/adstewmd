@@ -1,4 +1,4 @@
-import Fillers from "../../../../components/featured-services/inidividual-pages/injectables/fillers/Fillers";
+import Fillers from "../../../../components/treatments-and-services/injectables/fillers/Fillers";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

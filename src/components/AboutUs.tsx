@@ -1,7 +1,7 @@
 import { Box, Divider, Typography } from "@mui/material";
 import Image from "next/image";
 import Grid from "@mui/material/Grid2";
-import FeaturedServicesImageColumn from "./featured-services/inidividual-pages/individual-page-components/ImageColumn";
+import FeaturedServicesImageColumn from "./treatments-and-services/individual-page-components/ImageColumn";
 import { PageType } from "../constants/enums";
 import Link from "next/link";
 export default function AboutUs() {
