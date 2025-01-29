@@ -12,7 +12,7 @@ import {
   whatDoesFraxelAddressTitle,
   whatIsFraxelBody,
   whatIsFraxelTitle,
-} from "../../../constants/featured-services/face/fraxel";
+} from "../../../constants/treatments-and-services/face/fraxel";
 import { PageType } from "../../../constants/enums";
 
 export default function Fraxel() {

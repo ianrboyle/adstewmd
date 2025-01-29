@@ -19,7 +19,7 @@ import {
   whatCanIExpectMicroneedlingTitle,
   whatIsMicroneedlingBody,
   whatIsMicroneedlingTitle,
-} from "../../../constants/featured-services/face/microneedling";
+} from "../../../constants/treatments-and-services/face/microneedling";
 
 export default function Microneedling() {
   return (

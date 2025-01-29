@@ -18,7 +18,7 @@ import {
   whatDoesRestylaneAddressTitle,
   whatIsRestylaneBody,
   whatIsRestylaneTitle,
-} from "../../../constants/featured-services/injectables/restylane";
+} from "../../../constants/treatments-and-services/injectables/restylane";
 import { PageType } from "../../../constants/enums";
 
 export default function Restylane() {

@@ -22,7 +22,7 @@ import {
   whatIsLaserHairRemovalTitle,
   whyChooseASDBody,
   whyChooseASDTitle,
-} from "../../../constants/featured-services/laser-hair-removal";
+} from "../../../constants/treatments-and-services/laser-hair-removal";
 
 export default function LaserHairRemovalPage() {
   return (

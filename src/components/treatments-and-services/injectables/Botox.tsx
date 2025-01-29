@@ -17,7 +17,7 @@ import {
   whatHappensDuringInjectionsTitle,
   botoxExpectationsBody,
   botoxExpectationsTitle,
-} from "../../../constants/featured-services/injectables/botox";
+} from "../../../constants/treatments-and-services/injectables/botox";
 
 export default function Botox() {
   return (

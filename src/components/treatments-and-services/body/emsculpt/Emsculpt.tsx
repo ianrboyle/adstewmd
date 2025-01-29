@@ -17,7 +17,7 @@ import {
   howManyEmsculptTreatmentsBody,
   emsculptAccordianTitle,
   emsculptAbilities,
-} from "../../../../constants/featured-services/body/emsculpt";
+} from "../../../../constants/treatments-and-services/body/emsculpt";
 import FeaturedServicesAccordian from "../../Accordian";
 
 export default function Emsculpt() {

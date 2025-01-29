@@ -16,7 +16,7 @@ import {
   whatAreFacialsTitle,
   whatCanIExpectFacialsBody,
   whatCanIExpectFacialsTitle,
-} from "../../../constants/featured-services/face/facials";
+} from "../../../constants/treatments-and-services/face/facials";
 import { PageType } from "../../../constants/enums";
 
 export default function Facials() {

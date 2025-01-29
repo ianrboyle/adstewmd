@@ -12,7 +12,7 @@ import {
   sculptraMainTitle,
   whatIsSculptraBody,
   whatIsSculptraTitle,
-} from "../../../constants/featured-services/injectables/scultpra";
+} from "../../../constants/treatments-and-services/injectables/scultpra";
 import { PageType } from "../../../constants/enums";
 
 export default function Sculptra() {

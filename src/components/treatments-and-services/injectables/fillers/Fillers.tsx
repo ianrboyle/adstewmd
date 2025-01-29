@@ -16,7 +16,7 @@ import {
   resultsLastBody,
   howFillersFeelTitle,
   howFillersFeelBody,
-} from "../../../../constants/featured-services/injectables/fillers";
+} from "../../../../constants/treatments-and-services/injectables/fillers";
 
 export default function Fillers() {
   return (

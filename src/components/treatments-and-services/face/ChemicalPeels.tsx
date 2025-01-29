@@ -17,7 +17,7 @@ import {
   afterChemicalPeelsBody,
   whyASDTitle,
   whyASDBody,
-} from "../../../constants/featured-services/face/chemical-peels";
+} from "../../../constants/treatments-and-services/face/chemical-peels";
 
 export default function ChemicalPeels() {
   return (

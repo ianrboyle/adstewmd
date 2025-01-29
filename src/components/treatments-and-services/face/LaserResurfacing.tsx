@@ -13,7 +13,7 @@ import {
   laserResurfacingMainTitle,
   whatIsLaserResurfacingBody,
   whatIsLaserResurfacingTitle,
-} from "../../../constants/featured-services/face/laser-resurfacing";
+} from "../../../constants/treatments-and-services/face/laser-resurfacing";
 
 export default function LaserResurfacing() {
   return (

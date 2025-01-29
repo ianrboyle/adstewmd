@@ -15,7 +15,7 @@ import {
   whatCanIExpectDaxxifyBody,
   howLongDoesDaxxifyLastTitle,
   howLongDoesDaxxifyLastBody,
-} from "../../../constants/featured-services/injectables/daxxify";
+} from "../../../constants/treatments-and-services/injectables/daxxify";
 
 export default function Daxxify() {
   return (

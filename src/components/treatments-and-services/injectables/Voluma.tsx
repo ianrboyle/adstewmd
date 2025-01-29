@@ -18,7 +18,7 @@ import {
   whatDoesVolumaAddressTitle,
   whatIsVolumaBody,
   whatIsVolumaTitle,
-} from "../../../constants/featured-services/injectables/voluma";
+} from "../../../constants/treatments-and-services/injectables/voluma";
 import { PageType } from "../../../constants/enums";
 
 export default function Voluma() {

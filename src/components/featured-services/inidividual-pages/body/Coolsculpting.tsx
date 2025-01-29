@@ -1,5 +1,5 @@
 import { Box, Divider } from "@mui/material";
-import { PageType } from "../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 import Grid from "@mui/material/Grid2";
 import {
   coolsculptTitle,
@@ -14,7 +14,7 @@ import {
   seeResultsBody,
   goodCandidateTitle,
   goodCandidateBody,
-} from "../../../constants/treatments-and-services/body/coolsculpting";
+} from "../../../../constants/treatments-and-services/body/coolsculpting";
 import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
 import FeaturedServiceDescription from "../individual-page-components/Description";
 import FeaturedServiceDescriptionPageHeading from "../individual-page-components/DescriptionPageHeading";

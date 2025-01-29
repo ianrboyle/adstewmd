@@ -3,7 +3,7 @@ import FeaturedServiceBackgroundImage from "../individual-page-components/Backgr
 import Grid from "@mui/material/Grid2";
 import FeaturedServicesImageColumn from "../individual-page-components/ImageColumn";
 import { PageType } from "../../../constants/enums";
-import { faceImages } from "../../../constants/featured-services/face/face";
+import { faceImages } from "../../../constants/treatments-and-services/face/face";
 import FeaturedServicesSmallImagesGrid from "../individual-page-components/SmallImagesGrid";
 export default function FaceProcedures() {
   return (

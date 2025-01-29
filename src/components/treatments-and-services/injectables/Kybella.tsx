@@ -14,7 +14,7 @@ import {
   whatCanIExpectKybellaTitle,
   whatIsKybellaBody,
   whatIsKybellaTitle,
-} from "../../../constants/featured-services/injectables/kybella";
+} from "../../../constants/treatments-and-services/injectables/kybella";
 import { PageType } from "../../../constants/enums";
 
 export default function Kybella() {

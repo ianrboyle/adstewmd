@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { PageType } from "../../../constants/enums";
+import { PageType } from "../../../../constants/enums";
 import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
 import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
 import {
@@ -11,7 +11,7 @@ import {
   whatIsVanquishBody,
   whatIsVanquishTitle,
   vanquishTitle,
-} from "../../../constants/treatments-and-services/body/vanquish";
+} from "../../../../constants/treatments-and-services/body/vanquish";
 
 export default function Vanquish() {
   return (

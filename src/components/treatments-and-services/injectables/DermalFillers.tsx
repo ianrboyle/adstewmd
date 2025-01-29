@@ -18,7 +18,7 @@ import {
   whatAreDermalFillersTitle,
   whenNoticeResultsDermalFillersBody,
   whenNoticeResultsDermalFillersTitle,
-} from "../../../constants/featured-services/injectables/dermal-fillers";
+} from "../../../constants/treatments-and-services/injectables/dermal-fillers";
 import { PageType } from "../../../constants/enums";
 
 export default function DermalFillers() {

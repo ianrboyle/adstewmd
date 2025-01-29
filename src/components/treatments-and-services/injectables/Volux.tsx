@@ -17,7 +17,7 @@ import {
   whatCanIExpectVoluxBody,
   howLongDoesVoluxLastTitle,
   howLongDoesVoluxLastBody,
-} from "../../../constants/featured-services/injectables/volux";
+} from "../../../constants/treatments-and-services/injectables/volux";
 
 export default function Volux() {
   return (

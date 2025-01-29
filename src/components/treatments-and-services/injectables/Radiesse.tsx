@@ -18,7 +18,7 @@ import {
   whatDoesRadiesseAddressTitle,
   whatIsRadiesseBody,
   whatIsRadiesseTitle,
-} from "../../../constants/featured-services/injectables/radiesse";
+} from "../../../constants/treatments-and-services/injectables/radiesse";
 import { PageType } from "../../../constants/enums";
 
 export default function Radiesse() {

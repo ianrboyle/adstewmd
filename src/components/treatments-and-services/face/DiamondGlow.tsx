@@ -16,7 +16,7 @@ import {
   whatCanIExpectDiamondGlowTitle,
   whatIsDiamondGlowBody,
   whatIsDiamondGlowTitle,
-} from "../../../constants/featured-services/face/diamond-glow";
+} from "../../../constants/treatments-and-services/face/diamond-glow";
 
 export default function DiamondGlow() {
   return (

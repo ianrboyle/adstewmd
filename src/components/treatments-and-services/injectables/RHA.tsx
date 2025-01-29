@@ -16,7 +16,7 @@ import {
   howIsRhaDifferentBody,
   whatToExpectRhaTitle,
   whatToExpectRhaBody,
-} from "../../../constants/featured-services/injectables/rha";
+} from "../../../constants/treatments-and-services/injectables/rha";
 import FeaturedServiceDescriptionPageHeading from "../individual-page-components/DescriptionPageHeading";
 import FeaturedServiceDescription from "../individual-page-components/Description";
 export default function RHA() {

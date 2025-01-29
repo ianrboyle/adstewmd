@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
-import { bodyContourMain, bodyTitle } from "../../../constants/featured-services/body/body-contouring";
+import { bodyContourMain, bodyTitle } from "../../../constants/treatments-and-services/body/body-contouring";
 import { PageType } from "../../../constants/enums";
 import FeaturedServicePage from "../individual-page-components/FeaturedServicesPage";
 

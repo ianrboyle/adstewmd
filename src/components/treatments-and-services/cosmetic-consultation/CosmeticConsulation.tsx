@@ -19,7 +19,7 @@ import {
   cosmeticConsulationMainTitle,
   whatIsACosmeticConsulationBody,
   whatIsACosmeticConsulationTitle,
-} from "../../../constants/featured-services/cosmetic-consulation";
+} from "../../../constants/treatments-and-services/cosmetic-consulation";
 import FeaturedServiceDescriptionWithList from "../individual-page-components/DescriptionWithList";
 export default function CosmeticConsulation() {
   return (

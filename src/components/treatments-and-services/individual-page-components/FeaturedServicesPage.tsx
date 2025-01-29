@@ -9,11 +9,14 @@ import FeaturedServiceDescriptionWithList from "./DescriptionWithList";
 import FillerTypes from "../injectables/fillers/FillerTypes";
 import FeaturedServiceBodyContourImages from "./SmallImagesGrid";
 import FeaturedServicesAccordian from "../Accordian";
-import { laserHairRemovalFAQs } from "../../../constants/featured-services/laser-hair-removal";
-import { chemicalPeelsFAQs, chemicalPeelsFAQsTitle } from "../../../constants/featured-services/face/chemical-peels";
+import { laserHairRemovalFAQs } from "../../../constants/treatments-and-services/laser-hair-removal";
+import {
+  chemicalPeelsFAQs,
+  chemicalPeelsFAQsTitle,
+} from "../../../constants/treatments-and-services/face/chemical-peels";
 import React from "react";
 import FeaturedServicesSmallImagesGrid from "./SmallImagesGrid";
-import { bodyContourImages } from "../../../constants/featured-services/body/body-contouring";
+import { bodyContourImages } from "../../../constants/treatments-and-services/body/body-contouring";
 
 interface FeaturedServicePageProps {
   initialDescription: string | React.ReactNode;

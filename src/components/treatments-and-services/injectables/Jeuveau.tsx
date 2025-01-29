@@ -16,7 +16,7 @@ import {
   whatDoesJeuveauAddressTitle,
   whatIsJeuveauBody,
   whatIsJeuveauTitle,
-} from "../../../constants/featured-services/injectables/jeuveau";
+} from "../../../constants/treatments-and-services/injectables/jeuveau";
 import { PageType } from "../../../constants/enums";
 
 export default function Jeuveau() {
