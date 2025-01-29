@@ -4,23 +4,25 @@ import { AccordianTitleAndContent } from "../../../interfaces/accordianTitleAndC
 
 interface AccordianProps {
   content: AccordianTitleAndContent[];
-  title: string;
+  title?: string;
 }
 export default function FeaturedServicesAccordian({ content, title }: AccordianProps) {
   return (
     <Box sx={{ mb: "2rem" }}>
       <Box sx={{ p: 2 }}>
-        <Typography
-          variant="body2"
-          sx={{
-            fontSize: { xs: "2rem", md: "1.75rem" },
-            fontWeight: "400",
-            color: "text.secondary",
-            mb: "1rem",
-          }}
-        >
-          {title}
-        </Typography>
+        {title && (
+          <Typography
+            variant="body2"
+            sx={{
+              fontSize: { xs: "2rem", md: "1.75rem" },
+              fontWeight: "400",
+              color: "text.secondary",
+              mb: "1rem",
+            }}
+          >
+            {title}
+          </Typography>
+        )}
         {content &&
           content.map((ability, index) => (
             <Accordion key={index}>
