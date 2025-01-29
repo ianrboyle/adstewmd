@@ -21,6 +21,7 @@ export default function FeaturedServicesImageColumn({ currentPage }: ImageColumn
             whiteSpace: "normal",
             overflow: "hidden",
             mt: "1rem",
+            textAlign: { md: "center", lg: "left" },
           }}
         >
           Our Featured Services

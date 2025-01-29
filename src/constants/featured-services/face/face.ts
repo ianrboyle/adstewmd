@@ -54,7 +54,7 @@ export const faceImages: FeaturedServicesImageProps[] = [
   },
   {
     src: "/featured-services/face/avi-clear-small.png",
-    text: "AVICLEAR",
+    text: "AVI-CLEAR",
     altText: "avi-clear",
     link: "face/avi-clear",
   },
