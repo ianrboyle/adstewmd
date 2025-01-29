@@ -1,5 +1,5 @@
 import React from "react";
-import OverlayComponent from "../../Overlay";
+import OverlayComponent from "../Overlay";
 import { Box, Divider, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import FeaturedServiceCard from "./FeaturedServiceCard";

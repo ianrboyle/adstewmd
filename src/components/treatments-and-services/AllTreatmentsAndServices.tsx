@@ -1,4 +1,4 @@
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Divider, TextField, Typography } from "@mui/material";
 import FeaturedServiceBackgroundImage from "./individual-page-components/BackgroundImage";
 import Grid from "@mui/material/Grid2";
 import FeaturedServicesImageColumn from "./individual-page-components/ImageColumn";
@@ -6,8 +6,13 @@ import { PageType } from "../../constants/enums";
 import { faceImages } from "../../constants/treatments-and-services/face/face";
 import FeaturedServicesSmallImagesGrid from "./individual-page-components/SmallImagesGrid";
 import { bodyContourImages } from "../../constants/treatments-and-services/body/body-contouring";
-const allServicesImages = [...faceImages, ...bodyContourImages];
+import { miscImages } from "../../constants/treatments-and-services/misc-nav-items";
+import { useState } from "react";
+import AllTreatmentsSearchBarAndImages from "./AllTreatmentsSearchBarAndImages";
+const allServicesImages = [...miscImages, ...faceImages, ...bodyContourImages];
 export default function AllTreatmentsAndServices() {
+  const sortedServices = allServicesImages.sort((a, b) => a.text.localeCompare(b.text));
+
   return (
     <Box
       sx={{
@@ -20,6 +25,7 @@ export default function AllTreatmentsAndServices() {
         altText="fraxel"
         objectPosition="center 50%"
       />
+
       <Grid
         container
         spacing={4}
@@ -36,7 +42,8 @@ export default function AllTreatmentsAndServices() {
             justifyContent: "center",
           }}
         >
-          <Box
+          <AllTreatmentsSearchBarAndImages sortedServices={sortedServices} />
+          {/* <Box
             sx={{
               width: { lg: "100%", xl: "90%" },
               p: { xs: 2, sm: 2, md: 4, xl: 0 },
@@ -54,10 +61,44 @@ export default function AllTreatmentsAndServices() {
                 p: 2,
               }}
             >
-              All Face Procedures and Treatments
+              All Treatments And Services
             </Typography>
-            <FeaturedServicesSmallImagesGrid showTitle={false} imageProps={allServicesImages} />
-          </Box>
+            <Box
+              component="form"
+              sx={{
+                p: 2,
+                "& > :not(style)": { m: 1, width: "25ch" },
+                color: "text.secondary",
+                borderColor: "text.secondary",
+              }}
+            >
+              <TextField
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                sx={{
+                  color: "text.secondary",
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": { borderColor: "purple" }, // Default border color
+                    "&:hover fieldset": { borderColor: "purple" }, // Hover border color
+                    "&.Mui-focused fieldset": { borderColor: "purple" }, // Focus border color
+                  },
+                  "& .MuiInputBase-input": {
+                    color: "purple", // Text color
+                  },
+                  "& .MuiInputLabel-root": {
+                    color: "purple", // Label color
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": {
+                    color: "purple", // Label color when focused
+                  },
+                }}
+                id="outlined-basic"
+                label="Search Treatments"
+                variant="outlined"
+              />
+            </Box>
+            <FeaturedServicesSmallImagesGrid showTitle={false} imageProps={filteredServices} />
+          </Box> */}
         </Grid>
         <Divider
           orientation="vertical"
