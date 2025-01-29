@@ -148,7 +148,7 @@ export default function AboutUs() {
                 <Link href="/services/face/fraxel">Fraxel skin resurfacing</Link>,{" "}
                 <Link href="/services/face/facials">facials</Link>,{" "}
                 <Link href="/services/face/microneedling">microneedling</Link>,{" "}
-                <Link href="/services/laser">laser hair removal</Link>, and{" "}
+                <Link href="/services/laser-hair-removal">laser hair removal</Link>, and{" "}
                 <Link href="/services/face/chemical-peels">chemical peels</Link> to help patients look and feel younger
                 without excessive downtime.
               </Typography>
