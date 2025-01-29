@@ -56,14 +56,12 @@ export default function AviClearLaser() {
               p: { xs: 2, sm: 2, md: 4, xl: 0 },
             }}
           >
-            <Box>
-              <FeaturedServiceDescriptionPageHeading title={aviClearMainTitle} body={aviClearMainBody} />
-              <DividerWithContactButtons />
-              {aviClearImages.map((image, index) => (
-                <AviClearImage key={index} src={image.src} altText={image.altText} />
-              ))}
-              <AviClearAwards />
-            </Box>
+            <FeaturedServiceDescriptionPageHeading title={aviClearMainTitle} body={aviClearMainBody} />
+            <DividerWithContactButtons />
+            {aviClearImages.map((image, index) => (
+              <AviClearImage key={index} src={image.src} altText={image.altText} />
+            ))}
+            <AviClearAwards />
           </Box>
         </Grid>
         <Divider

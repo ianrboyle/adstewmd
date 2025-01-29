@@ -9,7 +9,12 @@ interface ImageWithAnimationProps {
   text: string;
 }
 
-export default function BodyContourImage({ link, imageSrc, altText, text }: ImageWithAnimationProps) {
+export default function FeaturedServicesSmallImageWithAnimation({
+  link,
+  imageSrc,
+  altText,
+  text,
+}: ImageWithAnimationProps) {
   return (
     <Link
       href={`/services/${link}`}

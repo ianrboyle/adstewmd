@@ -7,11 +7,13 @@ import FeaturedServiceDescriptionPageHeading from "./DescriptionPageHeading";
 import DividerWithContactButtons from "./DividerWithContactButtons";
 import FeaturedServiceDescriptionWithList from "./DescriptionWithList";
 import FillerTypes from "../injectables/fillers/FillerTypes";
-import FeaturedServiceBodyContourImages from "../body/BodyContourImages";
+import FeaturedServiceBodyContourImages from "../body/SmallImagesGrid";
 import FeaturedServicesAccordian from "../Accordian";
 import { laserHairRemovalFAQs } from "../../../../constants/featured-services/laser-hair-removal";
 import { chemicalPeelsFAQs, chemicalPeelsFAQsTitle } from "../../../../constants/featured-services/face/chemical-peels";
 import React from "react";
+import FeaturedServicesSmallImagesGrid from "../body/SmallImagesGrid";
+import { bodyContourImages } from "../../../../constants/featured-services/body/body-contouring";
 
 interface FeaturedServicePageProps {
   initialDescription: string | React.ReactNode;
@@ -78,7 +80,7 @@ export default function FeaturedServicePage({
           {currentPage === PageType.chemicalPeels && (
             <FeaturedServicesAccordian title={chemicalPeelsFAQsTitle} content={chemicalPeelsFAQs} />
           )}
-          {currentPage === PageType.body && <FeaturedServiceBodyContourImages />}
+          {currentPage === PageType.body && <FeaturedServicesSmallImagesGrid imageProps={bodyContourImages} />}
         </Box>
       </Grid>
       <Divider
