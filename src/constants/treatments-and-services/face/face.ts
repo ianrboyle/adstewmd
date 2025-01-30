@@ -1,6 +1,6 @@
-import { FeaturedServicesImageProps } from "../../../interfaces/featured-services-image-props";
+import { ImageProps } from "../../../interfaces/featured-services-image-props";
 
-export const faceImages: FeaturedServicesImageProps[] = [
+export const faceImages: ImageProps[] = [
   { src: "/featured-services/face/botox-small.png", text: "BOTOX", altText: "botox", link: "injectables/botox" },
   {
     src: "/featured-services/face/microneedling-small.png",

@@ -7,8 +7,7 @@ import FeaturedServiceDescriptionPageHeading from "./DescriptionPageHeading";
 import DividerWithContactButtons from "./DividerWithContactButtons";
 import FeaturedServiceDescriptionWithList from "./DescriptionWithList";
 import FillerTypes from "../injectables/fillers/FillerTypes";
-import FeaturedServiceBodyContourImages from "./SmallImagesGrid";
-import FeaturedServicesAccordian from "../Accordian";
+
 import { laserHairRemovalFAQs } from "../../../constants/treatments-and-services/laser-hair-removal";
 import {
   chemicalPeelsFAQs,
@@ -17,6 +16,7 @@ import {
 import React from "react";
 import FeaturedServicesSmallImagesGrid from "./SmallImagesGrid";
 import { bodyContourImages } from "../../../constants/treatments-and-services/body/body-contouring";
+import FeaturedServicesAccordian from "../Accordian";
 
 interface FeaturedServicePageProps {
   initialDescription: string | React.ReactNode;

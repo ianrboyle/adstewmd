@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { FeaturedServicesImageProps } from "../../interfaces/featured-services-image-props";
+import { ImageProps } from "../../interfaces/featured-services-image-props";
 import FeaturedServicesSmallImagesGrid from "./individual-page-components/SmallImagesGrid";
 import { Box, TextField, Typography } from "@mui/material";
 interface Props {
-  sortedServices: FeaturedServicesImageProps[];
+  sortedServices: ImageProps[];
 }
 export default function AllTreatmentsSearchBarAndImages({ sortedServices }: Props) {
   const [searchTerm, setSearchTerm] = useState("");

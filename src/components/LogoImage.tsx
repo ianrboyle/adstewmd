@@ -25,6 +25,8 @@ export default function LogoImage({ logoColor }: LogoImageProps) {
             width: "100%",
             height: "auto",
           }}
+          width={200}
+          height={100}
           priority
         />
       </Link>

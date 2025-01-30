@@ -1,4 +1,4 @@
-export interface FeaturedServicesImageProps {
+export interface ImageProps {
   src: string;
   link: string;
   altText: string;

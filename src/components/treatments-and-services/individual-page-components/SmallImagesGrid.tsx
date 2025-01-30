@@ -1,10 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import FeaturedServicesSmallImageWithAnimation from "./SmallImageWithAnimation";
-import { FeaturedServicesImageProps } from "../../../interfaces/featured-services-image-props";
+import { ImageProps } from "../../../interfaces/featured-services-image-props";
 
 interface SmallImageProps {
-  imageProps: FeaturedServicesImageProps[];
+  imageProps: ImageProps[];
   showTitle: boolean;
 }
 

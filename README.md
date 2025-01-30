@@ -35,6 +35,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+MVP:
+
 - Footer:
 
   - implement map
@@ -43,10 +45,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - add products page
 - add gallery page
 - finish home page
+- add providers images
+
+Nice To Haves:
 
 - add animations to FS home page images
 
   - figure out how to implement animation only when scrolling over content
 
+- Framer Motion
+  - carousel for providers -https://github.com/midday-ai/midday/blob/main/apps/website/src/components/text-generate-effect.tsx
 - figureo out og-image (open graph)
   - https://www.youtube.com/watch?v=wTGVHLyV09M&t=52s

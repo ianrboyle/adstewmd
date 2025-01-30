@@ -2,8 +2,9 @@ import { Box } from "@mui/material";
 import React from "react";
 import { ContactUs } from "./ContactUs";
 import WhatWeDo from "./WhatWeDo";
-import FeaturedServices from "./featured-services/main-menu/FeaturedServices";
 import MainMenuGreeting from "./MainMenuGreeting";
+import OurProviders from "./our-providers/OurProviders";
+import FeaturedServices from "./featured-services/FeaturedServices";
 
 export default function MainMenu() {
   return (
@@ -11,6 +12,7 @@ export default function MainMenu() {
       <MainMenuGreeting />
       <WhatWeDo />
       <FeaturedServices />
+      <OurProviders />
       <ContactUs />
     </Box>
   );

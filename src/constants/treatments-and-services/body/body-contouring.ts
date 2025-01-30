@@ -1,4 +1,4 @@
-import { FeaturedServicesImageProps } from "../../../interfaces/featured-services-image-props";
+import { ImageProps } from "../../../interfaces/featured-services-image-props";
 
 export const bodyTitle = "Body Contouring";
 
@@ -41,7 +41,7 @@ export const laser = [
 export const bodyContourSubtext =
   "Our team of experts tailors each treatment to your unique goals, ensuring you achieve stunning, natural-looking results. Visit us to start your journey toward a more confident you!";
 
-export const bodyContourImages: FeaturedServicesImageProps[] = [
+export const bodyContourImages: ImageProps[] = [
   {
     src: "/featured-services/body/laser-hair-removal2.png",
     altText: "laser hair removal",

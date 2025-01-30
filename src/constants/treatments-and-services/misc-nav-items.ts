@@ -1,6 +1,6 @@
-import { FeaturedServicesImageProps } from "../../interfaces/featured-services-image-props";
+import { ImageProps } from "../../interfaces/featured-services-image-props";
 
-export const miscImages: FeaturedServicesImageProps[] = [
+export const miscImages: ImageProps[] = [
   {
     src: "/featured-services/face/voluma-small.png",
     text: "JUVEDERM VOLUMA XC",
