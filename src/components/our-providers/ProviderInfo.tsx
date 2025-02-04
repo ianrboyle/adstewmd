@@ -1,31 +1,24 @@
-"use client";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import Grid from "@mui/material/Grid2";
-import { useEffect, useState } from "react";
 import { IProviderInfo } from "../../interfaces/provider-info";
+import { notFound } from "next/navigation";
 interface ProviderInfoProps {
   provider: string;
 }
-
-export default function ProviderInfo({ provider }: ProviderInfoProps) {
-  const [providerInfo, setProviderInfo] = useState<IProviderInfo | null>(null);
-
-  useEffect(() => {
-    async function fetchProviderInfo() {
-      try {
-        const providerModule = await import(`../../constants/our-providers/${provider}`);
-        setProviderInfo(providerModule.default);
-      } catch (error) {
-        console.error("Provider not found:", error);
-      }
-    }
-
-    fetchProviderInfo();
-  }, [provider]);
-  if (!providerInfo) {
-    return <Typography>Loading Provider Info</Typography>;
+async function getProviderInfo(provider: string): Promise<IProviderInfo | null> {
+  try {
+    const providerModule = await import(`../../constants/our-providers/${provider}`);
+    return providerModule.default;
+  } catch (error) {
+    return null;
   }
+}
+
+export default async function ProviderInfo({ provider }: ProviderInfoProps) {
+  const providerInfo = await getProviderInfo(provider);
+
+  if (!providerInfo) return notFound();
   return (
     <Box
       sx={{
