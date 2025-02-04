@@ -63,7 +63,7 @@ export default function FeaturedServices() {
           <Box justifyContent="center" display="flex">
             <Grid
               container
-              spacing={2}
+              spacing={{ xs: 4, sm: 4, md: 4, lg: 2 }}
               sx={{ mt: "1rem", mb: "2rem", width: { sm: "100%", md: "80%", lg: "100%", xl: "80%" } }}
             >
               <Divider

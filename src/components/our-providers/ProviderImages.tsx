@@ -1,11 +1,10 @@
 "use client";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { Box, Button, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import FeaturedServiceCard from "../featured-services/FeaturedServiceCard";
-import ProvidersCarousel from "./ProvidersCarousel";
 import { CardImageProps } from "../../interfaces/card-image-props";
-import ImageCarousel from "../animations/ImageCarousel";
+import MotionSlider from "../animations/MotionSlider";
 
 const data = [
   { image: "/featured-services/laser.png" },
@@ -49,7 +48,11 @@ export default function ProviderImages() {
   return (
     <Box justifyContent="center" display="flex" sx={{ p: isLargeScreen ? 2 : 0 }}>
       {isLargeScreen ? (
-        <Grid container spacing={2} sx={{ width: { sm: "100%", md: "80%", lg: "100%", xl: "80%" } }}>
+        <Grid
+          container
+          spacing={{ xs: 4, sm: 4, md: 4, lg: 2 }}
+          sx={{ width: { sm: "100%", md: "80%", lg: "100%", xl: "80%" } }}
+        >
           {providerImageData.map((provider, index) => (
             <Grid
               size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
@@ -64,7 +67,7 @@ export default function ProviderImages() {
           ))}
         </Grid>
       ) : (
-        <ImageCarousel images={providerImageData} />
+        <MotionSlider images={providerImageData} />
       )}
     </Box>
   );
