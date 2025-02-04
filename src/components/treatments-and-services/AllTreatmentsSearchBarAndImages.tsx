@@ -1,17 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { ImageProps } from "../../interfaces/featured-services-image-props";
+import { CardImageProps } from "../../interfaces/card-image-props";
 import FeaturedServicesSmallImagesGrid from "./individual-page-components/SmallImagesGrid";
 import { Box, TextField, Typography } from "@mui/material";
 interface Props {
-  sortedServices: ImageProps[];
+  sortedServices: CardImageProps[];
 }
 export default function AllTreatmentsSearchBarAndImages({ sortedServices }: Props) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredServices = sortedServices.filter((service) =>
-    service.text.toLowerCase().includes(searchTerm.toLowerCase())
+    service.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (

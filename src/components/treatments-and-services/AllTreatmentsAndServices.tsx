@@ -11,7 +11,7 @@ import { useState } from "react";
 import AllTreatmentsSearchBarAndImages from "./AllTreatmentsSearchBarAndImages";
 const allServicesImages = [...miscImages, ...faceImages, ...bodyContourImages];
 export default function AllTreatmentsAndServices() {
-  const sortedServices = allServicesImages.sort((a, b) => a.text.localeCompare(b.text));
+  const sortedServices = allServicesImages.sort((a, b) => a.title.localeCompare(b.title));
 
   return (
     <Box

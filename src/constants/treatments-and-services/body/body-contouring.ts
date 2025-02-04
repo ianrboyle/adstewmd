@@ -1,4 +1,4 @@
-import { ImageProps } from "../../../interfaces/featured-services-image-props";
+import { CardImageProps } from "../../../interfaces/card-image-props";
 
 export const bodyTitle = "Body Contouring";
 
@@ -41,35 +41,35 @@ export const laser = [
 export const bodyContourSubtext =
   "Our team of experts tailors each treatment to your unique goals, ensuring you achieve stunning, natural-looking results. Visit us to start your journey toward a more confident you!";
 
-export const bodyContourImages: ImageProps[] = [
+export const bodyContourImages: CardImageProps[] = [
   {
     src: "/featured-services/body/laser-hair-removal2.png",
     altText: "laser hair removal",
-    text: "LASER HAIR REMOVAL",
+    title: "LASER HAIR REMOVAL",
     link: "laser-hair-removal",
   },
   {
     src: "/featured-services/body/cool-sculpt.png",
     altText: "coolsculpting",
-    text: "COOLSCULPTING ELITE",
+    title: "COOLSCULPTING ELITE",
     link: "body/coolsculpting",
   },
   {
     src: "/featured-services/body/emsculpt.png",
     altText: "emsculpt",
-    text: "EMSCULPT NEO",
+    title: "EMSCULPT NEO",
     link: "body/emsculpt",
   },
   {
     src: "/featured-services/body/vanquish.png",
     altText: "vanquish",
-    text: "VANQUISH",
+    title: "VANQUISH",
     link: "body/vanquish",
   },
   {
     src: "/featured-services/body/cutera.png",
     altText: "cutera",
-    text: "CUTERA LASER VEIN TREATMENT",
+    title: "CUTERA LASER VEIN TREATMENT",
     link: "body/cutera-laser-vein-treatment",
   },
 ];

@@ -1,10 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import FeaturedServicesSmallImageWithAnimation from "./SmallImageWithAnimation";
-import { ImageProps } from "../../../interfaces/featured-services-image-props";
+import { CardImageProps } from "../../../interfaces/card-image-props";
 
 interface SmallImageProps {
-  imageProps: ImageProps[];
+  imageProps: CardImageProps[];
   showTitle: boolean;
 }
 
@@ -29,7 +29,7 @@ export default function FeaturedServicesSmallImagesGrid({ imageProps, showTitle 
         {imageProps.map((image, index) => (
           <Grid key={index} size={{ xs: 12, sm: 6, md: 6, lg: 4, xl: 4 }}>
             <FeaturedServicesSmallImageWithAnimation
-              text={image.text}
+              text={image.title}
               link={image.link}
               imageSrc={image.src}
               altText={image.altText}
