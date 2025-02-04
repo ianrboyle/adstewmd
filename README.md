@@ -50,4 +50,10 @@ MVP:
 Nice To Haves:
 
 - figureo out og-image (open graph)
+
   - https://www.youtube.com/watch?v=wTGVHLyV09M&t=52s
+
+  stock photo links:
+  https://www.istockphoto.com/photo/happy-mature-woman-admiring-herself-in-the-mirror-gm121356233-16701839
+
+why choose us: https://www.istockphoto.com/photo/woman-in-white-bathrobe-is-applying-facial-cream-while-smiling-at-her-reflection-in-gm2184170919-603018558

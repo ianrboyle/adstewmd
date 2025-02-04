@@ -65,7 +65,7 @@ const OverlayComponent: React.FC<OverlayComponentProps> = ({
           zIndex: 2,
           backgroundColor: backgroundColor,
           borderRadius: 2,
-          padding: 3,
+          padding: 0,
           textAlign: "center",
           width: "100%",
           minHeight,
