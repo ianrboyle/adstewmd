@@ -22,7 +22,7 @@ export default function FeaturedServiceCard({ imageProps, textColor }: FeaturedS
       elevation={0}
     >
       <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column" sx={{ height: "100%" }}>
-        <Link href={`/services/${imageProps.link}`} style={{ display: "flex", width: "100%" }}>
+        <Link href={`/${imageProps.link}`} style={{ display: "flex", width: "100%" }}>
           <Box
             sx={{
               borderRadius: "0 0 2rem 0",

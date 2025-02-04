@@ -17,7 +17,7 @@ const data = [
 const providerImageData: CardImageProps[] = [
   {
     title: "Adrienne Stewart, MD",
-    link: "adrienne-stewart-md",
+    link: "our-providers/adrienne-stewart-md",
     altText: "Adrienne Stewart MD",
     src: "/providers/Adrienne.png",
     text: "Founder / Board Certified Dermatologist",
@@ -25,14 +25,14 @@ const providerImageData: CardImageProps[] = [
   willaInfo.image,
   {
     title: "Jodi Payne",
-    link: "jodi-payne",
+    link: "our-providers/jodi-payne",
     altText: "Jodi Payne",
     src: "/providers/Jodi.png",
     text: "Master Coolsculpting Provider / Laser Technician / LMT",
   },
   {
     title: "Mia Kallevik",
-    link: "mia-kallevik",
+    link: "our-providers/mia-kallevik",
     altText: "Mia Kallevik MA",
     src: "/providers/Mia.png",
     text: "Medical Assistant",

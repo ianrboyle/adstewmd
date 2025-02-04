@@ -5,7 +5,7 @@ const willaTitle = "Meet Willa Roberts, Aesthetician";
 const willaTextNextToImage = ["More information coming soon!"];
 const willaImageProps: CardImageProps = {
   title: "Willa Roberts",
-  link: "willa-roberts",
+  link: "our-providers/willa-roberts",
   altText: "Willa Roberts",
   src: "/providers/Willa.png",
   text: "Aesthetician",

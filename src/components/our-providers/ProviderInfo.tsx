@@ -4,20 +4,10 @@ import Grid from "@mui/material/Grid2";
 import { IProviderInfo } from "../../interfaces/provider-info";
 import { notFound } from "next/navigation";
 interface ProviderInfoProps {
-  provider: string;
-}
-async function getProviderInfo(provider: string): Promise<IProviderInfo | null> {
-  try {
-    const providerModule = await import(`../../constants/our-providers/${provider}`);
-    return providerModule.default;
-  } catch (error) {
-    return null;
-  }
+  providerInfo: IProviderInfo;
 }
 
-export default async function ProviderInfo({ provider }: ProviderInfoProps) {
-  const providerInfo = await getProviderInfo(provider);
-
+export default async function ProviderInfo({ providerInfo }: ProviderInfoProps) {
   if (!providerInfo) return notFound();
   return (
     <Box

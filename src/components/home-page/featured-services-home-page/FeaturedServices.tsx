@@ -11,25 +11,25 @@ export default function FeaturedServices() {
     {
       title: "Neurotoxins",
       src: "/featured-services/neurotoxins.png",
-      link: "injectables/botox",
+      link: "services/injectables/botox",
       altText: "Neurotoxins",
     },
     {
       title: "Fillers",
       src: "/featured-services/injection.png",
-      link: "injectables/fillers",
+      link: "services/injectables/fillers",
       altText: "fillers",
     },
     {
       title: "Body Contouring",
       src: "/featured-services/body/body-contour.png",
-      link: "body",
+      link: "services/body",
       altText: "Body Contouring",
     },
     {
       title: "Laser Hair Removal",
       src: "/featured-services/laser.png",
-      link: "laser-hair-removal",
+      link: "services/laser-hair-removal",
       altText: "Lasers",
     },
   ];

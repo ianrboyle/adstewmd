@@ -5,11 +5,12 @@ import Grid from "@mui/material/Grid2";
 import FeaturedServicesImageColumn from "../treatments-and-services/individual-page-components/ImageColumn";
 import { PageType } from "../../constants/enums";
 import ProviderInfo from "./ProviderInfo";
+import { IProviderInfo } from "../../interfaces/provider-info";
 
 interface ProviderPageProps {
-  provider: string;
+  providerInfo: IProviderInfo;
 }
-export default function ProviderPageTemplate({ provider }: ProviderPageProps) {
+export default function ProviderPageTemplate({ providerInfo }: ProviderPageProps) {
   return (
     <Box
       sx={{
@@ -55,7 +56,7 @@ export default function ProviderPageTemplate({ provider }: ProviderPageProps) {
             justifyContent: "center",
           }}
         >
-          <ProviderInfo provider={provider} />
+          <ProviderInfo providerInfo={providerInfo} />
         </Grid>
         <Divider
           orientation="vertical"
