@@ -2,7 +2,7 @@ import { Box, Card, CardContent, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { CardImageProps } from "../../interfaces/card-image-props";
+import { CardImageProps } from "../../../interfaces/card-image-props";
 
 interface FeaturedServiceCardProps {
   imageProps: CardImageProps;

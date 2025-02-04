@@ -1,10 +1,10 @@
-import OverlayComponent from "../Overlay";
+import OverlayComponent from "../../Overlay";
 import { Box, Divider, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import FeaturedServiceCard from "./FeaturedServiceCard";
 import AssociationsAndSocieties from "./AssociationsAndSocieties";
-import { CardImageProps } from "../../interfaces/card-image-props";
-import FadeUpAnimation from "../animations/FadeUpAnimation";
+import { CardImageProps } from "../../../interfaces/card-image-props";
+import FadeUpAnimation from "../../animations/FadeUpAnimation";
 
 export default function FeaturedServices() {
   const featuredServiceImageData: CardImageProps[] = [
@@ -47,7 +47,7 @@ export default function FeaturedServices() {
               position: "relative",
               zIndex: 2,
               color: "white",
-              p: 2,
+              p: 5,
             }}
           >
             <Box sx={{ textAlign: "left", ml: { xs: "0", sm: "0", md: "8rem" }, mt: "3rem" }}>

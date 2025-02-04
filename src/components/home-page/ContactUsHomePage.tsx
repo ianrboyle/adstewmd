@@ -1,7 +1,7 @@
 import { Box, Button, Container, TextField, Typography } from "@mui/material";
 import React from "react";
 
-export const ContactUs = () => {
+export const ContactUsHomePage = () => {
   return (
     <Container
       sx={{

@@ -1,5 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
-import OverlayComponent from "./Overlay";
+import OverlayComponent from "../Overlay";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 export default function MainMenuGreeting() {
