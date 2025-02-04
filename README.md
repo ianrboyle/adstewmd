@@ -37,18 +37,22 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 MVP:
 
+- add contact us page
+- finish home page
+- add providers pages
+- add terms of use page
+- add site matp page
+- add accessibility page
+
+Nice To Haves:
+
 - Footer:
 
   - implement map
 
-- add contact us page
 - add products page
-- add gallery page
-- finish home page
-- add providers pages
-
-Nice To Haves:
-
+- add gallery page (page and home screen)
+- add reviews page (page and home screen)
 - figureo out og-image (open graph)
 
   - https://www.youtube.com/watch?v=wTGVHLyV09M&t=52s
