@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import FeaturedServiceCard from "../featured-services/FeaturedServiceCard";
 import { CardImageProps } from "../../interfaces/card-image-props";
-import MotionSlider from "../animations/MotionSlider";
+import ImageCarousel from "../animations/ImageCarousel";
 
 const data = [
   { image: "/featured-services/laser.png" },
@@ -67,7 +67,7 @@ export default function ProviderImages() {
           ))}
         </Grid>
       ) : (
-        <MotionSlider images={providerImageData} />
+        <ImageCarousel images={providerImageData} />
       )}
     </Box>
   );
