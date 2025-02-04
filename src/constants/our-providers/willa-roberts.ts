@@ -1,8 +1,9 @@
 import { CardImageProps } from "../../interfaces/card-image-props";
+import { IProviderInfo } from "../../interfaces/provider-info";
 
-export const willaTitle = "Meet Will Roberts, Aesthetician";
-export const willaTextNextToImage = "More information coming soon!";
-export const willaImageProps: CardImageProps = {
+const willaTitle = "Meet Willa Roberts, Aesthetician";
+const willaTextNextToImage = ["More information coming soon!"];
+const willaImageProps: CardImageProps = {
   title: "Willa Roberts",
   link: "willa-roberts",
   altText: "Willa Roberts",
@@ -10,4 +11,11 @@ export const willaImageProps: CardImageProps = {
   text: "Aesthetician",
 };
 
-export const willaTextBody = [];
+const willaTextBody: string[] = [];
+const willaInfo: IProviderInfo = {
+  title: willaTitle,
+  image: willaImageProps,
+  textNextToImage: willaTextNextToImage,
+  textBody: willaTextBody,
+};
+export default willaInfo;
