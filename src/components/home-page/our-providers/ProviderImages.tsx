@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid2";
 import FeaturedServiceCard from "../featured-services-home-page/FeaturedServiceCard";
 import { CardImageProps } from "../../../interfaces/card-image-props";
 import ImageCarousel from "../../animations/ImageCarousel";
+import { willaImageProps } from "../../../constants/our-providers/willa-roberts";
 
 const data = [
   { image: "/featured-services/laser.png" },
@@ -21,13 +22,7 @@ const providerImageData: CardImageProps[] = [
     src: "/providers/Adrienne.png",
     text: "Founder / Board Certified Dermatologist",
   },
-  {
-    title: "Willa Roberts",
-    link: "willa-roberts",
-    altText: "Willa Roberts",
-    src: "/providers/Willa.png",
-    text: "Aesthetician",
-  },
+  willaImageProps,
   {
     title: "Jodi Payne",
     link: "jodi-payne",
