@@ -45,15 +45,9 @@ MVP:
 - add products page
 - add gallery page
 - finish home page
-- add providers images
+- add providers pages
 
 Nice To Haves:
 
-- add animations to FS home page images
-
-  - figure out how to implement animation only when scrolling over content
-
-- Framer Motion
-  - carousel for providers -https://github.com/midday-ai/midday/blob/main/apps/website/src/components/text-generate-effect.tsx
 - figureo out og-image (open graph)
   - https://www.youtube.com/watch?v=wTGVHLyV09M&t=52s
