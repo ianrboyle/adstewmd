@@ -1,13 +1,11 @@
-import { Box, Divider, TextField, Typography } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import FeaturedServiceBackgroundImage from "./individual-page-components/BackgroundImage";
 import Grid from "@mui/material/Grid2";
 import FeaturedServicesImageColumn from "./individual-page-components/ImageColumn";
 import { PageType } from "../../constants/enums";
 import { faceImages } from "../../constants/treatments-and-services/face/face";
-import FeaturedServicesSmallImagesGrid from "./individual-page-components/SmallImagesGrid";
 import { bodyContourImages } from "../../constants/treatments-and-services/body/body-contouring";
 import { miscImages } from "../../constants/treatments-and-services/misc-nav-items";
-import { useState } from "react";
 import AllTreatmentsSearchBarAndImages from "./AllTreatmentsSearchBarAndImages";
 const allServicesImages = [...miscImages, ...faceImages, ...bodyContourImages];
 export default function AllTreatmentsAndServices() {

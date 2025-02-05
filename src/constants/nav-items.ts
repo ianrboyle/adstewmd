@@ -13,13 +13,13 @@ export const navItems: Links[] = [
     link: "/about-us",
     subLinks: [
       { title: "About Us", link: "/about-us" },
-      { title: "Providers", link: "/providers" },
+      { title: "Providers", link: "/our-providers" },
     ],
   },
-  { title: "Patient Reviews", link: "/reviews", subLinks: [] },
-  { title: "Products", link: "/products", subLinks: [] },
-  { title: "Gallery", link: "/gallery", subLinks: [] },
-  { title: "Contact", link: "/contact", subLinks: [] },
+  // { title: "Patient Reviews", link: "/reviews", subLinks: [] },
+  // { title: "Products", link: "/products", subLinks: [] },
+  // { title: "Gallery", link: "/gallery", subLinks: [] },
+  // { title: "Contact", link: "/contact", subLinks: [] },
   {
     title: "Face Procedures",
     link: "/services/face",
@@ -53,15 +53,20 @@ export const navItems: Links[] = [
     ],
   },
   {
-    title: "Forms",
-    link: "/forms",
+    title: "All Procedures",
+    link: "/services/all",
     subLinks: [],
   },
-  {
-    title: "Payment",
-    link: "/payment",
-    subLinks: [],
-  },
+  // {
+  //   title: "Forms",
+  //   link: "/forms",
+  //   subLinks: [],
+  // },
+  // {
+  //   title: "Payment",
+  //   link: "/payment",
+  //   subLinks: [],
+  // },
 ];
 
 export const lowerFooterLinks: Links[] = [
@@ -77,7 +82,7 @@ export const lowerFooterLinks: Links[] = [
   },
   {
     title: "Sitemap",
-    link: "/sitemap",
+    link: "/sitemap.xml",
     subLinks: [],
   },
 ];

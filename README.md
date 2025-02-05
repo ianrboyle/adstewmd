@@ -38,8 +38,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 MVP:
 
 - finish home page
-- add terms of use page
-- add site matp page
 
 Nice To Haves:
 
