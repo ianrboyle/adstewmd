@@ -1,4 +1,4 @@
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import FeaturedServiceBackgroundImage from "../individual-page-components/BackgroundImage";
 import FeaturedServicesImageColumn from "../individual-page-components/ImageColumn";
 import { PageType } from "../../../constants/enums";

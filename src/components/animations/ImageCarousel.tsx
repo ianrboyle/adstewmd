@@ -22,7 +22,7 @@ export default function ImageCarousel({ images }: Props) {
 
   return (
     <Link
-      href={`/providers/${images[index].link}`}
+      href={`/${images[index].link}`}
       style={{
         display: "flex",
         flexDirection: "column",

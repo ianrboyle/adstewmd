@@ -1,6 +1,5 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import OverlayComponent from "../Overlay";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import FeaturedServiceDescription from "../treatments-and-services/individual-page-components/Description";
 import FadeUpAnimation from "../animations/FadeUpAnimation";
 

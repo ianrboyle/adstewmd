@@ -77,7 +77,7 @@ export default function TermsOfUsePage() {
                   mb: "1rem",
                 }}
               >
-                1. This World Wide Web site with its home page in the domain 'https://www.adriennestewartmd.com',
+                1. This World Wide Web site with its home page in the domain https://www.adriennestewartmd.com,
                 hereinafter referred to as the Website, is an information service provided by Aesthetic Surgery &
                 Dermatology of Cherry Creek at no charge to users of the World Wide Web, with the express condition that
                 these users agree to be bound by the terms and conditions set forth in this Terms of Use Agreement.
@@ -97,7 +97,7 @@ export default function TermsOfUsePage() {
                   mb: "1rem",
                 }}
               >
-                2. You acknowledge that the information on the Website is provided 'as is' for general information only.
+                2. You acknowledge that the information on the Website is provided as is for general information only.
                 It is not intended to provide medical advice, and should not be relied upon as a substitute for
                 consultations with qualified health professionals who are familiar with your individual medical needs.
                 Aesthetic Surgery & Dermatology of Cherry Creek makes no warranties of any kind regarding this Website,
@@ -150,12 +150,12 @@ export default function TermsOfUsePage() {
               >
                 5. Aesthetic Surgery & Dermatology of Cherry Creek may provide links on the Website to other websites
                 which are not under the control of Aesthetic Surgery & Dermatology of Cherry Creek. In general, any
-                website which has an address (or URL) not containing 'https://www.adriennestewartmd.com' is such a
+                website which has an address (or URL) not containing https://www.adriennestewartmd.com is such a
                 website. These links are provided for convenience or reference only and are not intended as an
                 endorsement by Aesthetic Surgery & Dermatology of Cherry Creek of the organization or individual
                 operating the website or a warranty of any type regarding the website or the information on the website.
               </Typography>
-              <Typography
+              {/* <Typography
                 variant="body1"
                 sx={{
                   color: "black",
@@ -165,7 +165,7 @@ export default function TermsOfUsePage() {
                 }}
               >
                 6. You may provide hypertext links to this Website on another website, provided that: (a) the link be a
-                text-only link clearly marked 'Advice Media Site', (b) the link must 'point' to the URL
+                text-only link clearly marked Advice Media Site, (b) the link must 'point' to the URL
                 'https://www.adriennestewartmd.com' and not to other pages within the Website, (c) the appearance,
                 position and other aspects of the link may not be such as to damage or dilute the goodwill associated
                 with Aesthetic Surgery & Dermatology of Cherry Creek's name and trademarks, (d) the appearance, position
@@ -176,7 +176,7 @@ export default function TermsOfUsePage() {
                 the right to revoke its consent to any link at any time at its sole discretion by amending this Terms of
                 Use Agreement. You agree that any other hypertext links to this Website must be approved in writing by
                 Aesthetic Surgery & Dermatology of Cherry Creek.
-              </Typography>
+              </Typography> */}
               <Typography
                 variant="body1"
                 sx={{
@@ -191,8 +191,8 @@ export default function TermsOfUsePage() {
                 hereinafter referred to as Advice Media, or its suppliers and contributors, and may not be copied,
                 reproduced, transmitted, displayed, performed, distributed, rented, sublicensed, altered, stored by
                 subsequent use or otherwise used in whole or in part in any manner without Aesthetic Surgery &
-                Dermatology of Cherry Creek's prior written consent, except that the user may make such temporary copies
-                in a single computer's RAM and hard drive as is necessary to browse the Website, and that the user may
+                Dermatology of Cherry Creeks prior written consent, except that the user may make such temporary copies
+                in a single computers RAM and hard drive as is necessary to browse the Website, and that the user may
                 produce one permanent printout of each page of the Website (unmodified in form, with a copy of this
                 Terms of Use Agreement attached) to be used by the user for personal and non-commercial uses which do
                 not harm the reputation of Aesthetic Surgery & Dermatology of Cherry Creek or Advice Media

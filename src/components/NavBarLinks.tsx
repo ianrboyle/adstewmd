@@ -1,7 +1,7 @@
 import { Box, Button, Menu, MenuItem } from "@mui/material";
 import Link from "next/link";
-import { navItems, SubLink } from "../constants/nav-items";
-import React, { useState } from "react";
+import { navItems } from "../constants/nav-items";
+import React from "react";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 export default function NavBarLinks() {

@@ -1,6 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
 import OverlayComponent from "../Overlay";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 export default function MainMenuGreeting() {
   return (
@@ -39,9 +38,12 @@ export default function MainMenuGreeting() {
             FEEL COMFORTABLE IN YOUR OWN SKIN
           </Typography>
 
-          <Button type="submit">
+          {/* <Button type="submit">
             <CalendarMonthIcon sx={{ marginRight: "0.5rem" }} />
             BOOK AN APPOINTMENT
+          </Button> */}
+          <Button component="a" href="tel:3033336060">
+            Book Today: 303-333-6060
           </Button>
         </Box>
       </>

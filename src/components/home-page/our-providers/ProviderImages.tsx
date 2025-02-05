@@ -3,9 +3,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { Box } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import FeaturedServiceCard from "../featured-services-home-page/FeaturedServiceCard";
-import { CardImageProps } from "../../../interfaces/card-image-props";
 import ImageCarousel from "../../animations/ImageCarousel";
-import willaInfo from "../../../constants/our-providers/willa-roberts";
 import { providerImageData } from "../../../constants/our-providers/image-data";
 
 export default function ProviderImages() {

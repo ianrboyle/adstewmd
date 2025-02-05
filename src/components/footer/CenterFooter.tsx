@@ -1,6 +1,5 @@
-import { Box, Button, Divider, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 export default function CenterFooter() {
   return (
     <Box
