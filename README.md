@@ -38,10 +38,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 MVP:
 
 - finish home page
-- add providers pages
 - add terms of use page
 - add site matp page
-- add accessibility page
 
 Nice To Haves:
 
@@ -64,3 +62,6 @@ Nice To Haves:
   https://www.istockphoto.com/photo/happy-mature-woman-admiring-herself-in-the-mirror-gm121356233-16701839
 
 why choose us: https://www.istockphoto.com/photo/woman-in-white-bathrobe-is-applying-facial-cream-while-smiling-at-her-reflection-in-gm2184170919-603018558
+
+- add accessibility page
+  - finish accessibility - add widget?
