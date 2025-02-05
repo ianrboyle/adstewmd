@@ -6,38 +6,8 @@ import FeaturedServiceCard from "../featured-services-home-page/FeaturedServiceC
 import { CardImageProps } from "../../../interfaces/card-image-props";
 import ImageCarousel from "../../animations/ImageCarousel";
 import willaInfo from "../../../constants/our-providers/willa-roberts";
+import { providerImageData } from "../../../constants/our-providers/image-data";
 
-const data = [
-  { image: "/featured-services/laser.png" },
-  { image: "/featured-services/neurotoxins.png" },
-  { image: "/featured-services/injection.png" },
-  { image: "/featured-services/body/body-contour.png" },
-];
-
-const providerImageData: CardImageProps[] = [
-  {
-    title: "Adrienne Stewart, MD",
-    link: "our-providers/adrienne-stewart-md",
-    altText: "Adrienne Stewart MD",
-    src: "/providers/Adrienne.png",
-    text: "Founder / Board Certified Dermatologist",
-  },
-  willaInfo.image,
-  {
-    title: "Jodi Payne",
-    link: "our-providers/jodi-payne",
-    altText: "Jodi Payne",
-    src: "/providers/Jodi.png",
-    text: "Master Coolsculpting Provider / Laser Technician / LMT",
-  },
-  {
-    title: "Mia Kallevik",
-    link: "our-providers/mia-kallevik",
-    altText: "Mia Kallevik MA",
-    src: "/providers/Mia.png",
-    text: "Medical Assistant",
-  },
-];
 export default function ProviderImages() {
   const isLargeScreen = useMediaQuery("(min-width:900px)");
   return (

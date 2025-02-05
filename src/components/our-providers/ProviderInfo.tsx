@@ -28,7 +28,7 @@ export default async function ProviderInfo({ providerInfo }: ProviderInfoProps) 
         >
           {providerInfo.title}
         </Typography>
-        <Grid container>
+        <Grid container spacing={2}>
           <Grid size={{ xs: 12, sm: 6, md: 4, lg: 6 }}>
             <Box
               sx={{

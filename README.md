@@ -37,7 +37,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 MVP:
 
-- add contact us page
 - finish home page
 - add providers pages
 - add terms of use page
@@ -45,6 +44,8 @@ MVP:
 - add accessibility page
 
 Nice To Haves:
+
+- add contact us page
 
 - dynamic routing for services
 
