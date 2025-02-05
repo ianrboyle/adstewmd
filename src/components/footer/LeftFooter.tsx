@@ -13,7 +13,6 @@ export default function LeftFooter() {
         alignItems: "center",
         justifyContent: "center",
         minHeight: "30vh",
-        border: "1px solid white",
       }}
     >
       <LogoImage logoColor="white" />

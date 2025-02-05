@@ -30,7 +30,7 @@ export default function RHA() {
       <FeaturedServiceBackgroundImage
         imageSrc="/featured-services/fillers-long.png"
         altText="botox"
-        objectPosition="center 0%"
+        objectPosition="center 50%"
       />
       <Grid
         container

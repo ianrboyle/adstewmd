@@ -26,7 +26,7 @@ export default function Sculptra() {
       <FeaturedServiceBackgroundImage
         imageSrc="/featured-services/fillers-long.png"
         altText="botox"
-        objectPosition="center 0%"
+        objectPosition="center 50%"
       />
       <FeaturedServicePage
         initialDescription={sculptraMainText}

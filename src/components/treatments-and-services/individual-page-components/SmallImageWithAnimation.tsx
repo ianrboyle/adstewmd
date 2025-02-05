@@ -16,15 +16,13 @@ export default function FeaturedServicesSmallImageWithAnimation({
   text,
 }: ImageWithAnimationProps) {
   return (
-    <Link
-      href={`/services/${link}`}
-      style={{ display: "flex", width: "100%", overflow: "hidden", marginBottom: "1rem" }}
-    >
+    <Link href={`/${link}`} style={{ display: "flex", width: "100%", overflow: "hidden", marginBottom: "1rem" }}>
       <Box
         sx={{
           position: "relative",
           overflow: "hidden",
           width: "calc(100% + 2rem)",
+          aspectRatio: "1 / 1",
           height: { xs: "250px", sm: "350px", md: "300px", lg: "200px", xl: "250px" },
           marginLeft: "-2rem",
           "&:hover img": {

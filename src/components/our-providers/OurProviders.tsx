@@ -30,7 +30,7 @@ export default function OurProviders() {
           priority
           style={{
             objectFit: "cover",
-            objectPosition: "center 35%",
+            objectPosition: "center 50%",
           }}
         />
       </Box>

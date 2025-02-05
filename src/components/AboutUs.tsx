@@ -29,7 +29,7 @@ export default function AboutUs() {
           priority
           style={{
             objectFit: "cover",
-            objectPosition: "center 35%",
+            objectPosition: "center 50%",
           }}
         />
       </Box>

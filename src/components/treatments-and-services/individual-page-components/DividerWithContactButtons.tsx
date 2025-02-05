@@ -14,8 +14,10 @@ export default function DividerWithContactButtons() {
         />
       </Box>
       <Box sx={{ p: 2, justifyContent: "left", display: "flex" }}>
-        <Button sx={{ mr: "2.5rem" }}>Book Online</Button>
-        <Button>303-333-6060</Button>
+        {/* <Button sx={{ mr: "2.5rem" }}>Book Online</Button> */}
+        <Button component="a" href="tel:3033336060">
+          303-333-6060
+        </Button>
       </Box>
     </>
   );

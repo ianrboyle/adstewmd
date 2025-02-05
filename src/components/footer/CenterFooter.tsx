@@ -10,7 +10,7 @@ export default function CenterFooter() {
         alignItems: "center",
         justifyContent: "center",
         minHeight: "30vh",
-        border: "1px solid white",
+        // border: "1px solid white",
       }}
     >
       <Typography
@@ -25,7 +25,7 @@ export default function CenterFooter() {
         flexItem
         sx={{
           backgroundColor: "white",
-          width: "75%",
+          width: "90%",
           margin: "0 auto",
           marginTop: "1rem",
           marginBottom: "1rem",
@@ -40,9 +40,9 @@ export default function CenterFooter() {
           gap: "1rem",
         }}
       >
-        <Grid container spacing={2} alignItems="center">
+        <Grid container spacing={0} alignItems="center">
           {/* Left Box - 40% */}
-          <Grid size={{ xs: 5, md: 5, lg: 5 }}>
+          <Grid size={{ xs: 6, md: 6, lg: 6 }}>
             <Box
               sx={{
                 display: "flex",
@@ -56,7 +56,7 @@ export default function CenterFooter() {
               <Typography sx={{ color: "white", textAlign: "left" }}>3300 E 1st Ave #400 Denver, CO 80206</Typography>
             </Box>
           </Grid>
-          <Grid size={{ xs: 7, md: 7, lg: 7 }}>
+          <Grid size={{ xs: 6, md: 6, lg: 6 }}>
             <Box
               sx={{
                 display: "flex",
@@ -65,7 +65,9 @@ export default function CenterFooter() {
                 justifyContent: "center",
               }}
             >
-              <Typography sx={{ color: "white" }}>303-333-6060</Typography>
+              <Typography component="a" href="tel:3033336060" sx={{ color: "white", textDecoration: "none" }}>
+                303-333-6060
+              </Typography>
             </Box>
           </Grid>
         </Grid>
@@ -76,16 +78,16 @@ export default function CenterFooter() {
         flexItem
         sx={{
           backgroundColor: "white",
-          width: "75%",
+          width: "90%",
           margin: "0 auto",
           marginTop: "1rem",
         }}
         aria-hidden="true"
       />
-      <Button type="submit" sx={{}}>
+      {/* <Button type="submit" sx={{}}>
         <CalendarMonthIcon sx={{ marginRight: "0.5rem" }} />
         BOOK AN APPOINTMENT
-      </Button>
+      </Button> */}
     </Box>
   );
 }

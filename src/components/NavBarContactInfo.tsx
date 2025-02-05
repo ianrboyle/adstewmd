@@ -51,7 +51,10 @@ export default function NavBarContactInfo() {
             mr: "1rem",
           }}
         >
-          <PhoneAndroidIcon /> <Typography>303-333-6060</Typography>
+          <PhoneAndroidIcon />
+          <Typography component="a" href="tel:3033336060" sx={{ textDecoration: "none", color: "text.secondary" }}>
+            303-333-6060
+          </Typography>
         </IconButton>
         <Button type="submit" sx={{}}>
           Patient Portal

@@ -11,7 +11,6 @@ export default function RightFooter() {
         alignItems: "center",
         justifyContent: "center",
         minHeight: "30vh",
-        border: "1px solid white",
       }}
     >
       <Box
@@ -38,9 +37,9 @@ export default function RightFooter() {
           </Link>
         ))}
       </Box>
-      <Box>
+      {/* <Box>
         <Typography>MAP GOES HERE</Typography>
-      </Box>
+      </Box> */}
     </Box>
   );
 }

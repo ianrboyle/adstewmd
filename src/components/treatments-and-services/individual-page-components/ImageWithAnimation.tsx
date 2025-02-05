@@ -21,6 +21,7 @@ export default function FeaturedServicesImageWithAnimation({ link, imageSrc, alt
           overflow: "hidden",
           width: "calc(100% + 2rem)",
           marginLeft: "-2rem",
+          aspectRatio: "1.25/ 1",
           "&:hover img": {
             transform: "translateX(2rem)",
           },

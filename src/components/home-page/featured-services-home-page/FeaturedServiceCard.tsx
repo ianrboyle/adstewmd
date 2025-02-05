@@ -31,6 +31,7 @@ export default function FeaturedServiceCard({ imageProps, textColor }: FeaturedS
               height: "100%",
               cursor: "pointer",
               position: "relative",
+              aspectRatio: "1 / 1.5",
 
               "&:hover::before": {
                 content: '""',

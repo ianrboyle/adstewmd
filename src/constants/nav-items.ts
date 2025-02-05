@@ -49,7 +49,7 @@ export const navItems: Links[] = [
       { title: "Coolsculpting Elite", link: "/services/body/coolsculpting" },
       { title: "Emsculpt Neo", link: "/services/body/emsculpt" },
       { title: "Vanquish", link: "/services/body/vanquish" },
-      { title: "Cutera Laser Vein Treatment", link: "/services/body/cutera" },
+      { title: "Cutera Laser Vein Treatment", link: "/services/body/cutera-laser-vein-treatment" },
     ],
   },
   {

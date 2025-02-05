@@ -53,7 +53,7 @@ export default function Footer() {
                   gap: "1rem",
                 }}
               >
-                <Typography>
+                <Typography sx={{ fontSize: ".85rem" }}>
                   © Copyright 2025 Aesthetic Surgery & Dermatology of Cherry Creek | Design and Development by Ian Boyle
                 </Typography>
               </Box>
@@ -72,6 +72,7 @@ export default function Footer() {
                   <Link href={link.link} key={index} style={{ textDecoration: "none" }}>
                     <Typography
                       sx={{
+                        fontSize: ".85rem",
                         color: "white",
                         "&:hover": {
                           textDecoration: "underline",
