@@ -63,3 +63,21 @@ export const navItems: Links[] = [
     subLinks: [],
   },
 ];
+
+export const lowerFooterLinks: Links[] = [
+  {
+    title: "Accessibility",
+    link: "/accessibility-statement",
+    subLinks: [],
+  },
+  {
+    title: "Terms of Use",
+    link: "/terms-of-use",
+    subLinks: [],
+  },
+  {
+    title: "Sitemap",
+    link: "/sitemap",
+    subLinks: [],
+  },
+];

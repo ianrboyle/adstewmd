@@ -8,8 +8,8 @@ import CenterFooter from "./CenterFooter";
 import RightFooter from "./RightFooter";
 import { Divider, Typography } from "@mui/material";
 import Link from "next/link";
+import { lowerFooterLinks } from "../../constants/nav-items";
 
-const links = ["Accessibility", "Terms of Use", "Sitemap"];
 export default function Footer() {
   return (
     <footer>
@@ -68,12 +68,8 @@ export default function Footer() {
                   gap: "1rem",
                 }}
               >
-                {links.map((link, index) => (
-                  <Link
-                    href={`/${link.toLowerCase().replace(/\s+/g, "-")}`}
-                    key={index}
-                    style={{ textDecoration: "none" }}
-                  >
+                {lowerFooterLinks.map((link, index) => (
+                  <Link href={link.link} key={index} style={{ textDecoration: "none" }}>
                     <Typography
                       sx={{
                         color: "white",
@@ -82,7 +78,7 @@ export default function Footer() {
                         },
                       }}
                     >
-                      {link}
+                      {link.title}
                     </Typography>
                   </Link>
                 ))}

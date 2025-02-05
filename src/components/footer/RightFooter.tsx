@@ -1,18 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import Link from "next/link";
 import { navItems } from "../../constants/nav-items";
-const links = [
-  "About Us",
-  "Patient Reviews",
-  "Blog",
-  "Products",
-  "Gallery",
-  "Contact",
-  "Face Procedures",
-  "Body",
-  "Forms",
-  "Payment",
-];
+
 export default function RightFooter() {
   return (
     <Box
