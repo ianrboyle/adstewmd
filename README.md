@@ -63,3 +63,5 @@ why choose us: https://www.istockphoto.com/photo/woman-in-white-bathrobe-is-appl
 
 - add accessibility page
   - finish accessibility - add widget?
+
+figure out google search console

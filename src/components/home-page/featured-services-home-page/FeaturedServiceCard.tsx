@@ -69,7 +69,7 @@ export default function FeaturedServiceCard({ imageProps, textColor }: FeaturedS
           }}
         >
           <Box sx={{ textAlign: "center" }}>
-            <Link href={`/services/{${imageProps.link}}`} style={{ textDecoration: "none" }} passHref>
+            <Link href={`/{${imageProps.link}}`} style={{ textDecoration: "none" }} passHref>
               <Typography
                 variant="h3"
                 sx={{
