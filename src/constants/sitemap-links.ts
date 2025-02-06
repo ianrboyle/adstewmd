@@ -8,10 +8,10 @@ const allServicesLinks = allServicesImages.map((image) => {
 });
 
 export const allLinks = [
-  "/about-us",
-  "/our-providers",
-  "/accessibility-statement",
-  "/terms-of-use",
-  "/sitemap.xml",
+  "about-us",
+  "our-providers",
+  "accessibility-statement",
+  "terms-of-use",
+  "sitemap.xml",
   ...allServicesLinks,
 ];
