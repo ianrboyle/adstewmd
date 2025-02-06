@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     title: "Aesthetic Surgery & Dermatology of Cherry Creek",
     description:
       "Aesthetic Surgery and Dermatology of Cherry Creek is a cutting-edge aesthetic dermatology practice in Denver, Colorado, founded by board-certified dermatologist Adrienne Stewart, MD, and medical aesthetician Willa Roberts.",
-    url: "https://yourwebsite.com",
-    images: "/og-image.png",
+    url: "https://adstewmd.vercel.app",
+    images: "/opengraph-image.png",
     type: "website",
   },
 };
