@@ -27,7 +27,7 @@ export default function WhatWeDo() {
                 paddingLeft: { xs: "1rem", sm: "3.5rem" },
                 paddingRight: { xs: "1rem", sm: "3.5rem" },
                 paddingTop: "2rem",
-                borderRadius: "0 0 10rem 0",
+                borderRadius: { xs: "0 0 7.5rem 0", sm: "0 0 10rem 0" },
               }}
             >
               <Typography variant="h3" sx={{ color: "text.primary", marginTop: { sm: "1.5rem", md: "0rem" } }}>
@@ -47,7 +47,7 @@ export default function WhatWeDo() {
                   whiteSpace: "normal",
                   overflow: "hidden",
                   mt: "1rem",
-                  mb: "3rem",
+                  mb: "4rem",
                   fontWeight: "400",
                 }}
               >

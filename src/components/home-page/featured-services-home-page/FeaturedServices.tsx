@@ -38,7 +38,7 @@ export default function FeaturedServices() {
       backgroundImage="/featured-services/featured-services.png"
       altText="Descriptive Alt Text"
       backgroundColor="rgba(50, 20, 80, 0.7)"
-      borderRadius={{ xs: "10rem 0 0 0", md: "20rem 0 0 0" }}
+      borderRadius={{ xs: "7.5rem 0 0 0", md: "20rem 0 0 0" }}
     >
       <>
         <FadeUpAnimation>
