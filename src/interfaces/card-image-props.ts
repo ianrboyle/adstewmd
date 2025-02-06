@@ -4,4 +4,5 @@ export interface CardImageProps {
   altText: string;
   title: string;
   text?: string;
+  aspectRatio?: string;
 }
