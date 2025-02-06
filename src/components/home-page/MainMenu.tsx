@@ -15,7 +15,7 @@ export default function MainMenu() {
       <FeaturedServices />
       <OurProvidersHomePage />
       <WhyChooseUsHomePage />
-      <ContactUsHomePage />
+      {/* <ContactUsHomePage /> */}
     </Box>
   );
 }
