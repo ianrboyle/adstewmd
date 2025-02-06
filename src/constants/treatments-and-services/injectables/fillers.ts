@@ -1,10 +1,7 @@
-export const pageHeadingTitle = "Fillers In Denver, CO";
-export const pageHeadingSubtitle =
-  "Fillers offered in Cherry Creek, Denver, CO and serving patients from the Denver Metropolitan Area";
 export const fillersServices =
   "Fillers injectables can soften your wrinkles or increase the volume in your lips or cheeks to make your features a bit more youthful. In the Cherry Creek area of Denver, Colorado, board-certified dermatologist Adrienne Stewart, MD, provides customized treatments using Juvéderm’s high-end product line at Aesthetic Surgery and Dermatology of Cherry Creek. Start planning your treatment by scheduling a consultation over the phone or online at the Cherry Creek office today.";
 
-export const fillersServicesTitle = "Fillers services offered in Cherry Creek, Denver, CO";
+export const fillersServicesTitle = "Fillers";
 
 export const whatAreFillersText = [
   "A popular line of cosmetic fillers you can inject into your face or hands to increase volume. Between fat loss and collagen decline with age, some of your facial features can change over time. You might have sunken cheeks, more defined under-eye hollows, or bonier hands. You can restore a more youthful appearance and texture using fillers.",
