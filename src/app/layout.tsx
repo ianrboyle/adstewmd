@@ -20,7 +20,9 @@ export const metadata: Metadata = {
     images: "/opengraph-image.png",
     type: "website",
   },
-  other: { name: "google-site-verification", content: "rOnGfOZXxQodrY6X5jxFrdt2RxlTMDqsqWRMKKdvEQU" },
+  other: {
+    "google-site-verification": "rOnGfOZXxQodrY6X5jxFrdt2RxlTMDqsqWRMKKdvEQU",
+  },
 };
 
 export default function RootLayout({
