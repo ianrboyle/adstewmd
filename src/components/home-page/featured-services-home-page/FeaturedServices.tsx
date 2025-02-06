@@ -63,7 +63,7 @@ export default function FeaturedServices() {
             <Grid
               container
               spacing={{ xs: 4, sm: 4, md: 4, lg: 2 }}
-              sx={{ mt: "1rem", mb: "2rem", width: { sm: "100%", md: "80%", lg: "100%", xl: "80%" } }}
+              sx={{ mt: "1rem", mb: "2rem", width: { sm: "100%", md: "80%", lg: "100%", xl: "80%" }, height: "auto" }}
             >
               <Divider
                 sx={{
@@ -81,6 +81,8 @@ export default function FeaturedServices() {
                   sx={{
                     display: "flex",
                     justifyContent: "center",
+                    margin: "0",
+                    height: { xs: "400px", sm: "450px", md: "500px", lg: "auto" },
                   }}
                 >
                   <FeaturedServiceCard imageProps={fs} textColor="white" />

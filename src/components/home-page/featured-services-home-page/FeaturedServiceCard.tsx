@@ -11,7 +11,6 @@ interface FeaturedServiceCardProps {
 export default function FeaturedServiceCard({ imageProps, textColor }: FeaturedServiceCardProps) {
   return (
     <Card
-      className="cardClass"
       sx={{
         width: "100%",
         maxWidth: 400,
@@ -23,19 +22,17 @@ export default function FeaturedServiceCard({ imageProps, textColor }: FeaturedS
       elevation={0}
     >
       <Box
-        className="boxundercard"
-        display="flex"
         justifyContent="center"
         alignItems="center"
         flexDirection="column"
-        sx={{ height: "100%" }}
+        sx={{ height: { xs: "55%", sm: "50%", md: "75%", lg: "100%" }, display: "flex" }}
       >
-        <Link className="linkClass" href={`/${imageProps.link}`} style={{ display: "flex", width: "100%" }}>
+        <Link href={`/${imageProps.link}`} style={{ display: "flex", width: "100%" }}>
           <Box
             sx={{
               borderRadius: "0 0 2rem 0",
               overflow: "hidden",
-              width: { xs: "90%", sm: "90%" },
+              width: { xs: "90%", sm: "100%" },
               height: "auto",
               margin: "0 auto",
               cursor: "pointer",
