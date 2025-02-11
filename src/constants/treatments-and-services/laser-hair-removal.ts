@@ -2,7 +2,7 @@ import { AccordianTitleAndContent } from "../../interfaces/accordianTitleAndCont
 
 export const pageHeadingTitle = "Laser Hair Removal";
 export const pageHeadingBody =
-  "Are you tired of plucking, shaving, or waxing and want a permanent hair removal solution? At Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado, board-certified dermatologist Adrienne Stewart, MD, and medical aestheticians Willa Roberts & Jodi Payne offer laser hair removal treatments to get rid of unwanted hair for the long term.";
+  "Are you tired of plucking, shaving, or waxing and want a permanent hair removal solution? At Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado, board-certified dermatologist Adrienne Stewart, MD, and medical aesthetician Willa Roberts offer laser hair removal treatments to get rid of unwanted hair for the long term.";
 
 export const whatIsLaserHairRemovalTitle = "What Is Laser Hair Removal?";
 export const whatIsLaserHairRemovalMainBody = [
@@ -66,7 +66,7 @@ export const whatHappensAfterBody = [
 
 export const whyChooseASDTitle = "Why Choose Aesthetic Surgery & Dermatology of Cherry Creek?";
 export const whyChooseASDBody = [
-  "Aesthetic Surgery and Dermatology of Cherry Creek, led by board-certified dermatologist Dr. Adrienne Stewart, has 29 years of experience in medical and cosmetic dermatology. Dr. Stewart stays up-to-date with the latest surgical and nonsurgical treatments. She and our other team members, medical aesthetician Willa Roberts and laser technician Jodi Payne, provide treatments like laser hair removal, injectables, and body contouring to meet your needs.",
+  "Aesthetic Surgery and Dermatology of Cherry Creek, led by board-certified dermatologist Dr. Adrienne Stewart, has 29 years of experience in medical and cosmetic dermatology. Dr. Stewart stays up-to-date with the latest surgical and nonsurgical treatments. She and our other team members, medical aesthetician Willa Roberts provides treatments like laser hair removal, injectables, and body contouring to meet your needs.",
   "We’re known for using the most up-to-date technology and always providing personalized skin care. Whether you want to remove hair or improve your skin tone, our goal is for you to see real, long-term improvements. Aesthetic Surgery and Dermatology of Cherry Creek is here to help you feel more confident in your skin.",
 ];
 

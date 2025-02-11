@@ -1,7 +1,7 @@
 export const diamondGlowMainTitle = "DiamondGlow®";
 
 export const diamondGlowMainText =
-  "Revitalize your skin's natural luminosity and tackle dullness, uneven texture, or environmental damage with the transformative DiamondGlow® treatment at Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado. Esteemed board-certified dermatologist Adrienne Stewart, MD, along with experienced medical aestheticians Jodi Payne and Willa Roberts, specialize in DiamondGlow® treatments that deeply cleanse, exfoliate, and infuse the skin with nourishing serums for an immediate and enduring glow, all with minimal downtime. Secure your skin consultation now by calling the office or booking online today.";
+  "Revitalize your skin's natural luminosity and tackle dullness, uneven texture, or environmental damage with the transformative DiamondGlow® treatment at Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado. Esteemed board-certified dermatologist Adrienne Stewart, MD, along with experienced medical aesthetician Willa Roberts, specialize in DiamondGlow® treatments that deeply cleanse, exfoliate, and infuse the skin with nourishing serums for an immediate and enduring glow, all with minimal downtime. Secure your skin consultation now by calling the office or booking online today.";
 
 export const whatIsDiamondGlowTitle = "What is DiamondGlow®?";
 

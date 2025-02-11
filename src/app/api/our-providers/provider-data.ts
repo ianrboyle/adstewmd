@@ -40,18 +40,7 @@ export const providers: {
     },
     textBody: [],
   },
-  "jodi-payne": {
-    title: "Meet Jodi Payne, Master Coolsculpting Provider, Laser Technician",
-    textNextToImage: ["More information coming soon!"],
-    image: {
-      title: "Jodi Payne",
-      link: "our-providers/jodi-payne",
-      altText: "Jodi Payne",
-      src: "/providers/Jodi.png",
-      text: "Master Coolsculpting Provider / Laser Technician / LMT",
-    },
-    textBody: [],
-  },
+
   "mia-kallevik": {
     title: "Meet Mia Kallevik, Medical Assistant",
     textNextToImage: ["More information coming soon!"],
