@@ -57,10 +57,9 @@ export default function FeaturedServiceCard({ imageProps, textColor }: FeaturedS
               src={imageProps.src}
               alt={imageProps.altText}
               priority={false}
-              sizes="100vw"
-              style={{ width: "100%", height: "100%" }}
-              width={400}
-              height={400}
+              sizes="(max-width: 600px) 90vw, (max-width: 960px) 50vw, 400px"
+              style={{ objectFit: "cover" }}
+              fill
             />
           </Box>
         </Link>

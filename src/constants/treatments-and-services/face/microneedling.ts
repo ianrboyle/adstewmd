@@ -1,7 +1,7 @@
 export const microneedlingMainTitle = "Microneedling";
 
 export const microneedlingMainText =
-  "If lines, wrinkles, scarring, and other imperfections negatively affect your self-confidence, a simple aesthetic solution is within reach at Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado. Board-certified dermatologist Adrienne Stewart, MD, and medical aestheticians Jodi Payne and Willa Roberts offer microneedling treatments that stimulate new cell production to achieve younger-looking, healthier, beautiful skin without downtime. Call the office to schedule a cosmetic consultation, or use the online booking tool today.";
+  "If lines, wrinkles, scarring, and other imperfections negatively affect your self-confidence, a simple aesthetic solution is within reach at Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado. Board-certified dermatologist Adrienne Stewart, MD, and our medical aesthetician, Willa Roberts, offer microneedling treatments that stimulate new cell production to achieve younger-looking, healthier, beautiful skin without downtime. Call the office to schedule a cosmetic consultation, or use the online booking tool today.";
 
 export const whatIsMicroneedlingTitle = "What is microneedling?";
 

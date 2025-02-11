@@ -18,7 +18,7 @@ export default function ProviderImages() {
         >
           {providerImageData.map((provider, index) => (
             <Grid
-              size={{ xs: 12, sm: 12, md: 6, lg: 3 }}
+              size={{ xs: 12, sm: 12, md: 6, lg: 4 }}
               sx={{
                 display: "flex",
                 justifyContent: "center",
