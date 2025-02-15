@@ -1,6 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import OverlayComponent from "../Overlay";
 import FadeUpAnimation from "../animations/FadeUpAnimation";
+import Link from "next/link";
 export default function PhotoGalleryHomePage() {
   return (
     <OverlayComponent
@@ -79,9 +80,9 @@ export default function PhotoGalleryHomePage() {
             >
               View our gallery of patient results for all of our state of the art procedures
             </Typography>
-            <Box sx={{ display: "flex", justifyContent: "flex-start" }}>
-              <Button>View Gallery</Button>
-            </Box>
+            <Link href="/photo-gallery">
+              <Button sx={{ display: "flex", justifyContent: "flex-start" }}>View Gallery</Button>
+            </Link>
           </Box>
         </FadeUpAnimation>
       </>
