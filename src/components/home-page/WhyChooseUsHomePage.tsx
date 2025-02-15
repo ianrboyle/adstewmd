@@ -22,7 +22,7 @@ export default function WhyChooseUsHomePage() {
           <Box
             sx={{
               position: "absolute",
-              right: 0,
+              left: 0,
               padding: 2,
               textAlign: "left",
               height: "100%",

@@ -52,6 +52,7 @@ Nice To Haves:
 - add products page
 - add gallery page (page and home screen)
 - add reviews page (page and home screen)
+  - might need to wait until go live
 - figureo out og-image (open graph)
 
   - https://www.youtube.com/watch?v=wTGVHLyV09M&t=52s
