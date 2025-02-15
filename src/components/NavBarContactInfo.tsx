@@ -4,7 +4,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MapIcon from "@mui/icons-material/Map";
 import PlaceIcon from "@mui/icons-material/Place";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
-import Link from "next/link";
 
 export default function NavBarContactInfo() {
   return (
@@ -22,21 +21,31 @@ export default function NavBarContactInfo() {
           ml: "auto",
         }}
       >
-        <IconButton color="secondary" aria-label="go to facebook" sx={{}}>
-          <FacebookIcon />
-        </IconButton>
-        <IconButton aria-label="go to instagram" sx={{}}>
-          <InstagramIcon />
-        </IconButton>
-        <IconButton
-          aria-label="get directions"
-          sx={{
-            mr: "1rem",
-            mt: "0rem",
-          }}
+        <a href="https://www.facebook.com/ASDCherryCreek" target="_blank" rel="noopener noreferrer">
+          <IconButton color="secondary" aria-label="go to facebook" sx={{}}>
+            <FacebookIcon />
+          </IconButton>
+        </a>
+        <a href="https://www.instagram.com/adriennestewartmd" target="_blank" rel="noopener noreferrer">
+          <IconButton aria-label="go to instagram" sx={{}}>
+            <InstagramIcon />
+          </IconButton>
+        </a>
+        <a
+          href="https://www.google.com/maps/place/Aesthetic+Surgery+and+Dermatology+of+Cherry+Creek:+The+Office+of+Adrienne+Stewart,+MD/@39.7175786,-104.9481433,15z/data=!4m6!3m5!1s0x876c7e9507731e15:0x4940252569d5fb77!8m2!3d39.7175786!4d-104.9481433!16s%2Fg%2F1hc7zdp7z?sa=X&ved=1t:2428&ictx=111&coh=219816&entry=tts&g_ep=EgoyMDI0MDgwNS4wKgBIAVAD"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <MapIcon />
-        </IconButton>
+          <IconButton
+            aria-label="get directions"
+            sx={{
+              mr: "1rem",
+              mt: "0rem",
+            }}
+          >
+            <MapIcon />
+          </IconButton>
+        </a>
 
         <IconButton
           aria-label="Contact"
@@ -57,11 +66,9 @@ export default function NavBarContactInfo() {
             303-333-6060
           </Typography>
         </IconButton>
-        <Link href="https://asd.ema.md/ema/Login.action">
-          <Button type="submit" sx={{}}>
-            Patient Portal
-          </Button>
-        </Link>
+        <a href="https://asd.ema.md/ema/Login.action" target="_blank" rel="noopener noreferrer">
+          <Button type="submit">Patient Portal</Button>
+        </a>
       </Box>
     </Box>
   );
