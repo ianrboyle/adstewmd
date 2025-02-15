@@ -1,7 +1,7 @@
 export const laserResurfacingMainTitle = "Laser Resurfacing";
 
 export const laserResurfacingMainText =
-  "Laser resurfacing brings healthy and youthful cells to the surface so that you don’t see as many spots, blemishes, or scars. At Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado’s Cherry Creek area, board-certified dermatologist Adrienne Stewart, MD, and medical aestheticians Jodi Payne and Willa Roberts, provide personalized laser resurfacing to renew your aging skin. Call Aesthetic Surgery and Dermatology of Cherry Creek or schedule an appointment online today.";
+  "Laser resurfacing brings healthy and youthful cells to the surface so that you don’t see as many spots, blemishes, or scars. At Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado’s Cherry Creek area, board-certified dermatologist Adrienne Stewart, MD, and our medical aesthetician, Willa Roberts, provide personalized laser resurfacing to renew your aging skin. Call Aesthetic Surgery and Dermatology of Cherry Creek or schedule an appointment online today.";
 
 export const whatIsLaserResurfacingTitle = "What is laser resurfacing?";
 

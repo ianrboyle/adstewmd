@@ -1,6 +1,6 @@
 export const cuteraTitle = "Cutera Laser Vein Treatment";
 export const cuteraMain =
-  "Tiny web-like spider veins can appear on your skin because of hormones, prolonged standing, or genetic factors. If you don’t like how they look, board-certified dermatologist Adrienne Stewart, MD, and medical aestheticians Willa Roberts & Jodi Payne can provide Cutera® laser vein treatments at Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado. Call the Cherry Creek office or schedule a consultation for Cutera online today.";
+  "Tiny web-like spider veins can appear on your skin because of hormones, prolonged standing, or genetic factors. If you don’t like how they look, board-certified dermatologist Adrienne Stewart, MD, and medical aesthetician Willa Roberts can provide Cutera® laser vein treatments at Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado. Call the Cherry Creek office or schedule a consultation for Cutera online today.";
 
 export const whatIsCuteraTitle = "What is Cutera® laser vein treatment?";
 export const whatIsCuteraBody = [

@@ -1,7 +1,7 @@
 export const facialsMainTitle = "Facials";
 
 export const facialsMainText =
-  "If you want smoother, clearer skin, but aren’t ready for injectables or laser treatments, board-certified dermatologist Adrienne Stewart, MD, and and medical aestheticians Jodi Payne and Willa Roberts offer an array of facials offer an array of facials at Aesthetic Surgery and Dermatology of Cherry Creek in the Cherry Creek neighborhood of Denver, Colorado. Dr. Stewart and her aestheticians customize each facial to address your unique needs. Call the office today or schedule an appointment online to learn more.";
+  "If you want smoother, clearer skin, but aren’t ready for injectables or laser treatments, board-certified dermatologist Adrienne Stewart, MD, and medical aesthetician Willa Roberts offer an array of facials offer an array of facials at Aesthetic Surgery and Dermatology of Cherry Creek in the Cherry Creek neighborhood of Denver, Colorado. Dr. Stewart and her aestheticians customize each facial to address your unique needs. Call the office today or schedule an appointment online to learn more.";
 
 export const whatAreFacialsTitle = "What are facials?";
 

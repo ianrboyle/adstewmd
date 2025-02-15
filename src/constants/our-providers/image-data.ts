@@ -10,13 +10,7 @@ export const providerImageData: CardImageProps[] = [
     text: "Founder / Board Certified Dermatologist",
   },
   willaInfo.image,
-  {
-    title: "Jodi Payne",
-    link: "our-providers/jodi-payne",
-    altText: "Jodi Payne",
-    src: "/providers/Jodi.png",
-    text: "Master Coolsculpting Provider / Laser Technician / LMT",
-  },
+
   {
     title: "Mia Kallevik",
     link: "our-providers/mia-kallevik",

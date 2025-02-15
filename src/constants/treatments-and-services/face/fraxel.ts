@@ -1,7 +1,7 @@
 export const fraxelMainTitle = "Fraxel";
 
 export const fraxelMainText =
-  "Fraxel® laser treatments allow collagen to flourish in your skin for a smoother texture and more even tone. At Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado’s Cherry Creek area, board-certified dermatologist Adrienne Stewart, MD, and medical aestheticians Jodi Payne and Willa Roberts, customize your Fraxel laser treatments to meet or exceed your expectations for clearer skin. Call Aesthetic Surgery and Dermatology of Cherry Creek or book an appointment online today.";
+  "Fraxel® laser treatments allow collagen to flourish in your skin for a smoother texture and more even tone. At Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado’s Cherry Creek area, board-certified dermatologist Adrienne Stewart, MD, and medical aesthetician Willa Roberts, customize your Fraxel laser treatments to meet or exceed your expectations for clearer skin. Call Aesthetic Surgery and Dermatology of Cherry Creek or book an appointment online today.";
 
 export const whatIsFraxelTitle = "What is Fraxel®?";
 

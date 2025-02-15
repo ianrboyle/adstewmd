@@ -1,6 +1,6 @@
 export const vanquishTitle = "Vanquish";
 export const vanquishMainText =
-  "Melting down body fat is possible without surgery if you use Vanquish™, a fully noninvasive and pain-free radiofrequency treatment. At Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado’s Cherry Creek area, board-certified dermatologist Adrienne Stewart, MD, and medical aestheticians Willa Roberts & Jodi Payne use Vanquish to minimize stubborn fat on your love handles, abdomen, or thighs. Call the Cherry Creek office to schedule an appointment or book online today.";
+  "Melting down body fat is possible without surgery if you use Vanquish™, a fully noninvasive and pain-free radiofrequency treatment. At Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado’s Cherry Creek area, board-certified dermatologist Adrienne Stewart, MD, and medical aesthetician Willa Roberts use Vanquish to minimize stubborn fat on your love handles, abdomen, or thighs. Call the Cherry Creek office to schedule an appointment or book online today.";
 
 export const whatIsVanquishTitle = "What is Vanquish?";
 export const whatIsVanquishBody = [

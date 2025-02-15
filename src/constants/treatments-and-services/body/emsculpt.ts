@@ -2,7 +2,7 @@ import { AccordianTitleAndContent } from "../../../interfaces/accordianTitleAndC
 
 export const emsculptTitle = "Emsculpt NEO";
 export const ecsculptMain =
-  "EMsculpt® Neo can transform and tone your figure by helping you build muscle while melting away extra body fat at the same time. At Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado’s Cherry Creek area, Board-certified dermatologist Adrienne Stewart, MD, Medical Aethetician Willa Roberts and Jodi Payne plan your EMsculpt Neo treatments according to your aesthetic goals. Schedule a treatment consultation online for EMsculpt Neo today.";
+  "EMsculpt® Neo can transform and tone your figure by helping you build muscle while melting away extra body fat at the same time. At Aesthetic Surgery and Dermatology of Cherry Creek in Denver, Colorado’s Cherry Creek area, Board-certified dermatologist Adrienne Stewart, MD and Medical Aethetician Willa Roberts plan your EMsculpt Neo treatments according to your aesthetic goals. Schedule a treatment consultation online for EMsculpt Neo today.";
 
 export const whatIsEmsculptTitle = "What is EmSculpt NEO?";
 export const whatIsEmsculptBody = [

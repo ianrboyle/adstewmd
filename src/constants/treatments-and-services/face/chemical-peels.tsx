@@ -55,9 +55,8 @@ export const whyASDBody = [
   <>
     Aesthetic Surgery and Dermatology of Cherry Creek is led by board-certified dermatologist{" "}
     <Link href="/providers/adrienne-stewart-md">Dr. Adrienne Stewart</Link>, who has over 25 years of experience and
-    performs all cosmetic injections herself. Dr. Stewart works closely with medical aestheticians{" "}
-    <Link href="/providers/jodi-payne">Jodi Payne</Link> and <Link href="/providers/willa-roberts">Willa Roberts</Link>{" "}
-    to provide high-quality care.
+    performs all cosmetic injections herself. Dr. Stewart works closely with medical aesthetician{" "}
+    <Link href="/providers/willa-roberts">Willa Roberts</Link> to provide high-quality care.
   </>,
   "Our practice provides a wide range of treatments, including injectables, chemical peels, laser procedures, and body sculpting. We prioritize your safety in every service, along with getting natural-looking results with minimal downtime. At the end of the day, our goal is for you to have a great experience and love the skin you’re in.",
   "Call the Aesthetic Surgery and Dermatology of Cherry Creek office to learn more about microneedling, or use the online booking tab today.",
