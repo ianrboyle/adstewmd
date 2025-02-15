@@ -4,6 +4,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MapIcon from "@mui/icons-material/Map";
 import PlaceIcon from "@mui/icons-material/Place";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import Link from "next/link";
 
 export default function NavBarContactInfo() {
   return (
@@ -56,9 +57,11 @@ export default function NavBarContactInfo() {
             303-333-6060
           </Typography>
         </IconButton>
-        <Button type="submit" sx={{}}>
-          Patient Portal
-        </Button>
+        <Link href="https://asd.ema.md/ema/Login.action">
+          <Button type="submit" sx={{}}>
+            Patient Portal
+          </Button>
+        </Link>
       </Box>
     </Box>
   );
