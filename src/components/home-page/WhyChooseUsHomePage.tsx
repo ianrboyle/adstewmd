@@ -21,7 +21,7 @@ export default function WhyChooseUsHomePage() {
         <FadeUpAnimation>
           <Box
             sx={{
-              position: "absolute",
+              position: "relative",
               left: 0,
               padding: 2,
               textAlign: "left",
