@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import ThemeRegistry from "./providers/ThemeRegistry/ThemeRegistry";
 import NavBar from "../components/NavBar";
 import Footer from "../components/footer/Footer";
+import { Box } from "@mui/material";
 
 export const metadata: Metadata = {
   title: {
@@ -34,11 +35,14 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ThemeRegistry>
-          <NavBar />
-
-          {children}
-          <Analytics />
-          <Footer />
+          <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+            <NavBar />
+            <Box component="main" sx={{ flex: 1 }}>
+              {children}
+            </Box>
+            <Analytics />
+            <Footer />
+          </Box>
         </ThemeRegistry>
       </body>
     </html>
