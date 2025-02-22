@@ -41,28 +41,20 @@ MVP:
 
 Nice To Haves:
 
-- add contact us page
-
 - dynamic routing for services
 
-- Footer:
-
-  - implement map
-
 - add products page
-- add gallery page (page and home screen)
+
 - add reviews page (page and home screen)
   - might need to wait until go live
 - figureo out og-image (open graph)
 
   - https://www.youtube.com/watch?v=wTGVHLyV09M&t=52s
 
-  stock photo links:
-  https://www.istockphoto.com/photo/happy-mature-woman-admiring-herself-in-the-mirror-gm121356233-16701839
-
-why choose us: https://www.istockphoto.com/photo/woman-in-white-bathrobe-is-applying-facial-cream-while-smiling-at-her-reflection-in-gm2184170919-603018558
-
 - add accessibility page
   - finish accessibility - add widget?
 
 figure out google search console
+
+- look into email services
+  - sendgrid
