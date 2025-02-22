@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Box } from "@mui/material";
 import Footer from "../../components/footer/Footer";
 import NavBar from "../../components/NavBar";
-import ThemeRegistry from "../ThemeRegistry/ThemeRegistry";
+import ThemeRegistry from "../providers/ThemeRegistry/ThemeRegistry";
 
 export const metadata: Metadata = {
   title: {

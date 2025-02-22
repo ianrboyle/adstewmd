@@ -1,4 +1,4 @@
-import ThemeRegistry from "../ThemeRegistry/ThemeRegistry";
+import ThemeRegistry from "../providers/ThemeRegistry/ThemeRegistry";
 
 export default function AdminLayout({
   children,
