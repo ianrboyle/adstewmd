@@ -27,7 +27,6 @@ export default function LogoImage({ logoColor }: LogoImageProps) {
           }}
           width={200}
           height={100}
-          priority
         />
       </Link>
     </Box>
