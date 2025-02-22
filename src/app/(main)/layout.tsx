@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import "./globals.css";
+
+import { Analytics } from "@vercel/analytics/react";
+
+import { Box } from "@mui/material";
+import Footer from "../../components/footer/Footer";
+import NavBar from "../../components/NavBar";
+import ThemeRegistry from "../ThemeRegistry/ThemeRegistry";
 
 export const metadata: Metadata = {
   title: {
@@ -21,14 +27,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default function MainSiteLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <ThemeRegistry>
+      <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+        <NavBar />
+        <Box component="main" sx={{ flex: 1 }}>
+          {children}
+        </Box>
+        <Analytics />
+        <Footer />
+      </Box>
+    </ThemeRegistry>
   );
 }

@@ -17,19 +17,7 @@ import React from "react";
 import FeaturedServicesSmallImagesGrid from "./SmallImagesGrid";
 import { bodyContourImages } from "../../../constants/treatments-and-services/body/body-contouring";
 import FeaturedServicesAccordian from "../Accordian";
-
-interface FeaturedServicePageProps {
-  initialDescription: string | React.ReactNode;
-  initialDescriptionTitle: string;
-  sections: {
-    title: string;
-    body: string[] | React.ReactNode[];
-    isList?: boolean;
-    listItems?: string[] | React.ReactNode[];
-    subText?: string;
-  }[];
-  currentPage: PageType;
-}
+import { FeaturedServicePageProps } from "../../../interfaces/featured-service-page-props";
 
 export default function FeaturedServicePage({
   sections,
