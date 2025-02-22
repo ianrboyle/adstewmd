@@ -38,26 +38,25 @@ export default function RightFooter() {
           </Link>
         ))}
       </Box>
-      <Box
-        sx={{
-          position: "relative",
-          height: { xs: "350px", sm: "350px", md: "200px", lg: "250px" },
-          width: { xs: "100%", sm: "90%", md: "100%", lg: "90%", xl: "75%" },
-        }}
-      >
-        <Link href="/contact">
+      <Link href="/contact" style={{ width: "90%" }}>
+        <Box
+          sx={{
+            position: "relative",
+            height: { xs: "350px", sm: "350px", md: "200px", lg: "250px" },
+          }}
+        >
           <Image
             src="/map-location.png"
             alt="Map Location"
             fill
-            sizes="100vw"
+            sizes="(min-width: 1536px) 75vw, (min-width: 1200px) 90vw, (min-width: 900px) 100vw, (min-width: 600px) 90vw, 100vw"
             style={{
               objectFit: "cover",
               objectPosition: "center",
             }}
           />
-        </Link>
-      </Box>
+        </Box>
+      </Link>
     </Box>
   );
 }

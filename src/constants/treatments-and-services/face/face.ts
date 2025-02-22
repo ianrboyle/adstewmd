@@ -1,7 +1,12 @@
 import { CardImageProps } from "../../../interfaces/card-image-props";
 
 export const faceImages: CardImageProps[] = [
-  { src: "/featured-services/face/botox-small.png", title: "BOTOX", altText: "botox", link: "injectables/botox" },
+  {
+    src: "/featured-services/face/botox-small.png",
+    title: "BOTOX",
+    altText: "botox",
+    link: "services/injectables/botox",
+  },
   {
     src: "/featured-services/face/microneedling-small.png",
     title: "MICRONEEDLING",
@@ -24,7 +29,7 @@ export const faceImages: CardImageProps[] = [
     src: "/featured-services/face/facials-small.png",
     title: "FACIALS",
     altText: "services/facials",
-    link: "face/facials",
+    link: "services/face/facials",
   },
   {
     src: "/featured-services/face/laser-resurfacing-small.png",
