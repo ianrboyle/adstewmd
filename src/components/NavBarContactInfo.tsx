@@ -4,6 +4,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MapIcon from "@mui/icons-material/Map";
 import PlaceIcon from "@mui/icons-material/Place";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import Link from "next/link";
 
 export default function NavBarContactInfo() {
   return (
@@ -46,15 +47,17 @@ export default function NavBarContactInfo() {
             <MapIcon />
           </IconButton>
         </a>
+        <Link href="/contact">
+          <IconButton
+            aria-label="Contact"
+            sx={{
+              mr: "1rem",
+            }}
+          >
+            <PlaceIcon /> <Typography>Denver, CO</Typography>
+          </IconButton>
+        </Link>
 
-        <IconButton
-          aria-label="Contact"
-          sx={{
-            mr: "1rem",
-          }}
-        >
-          <PlaceIcon /> <Typography>Denver, CO</Typography>
-        </IconButton>
         <IconButton
           aria-label="Contact"
           sx={{
