@@ -1,9 +1,20 @@
-export class ResponseClass<T> {
-  result: T | null;
-  error: Error | null;
+export class ApiResponse<T = unknown> {
+  constructor(
+    public data: T | null,
+    public success: boolean,
+    public status: number,
+    public error?: { message: string } | string
+  ) {}
 
-  constructor(result: T | null = null, error: Error | null = null) {
-    this.result = result;
-    this.error = error;
+  static success<T>(data: T, status = 200): ApiResponse<T> {
+    return new ApiResponse(data, true, status);
+  }
+
+  static failure<T>(message: string, status = 400): ApiResponse<T> {
+    return new ApiResponse<T>(null, false, status, { message });
+  }
+
+  isSuccess(): boolean {
+    return this.success && !this.error;
   }
 }

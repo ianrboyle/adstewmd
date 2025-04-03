@@ -58,3 +58,5 @@ figure out google search console
 
 - look into email services
   - sendgrid
+
+figure out how to apply new text color to MUI Textfields via theme.ts

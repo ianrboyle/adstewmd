@@ -159,13 +159,23 @@ export const theme = createTheme({
         },
       },
     },
-    // overrides typegraphy color
-    // MuiTypography: {
-    //   styleOverrides: {
-    //     root: {
-    //       color: `${Colors.purple}`,
-    //     },
-    //   },
-    // },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          color: "#62288f",
+          input: { color: "#62288f" },
+          "&.MuiFocused": "#62288f",
+          "& .MuiInputLabel-root": {
+            color: "#62288f", // Default label color
+          },
+          "& .MuiInputLabel-root.Mui-focused": {
+            color: "#62288f", // Focused label color
+          },
+          "& .MuiFormLabel-root.Mui-focused": {
+            color: "#62288f", // Focused label color
+          },
+        },
+      },
+    },
   },
 });

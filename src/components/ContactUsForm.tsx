@@ -36,6 +36,7 @@ export const ContactUsForm = () => {
           sx={{
             marginBottom: "1rem",
             backgroundColor: "white",
+            "& label.Mui-focused": { color: "text.secondary" },
           }}
         />
         <TextField
@@ -46,6 +47,7 @@ export const ContactUsForm = () => {
           sx={{
             marginBottom: "1rem",
             backgroundColor: "white",
+            "& label.Mui-focused": { color: "text.secondary" },
           }}
         />
         <TextField
@@ -56,6 +58,7 @@ export const ContactUsForm = () => {
           sx={{
             marginBottom: "1rem",
             backgroundColor: "white",
+            "& label.Mui-focused": { color: "text.secondary" },
           }}
         />
         <TextField
@@ -68,6 +71,7 @@ export const ContactUsForm = () => {
           sx={{
             marginBottom: "1rem",
             backgroundColor: "white",
+            "& label.Mui-focused": { color: "text.secondary" },
           }}
         />
         <Button type="submit">Submit</Button>
